@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/common.css">
-    <title>hi</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <title>{% if page.title %}{{page.title}}&nbsp;|&nbsp;{% endif %}YS' TIL</title>
+    <meta name="description" content="{{page.meta}}">
 </head>
 <body>
-    <header>
+    <header class='masthead {{page.mastheadClass}}'>
         {% include nav.html navclass='nav-top' %}
     </header>
     {{content}}

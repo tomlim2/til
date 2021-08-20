@@ -1,14 +1,30 @@
 ---
 layout: default
+priority: 1.0
 ---
-
-<h1>hi</h1>
-
-<ul>
-    {% for post in site.posts %}
+<!-- <ol>
+    {% for subject in site.data.subject-types %}
     <li>
-        <a href="">{{post.title}}</a>
-        <p>{{post.meta}}</p>
+        <a href="{{site.baseurl}}/children/{{subject.folder}}/">{{subject.title}}</a>
+    </li>
+    {% endfor %}
+</ol> -->
+<h2>Today I learned</h2>
+<ul>
+    {% for post in site.categories.til limit:2 %}
+    <li>
+        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+        <!-- <p>{{post.meta}}</p> -->
+    </li>
+    {% endfor %}
+</ul>
+
+<h2>프로젝트</h2>
+<ul>
+    {% for project in site.categories.project limit:2 %}
+    <li>
+        <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
+        <p>{{project.meta}}</p>
     </li>
     {% endfor %}
 </ul>
