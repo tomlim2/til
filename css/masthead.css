@@ -1,9 +1,10 @@
 .masthead{
-    background-color: #383838;
-    color: #eee;
+    /* background-color: #383838; */
+    color: #383838;
     padding: 10px;
+    border-bottom: #383838 1px solid;
 }
 
 .masthead-about{
-    background-color: #383838;
+    /* background-color: #383838; */
 }

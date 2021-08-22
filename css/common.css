@@ -2,7 +2,6 @@ html{
     margin: 0;
     padding: 0;
 
-    font: 400;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
@@ -11,7 +10,9 @@ a{
     color: #222;
 }
 a:hover{
-    color: rgb(138, 138, 138);
+    /* text-decoration-line: underline; */
+    background-color: black;
+    color: white;
 }
 
 ul{
@@ -28,7 +29,7 @@ ul > li{
 }
 
 footer {
-    background-color: #383838;
-    color: #eee;
+    border-top: solid #383838 1px;
+    color: #383838;
     padding: 10px;
 }  
