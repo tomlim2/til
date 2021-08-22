@@ -3,7 +3,7 @@ layout: default
 title: opooo
 meta: test
 source: https://material.io/design/
-category: resources
+category: about
 ---
 
 sup bro 
