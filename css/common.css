@@ -1,3 +1,8 @@
+::selection {
+    color: white;
+    background: black;
+  }
+
 html{
     margin: 0;
     padding: 0;
@@ -18,6 +23,8 @@ p{
 a{
     text-decoration: none;
     color: #222;
+    padding-left: .1em;
+    padding-right: .1em;
 }
 a:hover{
     /* text-decoration-line: underline; */
@@ -30,7 +37,7 @@ ul{
 }
 
 .default-box{
-    width: 600px;
+    width: 720px;
     margin: 10px;
 }
 
@@ -45,5 +52,5 @@ footer {
 }  
 
 img {
-    width: 600px;
+    width: 720px;
 }
