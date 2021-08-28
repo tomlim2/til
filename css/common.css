@@ -2,7 +2,10 @@
     color: white;
     background: black;
   }
-
+html,body{
+    display: grid;
+    justify-content: center;
+}
 html{
     margin: 0;
     padding: 0;
@@ -10,14 +13,17 @@ html{
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+h1{
+    line-height: 40px;
+}  
+
 h3{
+    margin-top: 2em;
     margin-bottom: .5em;
 }  
 
 p{
-    margin-left: .5em;
-    margin-top: .5em;
-    margin-bottom: 2em;
+    margin: 0;
 }
 
 a{
@@ -37,6 +43,7 @@ ul{
 }
 
 .default-box{
+    line-height: 32px;
     width: 720px;
     margin: 10px;
 }

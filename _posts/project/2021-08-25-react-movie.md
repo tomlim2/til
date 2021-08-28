@@ -11,6 +11,11 @@ category: project
 ## React
 React로 구축한 두번째 웹서비스 Nomadcoders에서 제공하는 강의형 프로젝트이다.
 
+## React-Router
+React movie web 구축 중에 사용한 모듈. Jerkyll의 layout 개념과 동일하다. 
+
+[references](https://reactrouter.com/)
+
 ## 목적
 React 리마인드
 
