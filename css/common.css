@@ -14,9 +14,19 @@ html{
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+blockquote{
+    background-color: #f2f2f2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 h1{
     line-height: 40px;
 }  
+h2{
+    margin-bottom: 0;
+}  
+
 
 h3{
     margin-top: 2em;
@@ -30,7 +40,7 @@ p{
 
 a{
     text-decoration: none;
-    color: #222;
+    color: black;
     padding-left: .1em;
     padding-right: .1em;
 }
@@ -40,21 +50,29 @@ a:hover{
     color: white;
 }
 
-ul{
-    padding: 0px 10px 40px 10px;
-}
-
 .default-box{
     padding-top: 50px;
-    line-height: 32px;
+    line-height: 30px;
     width: 720px;
     margin: 10px;
     /* position: relative;
     top: 200px; */
 }
+.default-box ul {
+    padding: 0;
+}
 
-ul > li{
+.default-box ul li {
     list-style-type: none;
+}
+
+.default-box ul li a{
+    transition-property: margin;
+    transition-duration: 400ms;
+}
+
+.default-box ul li a:hover{
+    margin-left: -15px;
 }
 
 footer {

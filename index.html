@@ -11,7 +11,8 @@ priority: 1.0
 </ol> -->
 <h2>Today I learned</h2>
 <ul>
-    {% for post in site.categories.til limit:2 %}
+    {% for post in site.categories.til%}  
+    <!-- limit:2  -->
     <li>
         <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
         <!-- <p>{{post.meta}}</p> -->
@@ -19,9 +20,19 @@ priority: 1.0
     {% endfor %}
 </ul>
 
+<h2>React</h2>
+<ul>
+    {% for react in site.categories.react %}
+    <li>
+        <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
+        <!-- <p>{{react.meta}}</p> -->
+    </li>
+    {% endfor %}
+</ul>
+
 <h2>프로젝트</h2>
 <ul>
-    {% for project in site.categories.project limit:2 %}
+    {% for project in site.categories.project %}
     <li>
         <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
         <!-- <p>{{project.meta}}</p> -->
