@@ -8,7 +8,7 @@ category: react
 이해는 잘 하지못한 상태이다. react가 화면에 출력되는(render) 사이클이다.
 
 ### Commonly Used Lifecycle Methods 
-![lifecycle diagram]({{site.baseurl/}}/img/21-08-28-react-1.png)
+![lifecycle diagram]({{site.baseurl}}/img/21-08-28-react-1.png)
 React version >= 16.4 (출처:[React lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/))
 
 ### 예시- [React 영화 웹 프로젝트](https://tomlim2.github.io/movie_2019v/)([개인 프로젝트](http://localhost:4000/project/2021/08/25/react-movie.html))
