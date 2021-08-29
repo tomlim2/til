@@ -3,6 +3,10 @@
     color: #383838;
     padding: 10px;
     border-bottom: #383838 1px solid;
+    position: fixed;
+    width: 720px;
+    background-color: white;
+    z-index: 1;
 }
 
 .masthead-about{

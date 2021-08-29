@@ -8,26 +8,26 @@ category: project
 
 진행중
 
-## React
+### React
 React로 구축한 두번째 웹서비스 Nomadcoders에서 제공하는 강의형 프로젝트이다.
 
-## React-Router
+### React-Router
 React movie web 구축 중에 사용한 모듈. Jerkyll의 layout 개념과 동일하다. 
 
 [references](https://reactrouter.com/)
 
-## 목적
+### 목적
 React 리마인드
 
-## 느낀점
+### 느낀점
 다음엔 앱 프로젝트 한번 해보자. 
 
-## [The Component Lifecycle](https://reactjs.org/docs/react-component.html)
+### [The Component Lifecycle](https://reactjs.org/docs/react-component.html)
 Mounting
 Updating
 Unmounting
 -
-## References
+### References
 Link: [Jekyll](https://jekyllrb.com/docs/)
 Link: [Markdown Syntax Guidance](https://guides.github.com/features/mastering-markdown/)
 
