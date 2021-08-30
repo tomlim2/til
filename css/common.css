@@ -68,7 +68,7 @@ a:hover{
 
 .default-box ul li a{
     transition-property: margin;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
 }
 
 .default-box ul li a:hover{
