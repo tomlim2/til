@@ -38,18 +38,6 @@ p{
     padding-left: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    padding-left: .1em;
-    padding-right: .1em;
-}
-a:hover{
-    /* text-decoration-line: underline; */
-    background-color: black;
-    color: white;
-}
-
 .default-box{
     padding-top: 50px;
     line-height: 30px;
@@ -66,15 +54,6 @@ a:hover{
     list-style-type: none;
 }
 
-.default-box ul li a{
-    transition-property: margin;
-    transition-duration: 200ms;
-}
-
-.default-box ul li a:hover{
-    margin-left: -15px;
-}
-
 footer {
     border-top: solid #383838 1px;
     color: #383838;
@@ -83,4 +62,22 @@ footer {
 
 img {
     width: 700px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding-left: .1em;
+    padding-right: .1em;
+}
+a:hover{
+    background-color: #fff9a7;
+}
+
+.default-box ul li a{
+    transition-property: color, background-color;
+    /* transition-duration: 200ms; */
+}
+
+.default-box ul li a:hover{
 }

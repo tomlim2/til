@@ -1,12 +1,12 @@
 ---
 layout: post-til
-title: React로 영화 웹 서비스 만들기 (Nomadcoders)
+title: React - 영화 웹 만들기
 meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
 ---
 
-진행중
+2021-08-25 ~ 2021-08-28
 
 ### React
 React로 구축한 두번째 웹서비스 Nomadcoders에서 제공하는 강의형 프로젝트이다.

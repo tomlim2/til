@@ -1,11 +1,11 @@
 ---
 layout: post-til
-title: React와 Github에 연동하기 (Web)
+title: React Native, Expo-cli, Github 연동하기
 meta: React-Router
 source: https://reactrouter.com
-category: react
+category: react_native
 ---
-과거 처음 React를 사용했을때 github와 연동하는 법을 몰라서 [Codesandbox](https://codesandbox.io/)라는 곳에다 연동시켜 시연한적이 있었다. 그때 알았으면 좋았을걸 하는 마음에 정리한다.
+
 
 ## Setup
 React 프로젝트의 터미널에서 다음과 입력하기
