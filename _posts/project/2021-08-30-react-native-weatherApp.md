@@ -9,13 +9,7 @@ category: project
 진행중
 
 ### Installing expo-cli
-expo인스톨 도중 아래와 같은 에러로 설치할 수 없었다.
-
-```js
-errno -13
-npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'
-```
-해결:
+`npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'`로 expo 설치가 안되어 아래와 같은 코드로 해결했다.
 
 ```js
     & sudo npm install --global expo-cli
@@ -46,14 +40,4 @@ expo cli Xcode needs to be installed (don't worry, you won't have to use it), wo
 4. select an Xcode version in the select labeled "Command Line Tools"
 
 ### 느낀점
-다음엔 앱 프로젝트 한번 해보자. 
-
-### [The Component Lifecycle](https://reactjs.org/docs/react-component.html)
-Mounting
-Updating
-Unmounting
--
-### References
-Link: [Jekyll](https://jekyllrb.com/docs/)
-Link: [Markdown Syntax Guidance](https://guides.github.com/features/mastering-markdown/)
-
+es6는 axios와 같은 API들을 읽을 때 쓰는 문법으로 생각된다. 다음에 배워보자.

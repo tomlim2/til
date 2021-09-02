@@ -57,7 +57,7 @@ class Home extends React.Component{
 
 
 ### componentDidMount()
-출처는 [reactjs.org](https://reactjs.org/docs/react-component.html#componentdidupdate). **매우 자주 사용되는** method.
+출처는 [reactjs.org](https://reactjs.org/docs/react-component.html#componentdidupdate). **매우 자주 사용되는** 명령어
 
 ```js
 componentDidUpdate(prevProps, prevState, snapshot)
