@@ -1,6 +1,6 @@
-code{
-    color: #f8f8f2;
-    background-color: #272822;
+p code{
+    color: black;
+    background-color: #d6d6d6;
     padding-left: 5px;
     padding-right: 5px;
 }
