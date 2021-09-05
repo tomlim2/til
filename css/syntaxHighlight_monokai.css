@@ -1,13 +1,12 @@
 p code{
-    color: black;
-    background-color: #d6d6d6;
-    padding-left: 5px;
-    padding-right: 5px;
+    color: rgb(63, 63, 63);
+    background-color: #f0f0f0;
+    padding: 8px 12px 8px 12px;
 }
 .highlight pre{
     line-height: 16px;
     padding: 20px;
-    border-left: 5px #555555 solid;
+    border-left: 5px #f0f0f0 solid;
 }
 .highlight pre { background-color: #272822; }
 .highlight .hll { background-color: #272822; }

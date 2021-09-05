@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
-    <title>{% if page.title %}{{page.title}}&nbsp;|&nbsp;{% endif %}Lim's</title>
-    <meta name="description" content="{{page.meta}}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class='masthead {{page.mastheadClass}}'>
-        {% include nav.html navclass='nav-top' %}
-    </header>
-    <div class="default-box main">
-        {{content}}
-    </div>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+        <title>{% if page.title %}{{page.title}}&nbsp;|&nbsp;{% endif %}Lim's</title>
+        <meta name="description" content="{{page.meta}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class='masthead {{page.mastheadClass}}'>
+            {% include nav.html navclass='nav-top' %}
+        </header>
+        <div class="default-box main">
+            {{content}}
+        </div>
+        
 
-    <footer>
-        {% include nav.html navclass='nav-bottom' %}
-        <br>
-        Copyright, 임연수. All rights reserved.
-    </footer>
-</body>
+        <footer>
+            {% include nav.html navclass='nav-bottom' %}
+            <br>
+            Copyright, 임연수. All rights reserved.
+        </footer>
+    </body>
 </html>

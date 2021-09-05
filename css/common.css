@@ -1,7 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
 ::selection {
     color: white;
     background: black;
   }
+
 html,body{
     display: grid;
     justify-content: center;
@@ -24,7 +29,8 @@ h1{
     line-height: 40px;
 }  
 h2{
-    margin-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }  
 
 
@@ -34,24 +40,56 @@ h3{
 }  
 
 p{
-    margin: 0;
+    margin: 0px 0px 10px 0px;
     padding-left: 0px;
 }
 
 .default-box{
-    padding-top: 50px;
+    padding-top: 38px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     line-height: 30px;
     width: 720px;
-    margin: 10px;
-    /* position: relative;
-    top: 200px; */
 }
 .default-box ul {
     padding: 0;
 }
 
+.main-container{
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 4px;
+    padding-bottom: 0px;
+}
+
+.about{
+    padding-top: 30px;
+}
+
+.main-container .section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.main-container .firstSection{
+    margin-top: 10px;
+}
+.main-container h2{
+    margin-bottom: 8px;
+}
+.firstSection h2{
+    margin-top: 0;
+}
+.main-container .lastSection{
+    margin-bottom: 0px;
+}
 .main-container ul li {
     list-style-type: none;
+}
+
+.main-container ul{
+    margin-top: 0;
 }
 
 footer {
@@ -73,6 +111,13 @@ a{
 a:hover{
     background-color: #fff568;
 }
+ul{
+    list-style-position:  inside;
+    list-style-type: circle;
+}
+ul li::marker {
+    text-indent: 20px !important;
+}
 
 .default-box ul li a{
     transition-property: color, background-color;
@@ -80,4 +125,12 @@ a:hover{
 }
 
 .default-box ul li a:hover{
+}
+
+.task-list{
+    list-style: none;
+}
+
+.task-list .task-list-item-checkbox {
+    margin-right: 10px;
 }

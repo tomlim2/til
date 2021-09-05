@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 priority: 1.0
 ---
 <!-- <ol>
@@ -9,56 +9,64 @@ priority: 1.0
     </li>
     {% endfor %}
 </ol> -->
-<div class="main-container">
+<div class="section firstSection">
     <h2>Today I learned</h2>
-<ul>
-    {% for post in site.categories.til%}  
-    <!-- limit:2  -->
-    <li>
-        <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-        <!-- <p>{{post.meta}}</p> -->
-    </li>
-    {% endfor %}
-</ul>
+    <ul>
+        {% for post in site.categories.til%}  
+        <!-- limit:2  -->
+        <li>
+            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <!-- <p>{{post.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-<h2>React Native</h2>
-<ul>
-    {% for reactN in site.categories.react_native %}
-    <li>
-        <a href="{{site.baseurl}}{{reactN.url}}">{{reactN.title}}</a>
-        <!-- <p>{{react.meta}}</p> -->
-    </li>
-    {% endfor %}
-</ul>
+<div class="section">
+    <h2>React Native</h2>
+    <ul>
+        {% for reactN in site.categories.react_native %}
+        <li>
+            <a href="{{site.baseurl}}{{reactN.url}}">{{reactN.title}}</a>
+            <!-- <p>{{react.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-<h2>React</h2>
-<ul>
-    {% for react in site.categories.react %}
-    <li>
-        <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
-        <!-- <p>{{react.meta}}</p> -->
-    </li>
-    {% endfor %}
-</ul>
+<div class="section">
+    <h2>React</h2>
+    <ul>
+        {% for react in site.categories.react %}
+        <li>
+            <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
+            <!-- <p>{{react.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-<h2>프로젝트</h2>
-<ul>
-    {% for project in site.categories.project %}
-    <li>
-        <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
-        <!-- <p>{{project.meta}}</p> -->
-    </li>
-    {% endfor %}
-</ul>
+<div class="section">
+    <h2>프로젝트</h2>
+    <ul>
+        {% for project in site.categories.project %}
+        <li>
+            <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
+            <!-- <p>{{project.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 
-<h2>Trouble Shooting</h2>
-<ul>
-    {% for troubleShoot in site.categories.troubleShoot %}
-    <li>
-        <a href="{{site.baseurl}}{{troubleShoot.url}}">{{troubleShoot.title}}</a>
-        <!-- <p>{{troubleShoot.meta}}</p> -->
-    </li>
-    {% endfor %}
-</ul>
+<div class="section lastSection">
+    <h2>Trouble Shooting</h2>
+    <ul>
+        {% for troubleShoot in site.categories.troubleShoot %}
+        <li>
+            <a href="{{site.baseurl}}{{troubleShoot.url}}">{{troubleShoot.title}}</a>
+            <!-- <p>{{troubleShoot.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
 </div>
 

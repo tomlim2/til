@@ -7,7 +7,7 @@ category: til
 ---
 객체는 자바스크립트 데이터 타입 중의 하나입니다. 영어로는 object라고 표현합니다. key값과 value값을 쌍으로 이루어져 있고, 배열과는 다르게 순서가 중요하지 않습니다.
 
-### 마침표(Dot Notation) & 대괄호 (Bracket Notation) 예시
+### Object 접근법(마침표 & 대괄호) 예시 
 ```js
 let a = {
  "a" : 1,
@@ -42,11 +42,11 @@ var b = 'c'
 console.log(a[b] + ' vs ' + a.b) // 2 vs 1
 ```
 
-마침표 Dot Notation
+**마침표 (Dot Notation)**
 >1. 숫자로 시작하는 키에 접근할 수 없다
 >2. 띄어쓰기가 포함된 키에는 접근할 수 없다
 
-대괄호 Bracket Notation
+**대괄호 (Bracket Notation)**
 >1. 숫자, 띄어쓰기가 포함된 키에 접근가능하다
 >2. 변수로 접근 가능하다
 
@@ -72,3 +72,35 @@ let sayHi = myStorage.car.inside["glove box"]["book cover"].intro
 
 console.log(sayHi) //hi
 ```
+
+위의 예시는 Dot notation과 Bracket notation을 혼용해서 `hi`라는 property에 접근했다.  
+
+
+```js
+let myPlants = [
+    {
+      type: "flowers",
+      list: [
+        "rose",
+        "tulip",
+        "dandelion"
+      ]
+    },
+    {
+      type: "trees",
+      list: [
+        "fir",
+        "pine",
+        "birch"
+      ]
+    }
+  ];
+
+let foundValue1 = myPlants[1].list[1]; //Dot notation
+let foundValue2 = myPlants[1]["list"][1]; //Bracket notation
+
+console.log(foundValue1)//pine
+console.log(foundValue2)//pine
+```
+
+위의 예시는 객체와 배열이 혼용된 변수 안에서 `pine`이라는 property에 출력했다.  
