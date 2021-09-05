@@ -27,7 +27,7 @@ componentDidUpdate(prevProps) {
   }
 }
 ```
-### 예시- [React 영화 웹 프로젝트](https://tomlim2.github.io/movie_2019v/)([개인 프로젝트](http://localhost:4000/project/2021/08/25/react-movie.html))
+### 예시1 - [React 영화 웹](https://tomlim2.github.io/movie_2019v/)([개인 프로젝트](https://tomlim2.github.io/til/project/2021/08/25/react-movie.html))
 ```js
 state = {
     isLoading: true,
@@ -68,7 +68,7 @@ render(){
     )
   }
 ```
-### 예시2
+### 예시2 - React Native 날씨 앱 ([개인 프로젝트](https://tomlim2.github.io/til/project/2021/08/30/react-native-weatherApp.html))
 ```js
 state = {
       isLoading: true

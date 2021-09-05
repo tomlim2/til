@@ -5,7 +5,7 @@ meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
 ---
-2021-08-28 ~ 2021-09-04
+2021.08.28 ~ 09.04
 
 간단한 날씨 앱을 react native로 만든 프로젝트이다. 주요 내용은 
 1. 디바이스의 위치 정보 얻기 (expo-cli)
