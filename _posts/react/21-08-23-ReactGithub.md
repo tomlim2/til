@@ -1,5 +1,5 @@
 ---
-layout: post-til
+layout: post-base
 title: React와 Github에 연동하기 (Web)
 meta: React-Router
 source: https://reactrouter.com

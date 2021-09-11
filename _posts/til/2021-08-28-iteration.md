@@ -1,17 +1,17 @@
 ---
-layout: post-til
+layout: post-base
 title: 21-08-28 Javascript - 배열, 반복문
 meta: test
 source: https://material.io/design/
 category: til
 ---
-### Array.push()
+## Array.push()
 ```js
 let arr = [1,2,3];
 arr.push(4); 
 // arr is now [1,2,3,4]
 ```
-### Array.pop()
+## Array.pop()
 ```js
 let threeArr = [1, 4, 6];
 let oneDown = threeArr.pop();
@@ -19,7 +19,7 @@ let oneDown = threeArr.pop();
 console.log(oneDown); // Returns 6
 console.log(threeArr); // Returns [1, 4]
 ```
-### Array.shift()
+## Array.shift()
 ```js
 const array1 = [1, 2, 3];
 
@@ -31,7 +31,7 @@ console.log(array1);
 console.log(firstElement);
 // expected output: 1
 ```
-### Array.slice()
+## Array.slice()
 ```js
 let fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
 let citrus = fruits.slice(1, 3)
@@ -47,7 +47,7 @@ let nums_new = nums.slice(-2)
 console.log(nums) // [ 1, 2, 3, 4, 5 ]
 console.log(nums_new) // [ 4, 5 ]
 ```
-### Array.splice()
+## Array.splice()
 댓글 삭제기능 등을 구현할때 많이 쓰인다.
 ```js
 splice(start)
@@ -85,7 +85,7 @@ console.log(removeGerm(basket));
 // [ [ '양파' ], [ '빵', '딸기잼' ], [ '귤', '사과' ] ];
 ```
 
-### Array.filter()
+## Array.filter()
 ```js
 let fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
 
@@ -97,7 +97,7 @@ console.log(filtered(fruits, "ap"));
 //[ 'apple', 'grapes' ]
 ```
 
-### Array.concat()
+## Array.concat()
 ```js
 let pasta = ['tomato', 'basil', 'onion','chicken'];
 let pizza = ['tomato', 'cheese', 'onion','olive','beef'];
@@ -109,7 +109,7 @@ function totalIngredients (Arg1, Arg2) {
   console.log(totalIngredients());
 //[ 'tomato', 'basil', 'onion', 'chicken', 'cheese', 'olive', 'beef' ]
 ```
-### for loop
+## for loop
 기본문장
 ```js
 let result = 0;

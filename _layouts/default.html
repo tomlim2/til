@@ -13,7 +13,9 @@
     </head>
     <body>
         <header class='masthead {{page.mastheadClass}}'>
-            {% include nav.html navclass='nav-top' %}
+            <div class="nav_box">
+                {% include nav.html navclass='nav-top' %}
+            </div>
         </header>
         <div class="default-box main">
             {{content}}
@@ -21,9 +23,11 @@
         
 
         <footer>
-            {% include nav.html navclass='nav-bottom' %}
-            <br>
-            Copyright, 임연수. All rights reserved.
+            <div class="nav_box">
+                {% include nav.html navclass='nav-bottom' %}
+                <br>
+                Copyright, 임연수. All rights reserved.
+            </div>
         </footer>
     </body>
 </html>

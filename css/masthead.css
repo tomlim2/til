@@ -1,14 +1,34 @@
 .masthead{
     /* background-color: #383838; */
     color: #383838;
-    padding: 12px 10px 9px 10px;
-    border-bottom: #383838 1px solid;
     position: fixed;
-    width: 720px;
     background-color: white;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.masthead .nav_box{
+    border-bottom: #383838 1px solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 720px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer .nav_box{
+    padding-top: 10px;
+    border-top: #383838 1px solid;
+    padding-bottom: 10px;
+    width: 720px;
 }
 
 .masthead-about{
     /* background-color: #383838; */
 }
+

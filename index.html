@@ -1,9 +1,10 @@
 ---
 layout: home
+pageClass: home-container
 priority: 1.0
 ---
 <!-- <ol>
-    {% for subject in site.data.subject-types %}
+    {% for subject in site.data.subject-types limit:5 %}
     <li>
         <a href="{{site.baseurl}}/children/{{subject.folder}}/">{{subject.title}}</a>
     </li>
