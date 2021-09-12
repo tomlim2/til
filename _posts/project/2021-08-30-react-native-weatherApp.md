@@ -119,5 +119,5 @@ const styles = StyleSheet.create({
 
 ## [@expo/vector-icons@12.0.5](https://icons.expo.fyi/)
 
-## 느낀점
+## Conclusion
 좀더 자세한 꾸미는 방법 예를들어 글씨체, interaction & animation. Also, how to import images and manage those. es6 문법을 배워보자. 네비게이션과 로그인 기능을 구현해보자.

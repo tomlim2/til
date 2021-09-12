@@ -1,6 +1,6 @@
 <nav>
     <ul class="nav int {{include.navclass}}">
-        <li><a href="{{site.baseurl}}/" class= "{% if page.url == '/' %} current {% endif %}">L's Junkyard</a></li>
+        <li><a href="{{site.baseurl}}/" class= "{% if page.url == '/' or page.layout contains 'base' %} current {% endif %}">L's Junkyard</a></li>
         &nbsp;|&nbsp;
         <li><a href="{{site.baseurl}}/about" class= "{% if page.url == '/about.html' %} current {% endif %}">About</a></li>
         

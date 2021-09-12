@@ -57,11 +57,11 @@
     --color-yellow: #FFD300;
     --color-black: #000000;
     --color-white: #ffffff;
-    --elements-headerHeight: 4rem;
+    --elements-headerHeight: 50px;
     --elements-headerZ: 15;
 }
 
 ::selection {
     color: var(--color-white);
-    background: var(--color-blue-500);
+    background: var(--color-gray-900);
   }

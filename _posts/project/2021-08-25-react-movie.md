@@ -66,5 +66,5 @@ render(){
 ```
 Home.js에서 정보를 읽으면 필요한 데이터를 Movie.js로 보내 썸네일로 보여준다. 이후 데이터는 detail.js로 보내는데 이때 링크에 필요한 url은 App.js에서 제공한다.
 
-## 느낀점
+## Conclusion
 다음엔 앱 프로젝트 한번 해보자. 

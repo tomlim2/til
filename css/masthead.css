@@ -1,29 +1,31 @@
 .masthead{
     /* background-color: #383838; */
-    color: #383838;
+    color: var(--color-black);
     position: fixed;
-    background-color: white;
+    background-color: var(--color-white);
     z-index: 1;
     display: flex;
     justify-content: center;
     width: 100%;
+    height: var(--elements-headerHeight);
+    border-bottom: var(--color-black) solid 1px; 
 }
 
 .masthead .nav_box{
-    border-bottom: #383838 1px solid;
     padding-top: 10px;
     padding-bottom: 10px;
     width: 720px;
+    margin-bottom: 0;
 }
 
 footer{
     display: flex;
     justify-content: center;
+    border-top: var(--color-black) 1px solid;
 }
 
 footer .nav_box{
     padding-top: 10px;
-    border-top: #383838 1px solid;
     padding-bottom: 10px;
     width: 720px;
 }

@@ -1,0 +1,126 @@
+.about-footer{
+    border: none;
+}
+
+.about-container .main{
+    border-right: var(--color-black) solid 1px; 
+    width: calc(100vw);
+    height: calc(100vh - var(--elements-headerHeight));
+}
+.about-container .main .wrapper{
+    display: grid;
+    grid-template-columns: calc(100vw/2 - 720px/2) 720px calc(100vw/2 - 720px/2);
+    grid-template-rows: repeat(3, calc(100vh/3 - var(--elements-headerHeight)/3));
+    column-gap: 0;
+    row-gap: 0;   
+}
+
+.about-container .wrapper .item:nth-child(even){
+  }
+
+.about-container .wrapper .item {
+    border-left: 1px var(--color-black) solid;
+    border-bottom: 1px var(--color-black) solid;
+    overflow: hidden;
+}
+
+.item .frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.item .frame .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+    transition-duration: 400ms;
+    background-color: var(--color-white);
+}
+
+.item .frame .text{
+    text-align: center;
+}
+.item .frame .text a{
+    color: var(--color-white); 
+    line-height: 1em;
+    font-size: 4em;
+}
+
+.item .frame .text a:hover{ 
+    background-color:inherit;
+}
+
+.item1 .frame .text{
+    color: var(--color-black); 
+    line-height: 1.1em;
+    font-size: 3em;
+}
+
+.item1 .frame #krName{
+    font-weight: 600;
+}
+.item1 .frame #enName{
+    line-height: 1.1em;
+    font-size: .75em;
+}
+
+.item2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: var(--color-black);
+}
+
+.item2 .frame .cover {
+    transform-origin: center center;
+}
+
+.item2:hover .cover {
+    transform: scale(.95,.95);
+}
+
+.item3{
+    background-color: var(--color-black);
+}
+
+.item3 .frame .cover {
+    transform-origin: right;
+}
+
+.item3:hover .cover{
+    transform: scale(0,1);
+}
+
+.item4{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: var(--color-black);
+}
+
+.item4 .cover {
+    transform-origin: bottom left;
+}
+
+.item4:hover .cover{
+    cursor: pointer;
+    transform: scale(1,0);
+}
+
+.item5{
+    background-color: var(--color-white);
+}
+
+.item6 .frame {
+    padding: 20px 20px;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+}

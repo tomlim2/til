@@ -149,14 +149,18 @@ html 안 **부분적으로** 태그 내에서의 `<script>`의 사용이 필요�
 `<defer>` 속성은 자바스크립트의 읽기를 html parsing와 동시에 진행되고 실행은 html parsing이 완료된 후에 실행시킨다. 
 
 
-### 결론
+### Conclusion
 1. `<script>`의 위치는 크게 `<head>`와 `<body>`에서 사용되고 케이스에 맞춰서 사용하면된다.
 1. `<head>`의 `<script>`를 `<body>` 끝에 위치시키면 html parsing 후에 자바스크립트의 download와 excute가 일어난다.
 1. `async` 속성을 사용하면 html parsing과 자바스크립트의 download가 동시에 진행되고 자바스크립트의 excute가 실행되면 나머지 html parsing을 완료한다.
-1. `defer` 속성을 사용하면 html parsing과 자바스크립트의 download가 동시에 진행되고 html parsing이 완료된 이후 자바스크립트의 excute가 완료된.
+1. `defer` 속성을 사용하면 html parsing과 자바스크립트의 download가 동시에 진행되고 html parsing이 완료된 이후 자바스크립트의 excute가 완료된다.
+
+-
 
 ![d]({{site.baseurl}}/img/21-09-11-html-5.png)
 
-### 리소스
+프로젝트 마지막에 한번 신경써서 사용해보자.
+
+## Resource
 * 자바스크립트 코드들은 [w3 schools - HTML script Tag](https://www.w3schools.com/tags/tag_script.asp)에서 참조했다.
 * 효율적인 script 태그에 관한 글과 사진은 [Nehal Khan의 블로그](https://betterprogramming.pub/improve-page-load-performance-with-these-different-script-loading-techniques-b0d912eae7b1)에서 가져왔다.

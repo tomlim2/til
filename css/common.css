@@ -141,8 +141,8 @@ a{
     padding-right: .1em;
 }
 a:hover{
-    color: var(--color-black);
-    background-color:  var(--color-yellow);
+    color: var(--color-white);
+    background-color:  var(--color-black);
 }
 
 .blog-container a{
