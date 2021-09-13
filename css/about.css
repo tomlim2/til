@@ -47,7 +47,7 @@
 }
 .item .frame .text a{
     color: var(--color-white); 
-    line-height: 1em;
+    line-height: 1.05em;
     font-size: 4em;
 }
 
