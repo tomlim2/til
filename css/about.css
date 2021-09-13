@@ -79,6 +79,9 @@
 
 .item2 .frame .cover {
     transform-origin: center center;
+    background-image: url("{{site.baseurl}}/favicon.png");
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .item2:hover .cover {
