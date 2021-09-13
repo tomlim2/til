@@ -146,12 +146,21 @@ a:hover{
 }
 
 .blog-container a{
-    transition-property: color, background-color;
     color: var(--color-blue-500);
     /* transition-duration: 200ms; */
 }
+
+.blog-container a:hover{
+    color: var(--color-white);
+    background-color: var(--color-blue-500);;
+}
+
 .blog-container h4 a{
     color: var(--color-black);
+}
+.blog-container h4 a:hover{
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 .task-list{

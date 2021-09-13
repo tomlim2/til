@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Lottie Files & HTML
+title: HTML/CSS & Lottie Files - 자기소개 페이지
 meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
