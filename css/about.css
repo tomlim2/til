@@ -79,9 +79,10 @@
 
 .item2 .frame .cover {
     transform-origin: center center;
-    background-image: url("{{site.baseurl}}/favicon.png");
+    background-image: url("{{site.baseurl}}/img/about_hero.jpg");
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: -160px center;
+    background-size: cover;
 }
 
 .item2:hover .cover {
@@ -108,7 +109,7 @@
     background-color: var(--color-black);
 }
 
-.item4 .cover {
+.item4 .frame .cover {
     transform-origin: bottom left;
 }
 
@@ -119,6 +120,15 @@
 
 .item5{
     background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item5 #about-bot{
+    position: relative;
+    width: 300px;
+    height: auto;
 }
 
 .item6 .frame {
@@ -127,4 +137,13 @@
     justify-content: inherit;
     align-items: inherit;
     line-height: 1.7;
+}
+
+.item7{
+    transition-property: background-color;
+    transition-duration: 400ms;
+}
+
+.item7:hover{
+    background-color: var(--color-yellow);
 }
