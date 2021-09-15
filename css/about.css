@@ -81,7 +81,7 @@
     transform-origin: center center;
     background-image: url("{{site.baseurl}}/img/about_hero.jpg");
     background-repeat: no-repeat;
-    background-position: -160px center;
+    background-position: -10vw center;
     background-size: cover;
 }
 
@@ -126,7 +126,6 @@
 }
 
 .item5 #about-bot{
-    position: relative;
     width: 300px;
     height: auto;
 }
@@ -142,8 +141,18 @@
 .item7{
     transition-property: background-color;
     transition-duration: 400ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .item7:hover{
     background-color: var(--color-yellow);
+}
+
+
+.item7 #my-animation{
+    width: 300px;
+    height: auto;
 }

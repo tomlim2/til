@@ -70,7 +70,7 @@ html 안 **부분적으로** 태그 내에서의 `<script>`의 사용이 필요�
 ```
 [w3 schools - HTML JavaScript 2](https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_html)
 
-
+***
 ## HTML에서 효율적으로 `<head>` 태그에 있는 `<script>`를 불러오는 방법들 ***by [Nehal Khan](https://betterprogramming.pub/improve-page-load-performance-with-these-different-script-loading-techniques-b0d912eae7b1)***
 
 `<head>` 태그에 사용되는 것은 개발자들이 일반적으로 위치이다. 웹사이트를 사용자들에게 가장 완벽한 형태로 경험하게 할 수 있게 만드는 장점이 있는지만 인터넷 환경이 좋지 않은 곳에서는 코드를 읽는 데에 지연될 수 있다.
