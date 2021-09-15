@@ -81,7 +81,7 @@
     transform-origin: center center;
     background-image: url("{{site.baseurl}}/img/about_hero.jpg");
     background-repeat: no-repeat;
-    background-position: -10vw center;
+    background-position: center center;
     background-size: cover;
 }
 
@@ -130,29 +130,32 @@
     height: auto;
 }
 
+
 .item6 .frame {
     padding: 20px 20px;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
-    line-height: 1.7;
+    line-height: 1.9;
 }
 
 .item7{
-    transition-property: background-color;
-    transition-duration: 400ms;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    background-color: var(--color-black);
 }
 
-.item7:hover{
+.item7 .frame{
+    transition-property: transform, background-color;
+    transition-duration: 400ms;
+    cursor: pointer;
+    background-color: var(--color-white);
+}
+
+.item7:hover .frame{
+    transform: scale(.9);
     background-color: var(--color-yellow);
 }
 
-
-.item7 #my-animation{
+.item7 .frame #my-animation{
     width: 300px;
     height: auto;
 }

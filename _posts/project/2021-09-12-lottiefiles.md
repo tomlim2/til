@@ -1,13 +1,13 @@
 ---
 layout: post-base
-title: Lottie Files
+title: Lottie Files - lottie-player & jlottie
 meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
 ---
 JSON 베이스이기에 가볍고 빠르다. 상호작용용 애니메이션에 적합할거 같다. 스타일은 플랫, 단색에 유리하다.
 
-## lottie-player in HTML example ([my about page]({{site.baseurl}}/about.html))
+## HTML lottie-player 사용예시: [내 About 페이지]({{site.baseurl}}/about.html)
 ```html 
 <script src="https://unpkg.com/@lottiefiles/lottie-player@0.3.0/dist/lottie-player.js"></script>
 
@@ -56,7 +56,7 @@ jlottie는 버튼 등 인터렉션용 micro animation에 최적화되어 있다.
 <script src="https://unpkg.com/@lottiefiles/jlottie@latest/dist/jlottie.js" type="text/javascript"></script>
 ```
 
-## 예시 ([내 자기소개페이지]({{site.baseurl}}/about.html))
+## HTML jlottie 예시: [내 About 페이지]({{site.baseurl}}/about.html)
 ```html 
 <script src="https://unpkg.com/@lottiefiles/jlottie@latest/dist/jlottie.js" type="text/javascript"></script>
 
@@ -85,10 +85,10 @@ jlottie는 버튼 등 인터렉션용 micro animation에 최적화되어 있다.
         animationContainer.classList.remove("black-filter");
         animationContainer.classList.add("gary-filter");
       });
-      coverContainer.addEventListener("mouseleave", () => {
+    coverContainer.addEventListener("mouseleave", () => {
         animationContainer.classList.remove("gary-filter");
         animationContainer.classList.add("black-filter");
-      });
+    });
 </script>
 ```
 
