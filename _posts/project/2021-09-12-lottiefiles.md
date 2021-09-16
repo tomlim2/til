@@ -5,7 +5,7 @@ meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
 ---
-JSON 베이스이기에 가볍고 빠르다. 상호작용용 애니메이션에 적합할거 같다. 스타일은 플랫, 단색에 유리하다.
+웹, 앱용 애니메이션 플러그인으로 가볍고 빠르다. 스타일은 path, 플랫, 단색에 유리하다.
 
 ## HTML lottie-player 사용예시: [내 About 페이지]({{site.baseurl}}/about.html)
 ```html 
@@ -93,6 +93,8 @@ jlottie는 버튼 등 인터렉션용 micro animation에 최적화되어 있다.
 ```
 
 ## Conclusion
+개발자 입장에서는 lottie-player와 jlottie는 비슷한 맥락으로 사용하지만 애니메이터에게는 서로 다른 접근방법으로 애니메이션을 만들어야 한다. 최종적으로는 json 애니메이션의 최적화를 위해서는 graphic과 micro animation을 차이를 두고 이 두 lottie files에 친숙해 지는 것이 좋을거 같다.
+
 다음과 같은 케이스에서 써보자.
 - [ ] React Native
 - [ ] React

@@ -137,6 +137,8 @@
     justify-content: inherit;
     align-items: inherit;
     line-height: 1.9;
+    /* word-spacing: 2em; */
+    letter-spacing:-0.05em
 }
 
 .item7{
@@ -152,7 +154,6 @@
 
 .item7:hover .frame{
     transform: scale(.9);
-    background-color: var(--color-yellow);
 }
 
 .item7 .frame #my-animation{
