@@ -1,15 +1,15 @@
 ---
 layout: post-base
-title: axios를 사용한 API 연동 
+title: RNRN - Axios를 사용한 API 연동 
 meta: React-Router
 source: https://www.npmjs.com/package/axios
-category: react_native
+category: ReactAndReactNative
 ---
 API에 활용하는 툴 중 하나인 axios를 사용한 예시를 적어놓았다. 
 
 ## Install axios
 Documentation: [npmjs.com](https://www.npmjs.com/package/axios) 
-```js
+```jsx
 $ npm install axios
 ```
 
@@ -18,7 +18,7 @@ API from [YTS Proxy](https://github.com/serranoarevalo/yts-proxy). [API endpoint
 
 For the endpoint [`/list_movies.json`](https://yts.mx/api#list_movies) use `https://yts-proxy.now.sh/list_movies.json`
 
-```js
+```jsx
 import axios from 'axios';
 
 class Home extends React.Component{
@@ -66,7 +66,7 @@ class Home extends React.Component{
 
 ## Weather app
 API from [openweather](https://openweathermap.org/api)
-```js
+```jsx
 import * as Location from 'expo-location';
 
 export default class extends React.Component {

@@ -24,21 +24,9 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>React Native</h2>
-    <ul>
-        {% for reactN in site.categories.react_native %}
-        <li>
-            <a href="{{site.baseurl}}{{reactN.url}}">{{reactN.title}}</a>
-            <!-- <p>{{react.meta}}</p> -->
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="section">
     <h2>React</h2>
     <ul>
-        {% for react in site.categories.react %}
+        {% for react in site.categories.ReactAndReactNative %}
         <li>
             <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
             <!-- <p>{{react.meta}}</p> -->

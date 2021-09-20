@@ -15,13 +15,13 @@ category: project
 ## Installing expo-cli
 `npm ERR! Error: EACCES: permission denied, access '/usr/local/lib/node_modules'`로 expo 설치가 안되어 아래와 같은 코드로 해결했다.
 
-```js
+```
 & sudo npm install --global expo-cli
 ```
 
 ## Github와 연동하기
 일단 Github 홈피에서 새로운 Repository를 생성하기
-```js
+```
 $ git init
 
 $ git remote add origin "yourURL"
@@ -48,7 +48,7 @@ expo cli Xcode needs to be installed (don't worry, you won't have to use it), wo
 `https://api.openweathermap.org/data/2.5/weather?lat=37&lon=122&appid=ca3f1b9673fa1a16714d616face9034f`
 
 ## Code overview in Weather.js
-```js
+```jsx
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import PropTypes from "prop-types";
 import { MaterialCommunityIcons } from '@expo/vector-icons';
@@ -77,7 +77,7 @@ export default function Weather ({temp, condition}){
                 </Text>
             </View>
             <View style={styles.halfContainer}>
-                <View style={{...styles.halfContainer, ...styles.textContainer}}>
+                <View style={{styles.halfContainer, styles.textContainer}}>
                     <Text style={styles.title}>
                         {weatherOption[condition].title}
                     </Text>
