@@ -65,10 +65,14 @@ switch(fruits) {
 ```
 Use switch to select one of many blocks of code to be executed
 
+---
+
 ## 연산자(Operator)
 conditional과 function에 자주 쓰이는 것들로 사용할때마다 잊어먹고 검색했었다. 앞으로는 무조건 여기에 아예 링크를 걸어두고 더욱 익숙해져서 검색하는 시간을 줄이도록하자.
 
 Link: [javascript Operator Reference](https://www.w3schools.com/jsref/jsref_operators.asp)
+
+---
 
 ## null & undefined
 null은 선언이 되어있고 그 값이 blank로 입력된 경우이고 boolean에서는 falsy로 취급된다. undefined는 선언은 되었지만 아무런 value가 입력되어있지 않은 경우이다.

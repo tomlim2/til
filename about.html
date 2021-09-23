@@ -11,7 +11,9 @@ mastfooterClass: about-footer
     <div class="wrapper">
         <div class="item item1">
             <div class="frame">
-                <div class="text"> <span id="krName">임연수</span><br><div id="enName">/<br>Younsoo <br>Tom Lim</div> </div>
+                <div class="text"> <span id="krName">임연수</span><br>
+                    <div id="enName">/<br>Younsoo <br>Tom Lim</div>
+                </div>
             </div>
         </div>
         <div class="item item2">
@@ -61,27 +63,25 @@ mastfooterClass: about-footer
 
 <style>
     .black-filter {
-      filter: brightness(0%);
+        filter: brightness(0%);
     }
 
     .gary-filter {
-        filter: invert(57%) sepia(37%) saturate(1776%) hue-rotate(176deg)
-        brightness(101%) contrast(96%);
+        filter: invert(57%) sepia(37%) saturate(1776%) hue-rotate(176deg) brightness(101%) contrast(96%);
     }
 
     .twitter-blue-filter {
-      filter: invert(57%) sepia(37%) saturate(776%) hue-rotate(176deg)
-        brightness(101%) contrast(96%);
+        filter: invert(57%) sepia(37%) saturate(776%) hue-rotate(176deg) brightness(101%) contrast(96%);
     }
-  </style>
+</style>
 
 <script>
     let animationContainer = document.getElementById('my-animation');
     let loadAnimation = jlottie.loadAnimation({
-                    container: animationContainer,
-                    loop: false,
-                    autoplay: false,
-                    path: '/js/jlottie-test-1.json',
+        container: animationContainer,
+        loop: false,
+        autoplay: false,
+        path: '/js/jlottie-test-1.json',
     });
 
     let item7Container = document.getElementById('item7');
@@ -95,9 +95,9 @@ mastfooterClass: about-footer
     item7Container.addEventListener("mouseover", () => {
         animationContainer.classList.remove("black-filter");
         animationContainer.classList.add("gary-filter");
-      });
-      item7Container.addEventListener("mouseleave", () => {
+    });
+    item7Container.addEventListener("mouseleave", () => {
         animationContainer.classList.remove("gary-filter");
         animationContainer.classList.add("black-filter");
-      });
+    });
 </script>

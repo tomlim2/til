@@ -26,7 +26,8 @@ const App = () => {
 
       <View style = {styles.textBox}>
         <Text style = {styles.textQuestion}>
-          {password.length != 0 && password === checkPassword ? `checked!` 
+          {
+          password.length != 0 && password === checkPassword ? `checked!` 
           : "What is your password?"
           }
         </Text>

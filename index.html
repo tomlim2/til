@@ -13,11 +13,23 @@ priority: 1.0
 <div class="section firstSection">
     <h2>Today I learned</h2>
     <ul>
-        {% for post in site.categories.til%}  
+        {% for post in site.categories.til%}
         <!-- limit:2  -->
         <li>
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
             <!-- <p>{{post.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>HTML&CSS</h2>
+    <ul>
+        {% for htmlAndCss in site.categories.htmlAndCss %}
+        <li>
+            <a href="{{site.baseurl}}{{htmlAndCss.url}}">{{htmlAndCss.title}}</a>
+            <!-- <p>{{htmlAndCss.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
@@ -58,4 +70,3 @@ priority: 1.0
         {% endfor %}
     </ul>
 </div>
-

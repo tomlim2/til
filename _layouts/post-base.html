@@ -5,6 +5,10 @@ layout: default
     <h4><a href="{{site.baseurl}}/">블로그</a> > <a href="{{site.baseurl}}/">{{page.category}}</a></h4>
 
     <h1>{{page.title}}</h1>
+    {% if page.source %}
+    <p>Source: <a href="{{page.source}}">{{page.source}}</a></p>
+    {% endif %} 
+    
     {{content}}
 </div>
 
