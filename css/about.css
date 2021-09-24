@@ -14,10 +14,6 @@
     column-gap: 0;
     row-gap: 0;   
 }
-
-.about-container .wrapper .item:nth-child(even){
-  }
-
 .about-container .wrapper .item {
     border-left: 1px var(--color-black) solid;
     border-bottom: 1px var(--color-black) solid;
@@ -32,7 +28,7 @@
     height: 100%;
     position: relative;
 
-    transition-property: transform, background-color;
+    transition-property: transform;
     transition-duration: 400ms;
 }
 
@@ -140,17 +136,16 @@
     cursor: pointer;
     transform: scale(1,0);
 }
-/* jLottie*/
+/* Lottie-player*/
 .item5{
-    background-color: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-.item5 #about-bot{
-    width: 300px;
-    height: auto;
+.item5:hover{
+    background-color: var(--color-about-point);
 }
 
 /* description */
@@ -159,7 +154,7 @@
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
-    line-height: 1.9;
+    line-height: 1.7;
     /* word-spacing: 2em; */
     letter-spacing:-0.05em
 }
@@ -168,7 +163,7 @@
     background-color: var(--color-about-point);
 }
 
-/* lottie-player */
+/* jlottie */
 
 .item7{
     background-color: var(--color-black);
@@ -180,8 +175,12 @@
 }
 
 #item7:hover .frame{
-    background-color: var(--color-about-point);
     transform: scale(.95);
+    background-color: var(--color-about-point);
+}
+
+#item7 .frame:active{
+    background-color: var(--color-white);
 }
 
 .item7 .frame #my-animation{

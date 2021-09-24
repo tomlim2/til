@@ -24,24 +24,24 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>HTML&CSS</h2>
-    <ul>
-        {% for htmlAndCss in site.categories.htmlAndCss %}
-        <li>
-            <a href="{{site.baseurl}}{{htmlAndCss.url}}">{{htmlAndCss.title}}</a>
-            <!-- <p>{{htmlAndCss.meta}}</p> -->
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="section">
     <h2>React</h2>
     <ul>
         {% for react in site.categories.ReactAndReactNative %}
         <li>
             <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
             <!-- <p>{{react.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>HTML&CSS</h2>
+    <ul>
+        {% for htmlAndCss in site.categories.htmlAndCss %}
+        <li>
+            <a href="{{site.baseurl}}{{htmlAndCss.url}}">{{htmlAndCss.title}}</a>
+            <!-- <p>{{htmlAndCss.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
