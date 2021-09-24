@@ -2,7 +2,6 @@
 layout: post-base
 title: 21-08-28 Javascript - Object 접근법
 meta: test
-source: https://material.io/design/
 category: til
 ---
 객체는 자바스크립트 데이터 타입 중의 하나입니다. 영어로는 object라고 표현합니다. key값과 value값을 쌍으로 이루어져 있고, 배열과는 다르게 순서가 중요하지 않습니다.

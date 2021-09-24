@@ -147,13 +147,14 @@
 
 .item7 .frame{
     transition-property: transform, background-color;
-    transition-duration: 400ms;
+    transition-duration: 200ms;
     cursor: pointer;
     background-color: var(--color-white);
 }
 
 .item7:hover .frame{
-    transform: scale(.9);
+    /* transform: scale(.95); */
+    background-color: var(--color-black);
 }
 
 .item7 .frame #my-animation{

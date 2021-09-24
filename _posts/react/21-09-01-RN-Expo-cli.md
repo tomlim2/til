@@ -2,7 +2,6 @@
 layout: post-base
 title: React Native - Expo-cli, Github 연동하기
 meta: React-Router
-source: https://reactrouter.com
 category: ReactAndReactNative
 ---
 

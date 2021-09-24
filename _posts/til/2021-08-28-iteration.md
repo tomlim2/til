@@ -2,7 +2,6 @@
 layout: post-base
 title: 21-08-28 Javascript - 배열, 반복문
 meta: test
-source: https://material.io/design/
 category: til
 ---
 ## Array.push()

@@ -2,7 +2,6 @@
 layout: post-base
 title: RNRN - Component Life Cycle
 meta: Useful tool
-source: https://material.io/design/
 category: ReactAndReactNative
 ---
 이해는 잘 하지못한 상태이다. react가 화면에 출력되는(render) 사이클이다.

@@ -2,7 +2,6 @@
 layout: post-base
 title: React Native - Basic examples & resources
 meta: React Native guide
-source: https://reactrouter.com
 category: ReactAndReactNative
 ---
 React Native를 공부하면서 배우고 재밌다고 생각하는 코드들을 적어보았다. 

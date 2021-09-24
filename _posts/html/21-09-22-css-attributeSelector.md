@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: CSS - [href]{} Attribute selector
+title: CSS - Attribute selector - [href]{}
 meta: Table example
 source: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax
 category: htmlAndCss
@@ -11,8 +11,8 @@ category: htmlAndCss
 img[src*='winter'] {
   height: 50px;
 }
- 
-img[src*='summer'] {
-  height: 100px;
+
+a[href*='florence'] {
+  color: lightgreen;
 }
 ```

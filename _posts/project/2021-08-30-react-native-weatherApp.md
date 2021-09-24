@@ -2,7 +2,6 @@
 layout: post-base
 title: React Native - 간단한 날씨 앱 만들기
 meta: Evergreen (Updated 210820)
-source: https://nomadcoders.co/react-fundamentals/lobby
 category: project
 ---
 2021.08.28 ~ 09.04

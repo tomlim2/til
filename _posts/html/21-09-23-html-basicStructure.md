@@ -1,10 +1,16 @@
 ---
 layout: post-base
-title: HTML - Semantic HTML
+title: HTML - Semantic HTML&CSS **웹 구축시 항상 필독하기
 meta: Basic Structure example
 category: htmlAndCss
 ---
+HTML&CSS 구축시 코드의 가독성을 높이기 위한 노력을 아끼지 말고 항상 읽고 시작하자
 
+## Resource
+* Semantic [HTML](https://www.internetingishard.com/html-and-css/semantic-html/)&[CSS](https://css-tricks.com/semantic-class-names/)
+
+
+## HTML 예시
 ```html
 <!DOCTYPE html>
 <html>
@@ -54,7 +60,6 @@ category: htmlAndCss
 ```
 
 ## Conclusion
-* 홈피 구현할때 언제나 [참조하자](https://www.internetingishard.com/html-and-css/semantic-html/)
-* 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 이루어져있다.
-* 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸때는 `<section>`을 사용한다.
+* 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
+* `<section>`은 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸 때 사용한다.
 * `<aside>`는 메인 컨텐츠에 관련은 있으나 그 컨텐츠를 이해하는데 필수가 아닌 정보를 보여줄때 쓴다.
