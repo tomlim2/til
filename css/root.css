@@ -59,9 +59,11 @@
     --color-white: #ffffff;
     --elements-headerHeight: 50px;
     --elements-headerZ: 15;
+
+    --color-about-point: var(--color-yellow);
 }
 
 ::selection {
     color: var(--color-black);
-    background: var(--color-yellow);
+    background: var(--color-lightGreen);
   }

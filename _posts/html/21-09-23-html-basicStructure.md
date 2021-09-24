@@ -59,6 +59,64 @@ HTML&CSS 구축시 코드의 가독성을 높이기 위한 노력을 아끼지 �
 </html>
 ```
 
+## CSS 예시
+```css
+/* Site Stylesheet
+  1. Global Styles
+  2. Typography Styles
+  3. Structure Styles
+  4. Module Styles
+  5. Component Styles
+======================================== */
+
+/* 1. Global Styles
+======================================== */
+*,
+html,
+body {}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+{
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+h1 {}
+@media(min-width: 720px) {
+  h1 {}
+}
+@media(min-width: 1024px) {
+  h1 {}
+}
+
+/* 2. Typography Styles
+======================================== */
+h1,
+h2,
+{
+  font-family: 'Roboto', Helvetica, sans-serif;
+}
+
+/* 3. Structure Styles
+======================================== */
+.container {}
+@media(min-width: 720px) {}
+
+/* 4. Modules Styles
+======================================== */
+.site-header {}
+.site-nav-left li:not(:last-child), .site-nav-right li:not(:last-child), .site-nav-mobile li:not(:last-child) {}
+.site-nav-link.active {}
+/* 5. Component Styles
+======================================== */
+.alert{}
+
+/* 6. Page Styles
+======================================== */
+.site-main {}
+```
+
 ## Conclusion
 * 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
 * `<section>`은 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸 때 사용한다.
