@@ -150,13 +150,17 @@
 
 /* description */
 .item6 .frame {
-    padding: 20px 20px;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     line-height: 1.7;
-    /* word-spacing: 2em; */
+}
+.item6 .frame div{
+    padding: 20px 20px;
     letter-spacing:-0.05em
+}
+.item6 .frame div span{
+    font-weight: 600;
 }
 
 #description:hover .frame{

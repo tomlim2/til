@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: HTML - Semantic HTML&CSS **웹 구축시 항상 필독하기
+title: HTML&CSS - Improving semantic HTML&CSS **웹 구축시 항상 필독하기
 meta: Basic Structure example
 category: htmlAndCss
 ---
@@ -116,6 +116,30 @@ h2,
 ======================================== */
 .site-main {}
 ```
+## CSS - Cascade order for pseudo-classes
+```css
+:hover, :visited, :active, :link
+```
+## CSS - Useful selector for Navigation
+```css
+.breadcrumb li.location+li.location::before {
+  color: gray;
+  content: ">";
+}
+
+.breadcrumb li.attribute::after {
+  content: " x";
+  font-size: 10px;
+  vertical-align: super;
+}
+```
+## UI pattern
+http://ui-patterns.com/
+
+## Styling inspiration
+* Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/utilities/text/)
+* Google’s [Material Design](https://material.io/design/)
+* Twitter's [Bootstrap](https://getbootstrap.com/docs/4.0/components/buttons/)
 
 ## Conclusion
 * 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
