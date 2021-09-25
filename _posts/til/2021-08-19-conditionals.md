@@ -10,7 +10,7 @@ category: til
 조건문이 프로그래밍할 때 필요한 이유는 조건문을 통해 많은 상황 즉 조건에 따른 결정을 만듦으로서 현실의 상황을 모델링할 수 있다는 점 때문이다. 조건문은 주어진 조건식의 평가 결과에 따라 블록의 실행을 결정할 때 쓰이고 불리언(boolean) 값으로 평가될 수 있는 표현식으로 나타난다.
 
 ![d](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FKPOPp%2FbtqDHtcNo5B%2FokziouuigeMDhPpTW1j9U1%2Fimg.png)
-_조건문은 복잡한 현실의 일들을 시스템화 시킬 때 필수!_ (출처: [뭐래, 나 개발 공부해](https://ystidy.tistory.com/40#:~:text=%EB%A8%BC%EC%A0%80%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0,%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%98%EA%B3%A0%EC%9E%90%20%ED%95%9C%EB%8B%A4.&text=%EC%9A%B0%EB%A6%AC%EB%8A%94%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9D%B4%20%EC%A1%B0%EA%B1%B4,%EB%8A%94%20%EC%9D%B4%EA%B2%83%EC%9D%84%20%EC%A0%9C%EA%B3%B5%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.)
+_조건문은 복잡한 현실의 일들을 시스템화 시킬 때 필수! (출처: [뭐래, 나 개발 공부해](https://ystidy.tistory.com/40#:~:text=%EB%A8%BC%EC%A0%80%20%EC%A1%B0%EA%B1%B4%EB%AC%B8%EC%9D%B4%20%ED%95%84%EC%9A%94%ED%95%9C%20%EC%9D%B4%EC%9C%A0,%EC%97%90%20%EB%8C%80%ED%95%B4%20%EC%84%A4%EB%AA%85%ED%95%98%EA%B3%A0%EC%9E%90%20%ED%95%9C%EB%8B%A4.&text=%EC%9A%B0%EB%A6%AC%EB%8A%94%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%EC%9D%B4%20%EC%A1%B0%EA%B1%B4,%EB%8A%94%20%EC%9D%B4%EA%B2%83%EC%9D%84%20%EC%A0%9C%EA%B3%B5%ED%95%98%EA%B3%A0%20%EC%9E%88%EB%8B%A4.))_
 
 ## How to use? (출처: [w3schools](https://www.w3schools.com/jsref/jsref_if.asp))
 In JavaScript we have the following conditional statements:

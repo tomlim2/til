@@ -74,7 +74,8 @@ HTML&CSS 구축시 코드의 가독성을 높이기 위한 노력을 아끼지 �
 *,
 html,
 body {}
-
+@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+}
 /* 2. Typography Styles
 ======================================== */
 h1,

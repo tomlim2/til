@@ -61,6 +61,10 @@
     --elements-headerZ: 15;
 
     --color-about-point: var(--color-yellow);
+    --font-light: 300;
+    --font-regular: 400;
+    --font-bold: 500;
+    
 }
 
 ::selection {

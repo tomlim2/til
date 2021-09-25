@@ -47,7 +47,7 @@
 .item .frame .text a{
     color: var(--color-white); 
     line-height: 1.05em;
-    font-size: 4em;
+    font-size: 4rem;
     transition-property: color;
     transition-duration: 400ms;
 }
@@ -64,7 +64,7 @@
 }
 
 .item1 .frame #krName{
-    font-weight: 600;
+    font-weight: var(--font-bold);
 }
 .item1 .frame #enName{
     line-height: 1.1em;
@@ -157,10 +157,11 @@
 }
 .item6 .frame div{
     padding: 20px 20px;
-    letter-spacing:-0.05em
+    letter-spacing:-0.02em;
+    font-weight: var(--font-light);
 }
 .item6 .frame div span{
-    font-weight: 600;
+    font-weight: var(--font-bold);
 }
 
 #description:hover .frame{
