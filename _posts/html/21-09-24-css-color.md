@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: CSS - Color & design resources
+title: CSS - Color resources
 meta: Color references
 category: htmlAndCss
 ---
