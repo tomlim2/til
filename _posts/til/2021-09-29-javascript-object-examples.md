@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-09-28 Javascript - Advanced Object
+title: 21-09-29 Javascript - Advanced Object
 meta: test
 category: til
 ---
@@ -167,35 +167,25 @@ functionality.beep();//Beep Boop
 const menu = {
   _courses: {
     appetizers: [],
-    mains: [],
-    desserts: []
+    ...
   },
-  get appetizer(){
+  get appetizer() {
     return this._courses.appetizers;
   },
-  get main(){
-    return this._courses.mains;
-  },
-  get desserts(){
-    return this._courses.desserts;
-  },
-  set appetizer(appetizerIn){
+  ...
+  ,
+  set appetizer(appetizerIn) {
     this._courses.appetizers = appetizerIn;
   },
-  set main(mainIn){
-    this._courses.mains = mainIn;
-  },
-  set dessert(dessertIn){
-    this._courses.desserts = dessertIn;
-  },
-  get courses(){
+  ...
+  ,
+  get courses() {
     return {
       appetizers: this.appetizers,
-      mains: this.mains,
-      desserts: this.desserts,
+      ...
     }
   },
-  addDishToCourse (courseName, name, price) {
+  addDishToCourse(courseName, name, price) {
     const dish = {
       name: name,
       price: price
@@ -203,25 +193,74 @@ const menu = {
 
     this._courses[courseName].push(dish);
   },
-  getRandomDishFromCourse(courseName){
+  getRandomDishFromCourse(courseName) {
     const dishes = this._courses[courseName];
     const randomIndex = Math.floor(Math.random() * dishes.length);
     return dishes[randomIndex]
   },
-  generateRandomMeal(){
+  generateRandomMeal() {
     const appetizers = this.getRandomDishFromCourse('appetizers');
-    const mains = this.getRandomDishFromCourse("mains");
-    const desserts = this.getRandomDishFromCourse("desserts");
-    const price = appetizers.price + mains.price + desserts.price
-    return `Appetizer is ${appetizers.name} main is ${mains.name}, and dessert is ${desserts.name} total price is ${price}`
+    ...
+    const price = appetizers.price + mains.price + desserts.price;
+
+    return `Appetizer is ${appetizers.name}... total price is ${price}`
   }
 };
 
 menu.addDishToCourse('appetizers', 'Caesar Salad', 4.25);
-menu.addDishToCourse('mains', 'Caesar Salad', 4.25);
-menu.addDishToCourse('desserts', 'Caesar Salad', 4.25);
+...
 
 let meal = menu.generateRandomMeal();
 console.log(meal);
-
 ```
+
+## Team Stats
+```js
+const team = {
+  _players: [{
+      firstName: 'Pablo',
+      lastName: 'Sanchez',
+      age: 11
+    },
+    ...
+  ],
+  _games: [{
+      opponent: 'Broncos',
+      teamPoints: 42,
+      opponentPoints: 27
+    },
+    ...
+  ],
+  get players() {
+    return this._players
+  },
+  get game() {
+    return this._game
+  },
+  addPlayer(firstName, lastName, age) {
+    const newPlayer = {
+      firstName: firstName,
+      lastName: lastName,
+      age: age
+    };
+    this._players.push(newPlayer);
+  },
+  addGame(opponentName, teamPoints, opponentPoints) {
+    const newGame = {
+      opponent: opponentName,
+      teamPoints: teamPoints,
+      opponentPoints: opponentPoints
+    }
+    this._games.push(newGame);
+  }
+};
+
+team.addPlayer('Steph', 'Curry', 28);
+console.log(team['players']);
+
+team.addGame('Help', 22, 28);
+console.log(team['_games']);
+```
+
+## Resource
+* MDN - [Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
