@@ -245,3 +245,26 @@ logInfo(wordCount,sentences,overusedWordCount())
 let betterWordsSingleString = betterWords.join('');
 console.log(betterWordsSingleString)
 ```
+
+## Example - Groceries
+```js
+const groceries = list => {
+  let result = '';
+  for(let j=0; j<list.length; j++){
+    result += list[j].item;
+    if(j < list.length -2){
+        result += ", ";
+      } else if(j === list.length -2){
+        result += ' and ';
+      }
+  }
+  return result
+};
+
+groceries( [{item: 'Carrots'}, {item: 'Hummus'}, {item: 'Pesto'}, {item: 'Rigatoni'}] );
+// returns 'Carrots, Hummus, Pesto and Rigatoni'
+groceries( [{item: 'Bread'}, {item: 'Butter'}] );
+// returns 'Bread and Butter'
+groceries( [{item: 'Cheese Balls'}] );
+// returns 'Cheese Balls'
+```

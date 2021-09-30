@@ -5,6 +5,17 @@ source: https://www.digitalocean.com/community/tutorials/how-to-use-array-method
 meta: test
 category: Javascript
 ---
+
+* Arrow function
+* `.forEach()`
+* `.map()`
+* `.filter()`
+* `.reduce()`
+* `.find()`
+* `.findIndex()`
+* `.every()`
+* `.sort()`
+
 ## Understanding Arrow Functions
 ```js
 var example = function() {
@@ -25,8 +36,8 @@ var example = parameter1 => {
   // code to execute
 }
 ```
-
-## `forEach()`
+---
+## `.forEach()`
 ```js
 let fish = [ "piranha", "barracuda", "cod", "eel" ];
 ```
@@ -50,8 +61,22 @@ for (let i = 0; i < fish.length; i++) {
     console.log(fish[i]);
 }
 ```
+## more
+```js
+const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
 
-## `map()`
+const politelyDecline = veg => console.log('No ' + veg + ' please. I will have pizza with extra cheese.');
+
+// Write your code here:
+
+const declineEverything = veg => veg.forEach(politelyDecline);
+}
+
+const acceptEverything = veg => veg.forEach(e => console.log(`Ok, I guess I will eat some ${e}.`);
+}
+```
+---
+## `.map()`
 `map()` 매서드를 사용하게 되면 새로운 배열을 만든다.
 ```js
 let fish = [ "piranha", "barracuda", "cod", "eel" ];
@@ -84,7 +109,20 @@ pluralFish;
 [ 'piranhas', 'barracudas', 'cods', 'eels' ]
 ```
 
-## `filter()`
+## More examples
+```js
+// const complete = el => el.toUpperCase() + '!';
+// const shoutGreetings = arr => arr.map(complete);
+
+const shoutGreetings = arr => arr.map(el => el.toUpperCase() + '!');
+
+const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
+
+console.log(shoutGreetings(greetings))
+// Should print [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
+```
+---
+## `.filter()`
 `filter()`는 결과 값을 새로운 배열에 저장한다. 기존 배열에는 아무런 영향을 주지 않는다.
 ```js
 let seaCreatures = [ "shark", "whale", "squid", "starfish", "narwhal" ];
@@ -100,8 +138,20 @@ filteredList;
 //Output
 [ 'shark', 'squid', 'starfish' ]
 ```
+## More examples
+```js
+const justCoolStuff = (arr1, arr2) =>  newArr = arr1.filter(el => arr2.includes(el));
 
-## `reduce()`
+const coolStuff = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
+
+const myStuff = [ 'g', 'i', 'j', 'd', 'k', 'l', 'm', 'n', 'a']; 
+
+console.log(justCoolStuff(myStuff, coolStuff))
+//[ 'g', 'd', 'a' ]
+```
+
+---
+## `.reduce()`
 ```js
 let numbers = [ 42, 23, 16, 15, 4, 8 ];
 
@@ -116,8 +166,8 @@ sum;
 //Output
 108
 ```
-
-## `find()`
+---
+## `.find()`
 ```js
 let seaCreatures = [ "whale", "octopus", "shark", "cuttlefish", "flounder" ];
 ```
@@ -134,8 +184,8 @@ seaCreatures.find(isCephalopod);
 //Output
 octopus
 ```
-
-## `findIndex()`
+---
+## `.findIndex()`
 ```js
 let seaCreatures = [ "whale", "octopus", "shark", "cuttlefish", "flounder" ];
 ```
@@ -162,4 +212,22 @@ seaCreatures.findIndex
 ```js
 //Output
 -1
+```
+---
+## `.every`
+```js
+const isTheDinnerVegan = arr => arr.every(food => food.source === 'plant');
+
+const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'dairy'}, {name: 'ketchup', source:'plant'}, {name: 'bun', source: 'plant'}, {name: 'dessert twinkies', source:'unknown'}];
+
+console.log(isTheDinnerVegan(dinner))//false
+```
+---
+## `.sort()`
+```js
+const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
+
+const sortSpeciesByTeeth = arr => arr.sort((speciesObj1, speciesObj2) => speciesObj1.numTeeth > speciesObj2.numTeeth)
+
+// [ { speciesName: 'human', numTeeth: 32 }, { speciesName: 'dog', numTeeth: 42 }, { speciesName: 'shark', numTeeth: 50 }, { speciesName: 'alligator', numTeeth: 80 } ]
 ```
