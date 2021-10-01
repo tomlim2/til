@@ -3,7 +3,7 @@ layout: post-base
 title: React - 간단한 영화 웹 만들기
 meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
-category: project
+category: test-for-test
 ---
 2021.08.25 ~ 28
 

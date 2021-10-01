@@ -2,7 +2,7 @@
 layout: post-base
 title: React Native - 간단한 날씨 앱 만들기
 meta: Evergreen (Updated 210820)
-category: project
+category: test-for-test
 ---
 2021.08.28 ~ 09.04
 
