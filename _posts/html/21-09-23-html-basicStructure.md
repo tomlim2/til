@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: HTML&CSS - Improving semantic HTML&CSS **웹 구축시 항상 필독하기
+title: HTML&CSS - Improving semantic HTML&CSS **
 meta: Basic Structure example
 category: htmlAndCss
 ---
