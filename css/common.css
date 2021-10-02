@@ -60,7 +60,12 @@ li{
     display: list-item;
     text-align: -webkit-match-parent;
 }
-
+table{
+    text-align: center;
+}
+td{
+    padding: 0px 60px;
+}
 code{
     font-size: .75em;
 }
