@@ -4,7 +4,7 @@ title: HTML&CSS - Improving semantic HTML&CSS **
 meta: Basic Structure example
 category: htmlAndCss
 ---
-HTML&CSS 구축시 코드의 가독성을 높이기 위해 tag들과 일반적인 웹에 대한 기본 틀들을 개발되어졌다. 예를 들면 `background-image`를 이용한 이미지 삽입은 히어로 이미지 혹은 텍스트 뒤에 이미지가 있어야할 때 주로 쓰이고 블로그 글이나 글 중간에 삽입된 이미지는 `<img>`를 사용하는 것이 다른 협업하는 개발자들의 코드의 가독성을 높이게 된다. 
+HTML&CSS 구축시 코드의 가독성을 높이기 위해 tag들과 일반적인 웹에 대한 기본 틀들을 개발되어졌다. 예를 들면 `background-image`를 이용한 이미지 삽입의 html syntax는 `<section class='hero-image'>히어로 이미지 입니다.</section>`이 될것이다. 이는 다른 `section`들과 함께 스크린 하나를 차지하는 덩어리로 인식된다. 이미지 삽입 태그인 img의 context는 `와~~ <img alt='화창한 날' src='sunny.png'> 오늘 같은 화창한날엔 라면!`일 것이다. `section`이나 `div`를 이용한 이미지 삽입보다 더욱 글 속의 삽입된 이미지라는 인식을 가지게 된다. 이처럼 semantic HTML&CSS 지향적인 코드 작성은 다른 개발자들과의 원할한 협업을 위해 그리고 후의 유지보수에도 커다란 이점을 가지게 된다.
 
 밑의 자료들은 semantic HTML&CSS에 대한 구현방법론과 태그들을 간략하게 정리하였다. 웹 구축이 필요할시 항상 읽고 시작하자
 
