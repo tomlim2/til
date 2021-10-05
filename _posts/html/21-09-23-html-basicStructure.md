@@ -4,7 +4,9 @@ title: HTML&CSS - Improving semantic HTML&CSS **
 meta: Basic Structure example
 category: htmlAndCss
 ---
-HTML&CSS 구축시 코드의 가독성을 높이기 위한 노력을 아끼지 말고 항상 읽고 시작하자
+HTML&CSS 구축시 코드의 가독성을 높이기 위해 이후 개발된 tag들과 일반적인 웹에 대한 기본 틀들을 개발되어졌다. 예를 들면 background-image를 이용한 이미지 삽입은 히어로 이미지 혹은 텍스트 뒤에 이미지가 있어야할 때 주로 쓰이고 블로그 글이나 글 중간에 삽입된 이미지는 img로 하는것이 다른 협업하는 개발자들의 코드의 가독성을 높이게 된다. 
+
+밑의 자료들은 semantic HTML&CSS에 대한 구현방법론과 태그들을 간략하게 정리하였다. 웹 구축이 필요할시 항상 읽고 시작하자
 
 ## Resource
 * Semantic [HTML](https://www.internetingishard.com/html-and-css/semantic-html/)&[CSS](https://css-tricks.com/semantic-class-names/)
