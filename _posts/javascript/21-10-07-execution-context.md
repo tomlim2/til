@@ -275,9 +275,83 @@ a: fn()
 ```
 `REMOVE Closure Scope`, `Finished`
 
-## local variable
+## Local variable
+```
+var name = "hi";
+var handle = "@hiyo";
 
+function getURL(handle){
+  var twitterURL = 'http://twitter.com/';
+  return twitterURL + handle;
+}
 
+getURL(handle)
+```
+## Local variable의 예시
+`(생략)` >
+```
+Global Execution Context
+Phase: Execution
+window: global object
+this: window
+name: "hi"
+handle: "@hiyo"
+getURL: fn()
+        getURL Execution Context
+        Phase: Creation
+        arguments: { 0: "@hiyo", length: 1 }
+        this: window
+        twitterURL: undefined
+        handle: "@hiyo"
+```
+`START getURL Execution Context Phase: Creation// Hoist a value or assign defult value of undefined to twitterURL`, `BlockStatement` > `getURL Execution Context Phase: Creation`, `VariableDeclaration` > `Literal // 'http://twitter.com/'` > `VariableDeclaration` > `twitterURL assigned "http://twitter.com/"`, `BlockStatement` > `(생략)`
+
+## Scope
+```
+function first () {
+    var name = '미션'
+
+    console.log(name)
+}
+function second () {
+    var name = '키'
+
+    console.log(name)
+}
+
+console.log(name); // undefined :: a value from variable decoration in creation execution phase
+var name = '에이스';
+first(); // 미션
+second(); // 키
+console.log(name) // 에이스 :: 
+```
+
+## Operation log 
+```
+Global Execution Context
+Phase: Creation
+window: global object
+this: window
+first: fn()
+second: fn()
+name: undefined
+```
+START Global Execution Context Phase: Creation, program > START Global Execution Context Phase: Execution, FunctionDeclaration // fn first > Program > FunctionDeclaration // fn second > program > ExpressionStatement > CallExpression > MemberExpression > Identifier > MemberExpression > Identifier > MemberExpression > CallExpression > Identifier > CallExpression > CallExpression > ExpressionStatement > Program > VariableDeclaration > Literal > VariableDeclaration > assigned "에이스" on "name" in Global Execution Context Phase: Execution, Program > ExpressionStatement // first(); > CallExpression > Identifier > CallExpression > 
+```
+Global Execution Context
+Phase: Execution
+window: global object
+this: window
+first: fn()
+second: fn()
+name: "에이스"
+        first Execution Context
+        Phase: Creation
+        arguments: { length: 0 }
+        this: window
+        name: undefined
+```
+START first Execution Context Phase: Creation, BlockStatement > START first Execution Context Phase: Execution, VariableDeclaration > Literal > VariableDeclaration > BlockStatement > ExpressionStatement > CallExpression > MemberExpression > Identifier > MemberExpression > Identifier > MemberExpression > CallExpression > Identifier > CallExpression > CallExpression > ExpressionStatement > REMOVE first Execution Context Phase: Creatio, BlockStatement > A(), CallExpression > ExpressionStatement > 
 
 ## 의문점
 * Closure Scope가 뭐지?
