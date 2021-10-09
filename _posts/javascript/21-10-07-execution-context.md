@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript - Execution context
+title: Javascript - Execution contexts, Hoisting, Scopes, and Closures
 meta: execution context
 category: Javascript
 ---
