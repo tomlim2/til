@@ -277,7 +277,7 @@ a: fn()
 ```
 `REMOVE a Execution Context Phase: Execution`, `Finished`
 
-## Local variable
+## 예시2 - Local variable
 ```js
 var name = "hi";
 var handle = "@hiyo";
@@ -289,7 +289,7 @@ function getURL(handle){
 
 getURL(handle)
 ```
-## Local variable의 예시
+## 예시2의 operation log
 `(생략)` >
 ```
 Global Execution Context
