@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1>개발 놀이터:)</h1>
     <script>
         localStorage.setItem('name', 'Tom')
         console.log(localStorage.getItem('name'));
+        localStorage.clear('name');
+        sessionStorage.setItem('car', 'wow');
         sessionStorage.clear('car');
-        // sessionStorage.setItem('car','wow')
-        document.cookie = 'username = Tom Thomas'
+        document.cookie = 'username = Tom Thomas';
     </script>
 </body>
+
 </html>

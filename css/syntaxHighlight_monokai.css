@@ -1,14 +1,13 @@
-p code{
-    color: var(--color-black);
-    background-color: var(--color-gray-200);
-    padding: 2px 2px 2px 2px;
-}
 .highlight pre{
     line-height: 16px;
     padding: 20px;
     overflow: scroll;
 }
-
+code.highlighter-rouge{
+    color: var(--color-black);
+    background-color: var(--color-gray-200);
+    padding: 3px 6px;
+}
 pre code{
     color: var(--color-gray-200);
 }
