@@ -4,7 +4,17 @@ title: Javascript - Execution contexts, Hoisting, Scopes, and Closures
 meta: execution context
 category: Javascript
 ---
+* [Execution contexts](#execution-contexts)
+    * [Global Execution Context](#global-execution-context)    
+    * [Hoisting](#hoisting)
+    * [Function Execution Context](#function-execution-context)
+    * [Execution Stack](#execution-stack)
+* [Scopes](#scopes)
+* [Closures](#closures)
+* [Resources](#resources)
 
+
+## Execution Contexts
 Execution context는 자바스크립트가 가지고 있는 프로세스로 컴퓨터가 코드를 읽을 때 한번에 전체를 읽는 것이 아닌 몇몇의 조각으로 나누어 읽는 방식이다. 이는 자바스크립트가 복잡한 코드를 해석, 작성, 관리, 그리고 실행하게 해준다.
 
 ## Global Execution Context
@@ -57,7 +67,7 @@ getUser: fn()
 ```
 `VariableDeclaration` > `program` > `FunctionDeclaration` > `program` > `Finished`
 
-### 정리
+### 정리 {#hoisting}
 - 변수 선언 후 읽는 순간 코드 전역에 있는 코드들을 읽는다.
 - Creation Phase에서 변수들이 `undefined`로 설정된 것을 호이스팅(Hoisting)이라고 한다.
 - 호이스팅(Hoisting)은 Creation Phase에서 할당되는 Variable decoration(기본값)을 말한다.
@@ -80,8 +90,6 @@ function getUser(){
 ```
 ### 정리
 - `name`과 `handle`이 `undefined`로 출력되는 이유는 Creation Phase에서 바로 넘어와 변수가 전역에 입력되어 있지 않은 상태였기 때문이다.
-
---- 
 
 ## Function Execution Context
 Function execution context는 다음의 항목을 제외하고는 Global execution context와 밑의 완벽히 동일한 테스크가 일어난다.
@@ -149,7 +157,7 @@ getUser: fn()
 
 --- 
 
-## Execution Stack
+## Execution Stack {#execution-stack}
 함수가 호출되면 언제나 새로운 Execution context가 생성되고 Execution stack에 추가된다. 언제나 함수가 종료되면 그 함수의 execution context가 끝이나고 execution stack에서 사라진다. 자바스크립트는 코드를 실행할 때 하나의 테스크가 일차원적으로 일어나는 'Single thread'이기에 이 Excution Stack이란 개념을 사용하한다. Single thread이기에 프로세스를 시각화하기 용이하다.
 
 ### 예시1
@@ -310,7 +318,7 @@ getURL: fn()
 
 ---
 
-## Scope
+## Scopes
 위의 Local variable 예시는 Scope라는 주제를 보여준다. Scope는 변수 혹은 expression이 참조 가능한 컨텍스트를 뜻한다.
 
 ### 예시1
@@ -400,7 +408,7 @@ logname: fn()
 
 ---
 
-## Closures
+## Closures {#closures}
 함수 안에 함수가 있다면 바깥 쪽의 함수(outer function)의 execution context가 stack에서 제거되도 안 쪽의 함수(inner function)는 여전히 부모 함수(outer function)의 variable environment를 가져온 closure에서 엑세스할 수 있다.
 
 ```js
