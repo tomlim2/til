@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: 21-10-11 Javascript - Piano Keys
+title: Javascript/DOM - Piano Keys
 meta: Javascript
-category: til
+category: Javascript
 ---
 아주 간단한 생일 축하 노래를 연습할 수 있는 피아노 플레이어를 구현시키는 프로젝트. 사용자는 왼쪽에서는 실제로 피아노 키와 상호작용할 수 있고 오른쪽에서는 생일 축하 노래의 가사와 코드를 확인할 수 있다. 오른쪽 박스에서는 한 번에 최대 7개의 키를 확인할 수 있고 노란색 버튼을 누르면 노래의 다음 가사와 키를 확인할수 있다.
 
