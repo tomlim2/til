@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-09-21 Javascript - Fun!
+title: 21-09-21 Javascript/ Fun!
 meta: test
 category: til
 ---

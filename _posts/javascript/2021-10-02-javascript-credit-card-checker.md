@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: 21-10-02 Javascript - Credit Card Checker
+title: Javascript/_Project/ Credit Card Checker
 meta: test
-category: til
+category: Javascript
 ---
 카드체커를 자바스크립트로 구현한 코드이다.
 

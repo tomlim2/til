@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: 21-09-29 Javascript - Advanced Object
+title: Javascript/ Advanced Object
 meta: test
-category: til
+category: Javascript
 ---
 객체에 좀더 깊게 파고들었다. 아래와 같은 리스트들로 본다.
 * how to use the `this` keyword.

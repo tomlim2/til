@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: 21-10-03 Javascript - Mysterious Organism
+title: Javascript/_Project/ Mysterious Organism
 meta: test
 source: www.codecademy.com
-category: til
+category: Javascript
 ---
 Code Academy Challenge Project: Mysterious Organism에서 사용한 코드이다. 다른 튜토리얼들은 step-by-step의 형식이었지만 이 프로젝트는 목적만 주고 코드는 찾고 생각하면서 푸는 프로젝트였다.
 ## Context

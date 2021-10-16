@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript - Debugging
+title: Javascript/ Debugging
 meta: test
 category: Javascript
 ---

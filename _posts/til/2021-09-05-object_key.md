@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-08-28 Javascript - Object 접근법
+title: 21-08-28 Javascript/ Object 접근법
 meta: test
 category: til
 ---

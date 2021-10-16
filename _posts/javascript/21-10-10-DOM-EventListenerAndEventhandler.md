@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/DOM events
+title: Javascript/DOM/ events
 meta: Event
 category: Javascript
 ---

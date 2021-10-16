@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: CSS - Attribute selector - [href]{}
+title: CSS/ Attribute selector / [href]{}
 meta: Table example
 source: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax
 category: htmlAndCss

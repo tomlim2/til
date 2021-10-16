@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/DOM - Piano Keys
+title: Javascript/DOM/_Project/ Piano Keys
 meta: Javascript
 category: Javascript
 ---

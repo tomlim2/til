@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: React Native - Expo-cli, Github 연동하기
+title: React Native/ Expo-cli, Github 연동하기
 meta: React-Router
 category: ReactAndReactNative
 ---

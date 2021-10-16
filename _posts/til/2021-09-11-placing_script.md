@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-09-11 HTML - script 태그
+title: 21-09-11 HTML/ script 태그
 meta: test
 category: til
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: React Native - Basic examples & resources
+title: React Native/ Basic examples & resources
 meta: React Native guide
 category: ReactAndReactNative
 ---

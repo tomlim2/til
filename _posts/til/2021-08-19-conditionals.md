@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-08-22 Javascript - 조건문, 연산자, null&undifined
+title: 21-08-22 Javascript/ 조건문, 연산자, null&undifined
 meta: test
 category: til
 ---

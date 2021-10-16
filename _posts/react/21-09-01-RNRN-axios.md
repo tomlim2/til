@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: RNRN - Axios를 사용한 API 연동 
+title: RNRN/ Axios를 사용한 API 연동 
 meta: React-Router
 source: https://www.npmjs.com/package/axios
 category: ReactAndReactNative
