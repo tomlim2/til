@@ -163,11 +163,6 @@
 
 #description:hover .frame{
     background-color: var(--color-about-point);
-    letter-spacing: 0.2em;
-}
-
-#description:hover .frame div{
-    letter-spacing: 0.2em;
 }
 
 #about-word-1{
