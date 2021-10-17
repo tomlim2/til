@@ -160,13 +160,27 @@
     letter-spacing:-0.02em;
     font-weight: var(--font-light);
 }
-.item6 .frame div span{
-    font-weight: var(--font-bold);
-}
 
 #description:hover .frame{
     background-color: var(--color-about-point);
+    letter-spacing: 0.2em;
 }
+
+#description:hover .frame div{
+    letter-spacing: 0.2em;
+}
+
+#about-word-1{
+    font-weight: var(--font-bold);
+}
+#about-word-2{
+    transition-duration: 800ms;
+}
+
+#description:hover #about-word-2{
+    opacity: 0;
+}
+
 
 /* jlottie */
 
