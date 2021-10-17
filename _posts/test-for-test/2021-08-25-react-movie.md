@@ -68,3 +68,6 @@ Home.js에서 정보를 읽으면 필요한 데이터를 Movie.js로 보내 썸�
 
 ## Conclusion
 다음엔 앱 프로젝트 한번 해보자. 
+
+## Resource
+* [nomadcoders](https://nomadcoders.co/)

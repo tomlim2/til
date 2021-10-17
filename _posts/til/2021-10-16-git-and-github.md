@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-10-16 Git & Github
+title: 21-10-16 Git & Github (cli ver)
 meta: Git과 Github 쓰는 방법 (cli ver)
 category: til
 ---
@@ -35,3 +35,7 @@ $ git push origin feature/“branch_name"
 ## 협업을 위한 나의 git cli 사용 예시
 앞에 git clone 단계가 있었다.
 ![my usage of github]({{site.baseurl}}/img/21-10-16-git.jpg)
+
+## Resource
+* [Github Document](https://docs.github.com/en)
+* [Git](https://git-scm.com/doc)
