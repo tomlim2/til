@@ -76,7 +76,6 @@
 }
 
 /* hero image */
-
 .item2{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -98,7 +97,6 @@
 }
 
 /* link to designer */
-
 .item3{
     background-color: var(--color-black);
 }
@@ -115,7 +113,6 @@
 }
 
 /* link to developer */
-
 .item4{
     grid-column-start: 1;
     grid-column-end: 2;
@@ -136,6 +133,7 @@
     cursor: pointer;
     transform: scale(1,0);
 }
+
 /* Lottie-player*/
 .item5{
     display: flex;
@@ -153,8 +151,9 @@
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
-    line-height: 1.7;
+    line-height: 1.7;    
 }
+
 .item6 .frame div{
     padding: 20px 20px;
     letter-spacing:-0.02em;
@@ -168,17 +167,25 @@
 #about-word-1{
     font-weight: var(--font-bold);
 }
+
 #about-word-2{
+    transition-duration: 1600ms;
+}
+
+#about-word-3{
     transition-duration: 800ms;
+    transition-delay: 400ms;
 }
 
 #description:hover #about-word-2{
     opacity: 0;
 }
+#description:hover #about-word-3{
+    color: var(--color-red);
+}
 
 
 /* jlottie */
-
 .item7{
     background-color: var(--color-black);
 }
