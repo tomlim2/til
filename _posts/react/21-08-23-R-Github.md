@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: React/ Github에 연동하기 (Web)
+title: React / Github에 연동하기 (Web)
 meta: React-Router
 category: ReactAndReactNative
 ---

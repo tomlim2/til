@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: React/_Project/ 간단한 영화 웹 만들기
+title: React / Project / 간단한 영화 웹 만들기
 meta: Evergreen (Updated 210820)
 source: https://nomadcoders.co/react-fundamentals/lobby
 category: test-for-test

@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-10-16 Git & Github (cli ver)
+title: 21-10-16 Git & Github 개인용, 협업용 사용법 (cli ver)
 meta: Git과 Github 쓰는 방법 (cli ver)
 category: til
 ---

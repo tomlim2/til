@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: RNRN/ Component Life Cycle
+title: Common / Component Life Cycle
 meta: Useful tool
 category: ReactAndReactNative
 ---

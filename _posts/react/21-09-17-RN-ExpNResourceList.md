@@ -1,10 +1,10 @@
 ---
 layout: post-base
-title: React Native/ Basic examples & resources
+title: React Native / Basic examples & resources
 meta: React Native guide
 category: ReactAndReactNative
 ---
-React Native를 공부하면서 배우고 재밌다고 생각하는 코드들을 적어보았다. 
+Code Academy를 통해 React Native를 공부하면서 배우고 중요하다고 생각하는 부분들을 적어보았다. 
 
 ## Core components
 ### Iamge

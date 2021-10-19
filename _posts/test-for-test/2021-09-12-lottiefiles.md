@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/ Lottie Files/_test lottie-player & jlottie
+title: Javascript / Lottie Files / Test / lottie-player & jlottie
 meta: Evergreen (Updated 210820)
 category: test-for-test
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/ Array&literation Methods **
+title: Javascript / Array&literation Methods **
 meta: test
 category: Javascript
 ---

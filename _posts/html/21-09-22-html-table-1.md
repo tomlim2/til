@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: HTML/ table
+title: HTML / table
 meta: Table example
 source: https://content.codecademy.com/courses/learn-html-tables/index.html
 category: htmlAndCss

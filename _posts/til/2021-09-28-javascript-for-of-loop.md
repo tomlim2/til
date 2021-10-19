@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: 21-09-28 Javascript/ for loop vs for…of loop
+title: 21-09-28 Javascript / for loop vs for…of loop
 meta: test
 category: til
 ---

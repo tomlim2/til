@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Snack - Unable to resolve module 'formik.js'
+title: Snack / Unable to resolve module 'formik.js'
 meta: test
 category: troubleShoot
 ---

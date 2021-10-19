@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/_Project/ Credit Card Checker
+title: Javascript / Project / Credit Card Checker
 meta: test
 category: Javascript
 ---

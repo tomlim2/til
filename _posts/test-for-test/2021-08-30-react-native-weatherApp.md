@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: React Native/_Project/ 간단한 날씨 앱 만들기
+title: React Native / Project / 간단한 날씨 앱 만들기
 meta: Evergreen (Updated 210820)
 category: test-for-test
 ---

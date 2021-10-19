@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/ Advanced Object
+title: Javascript / Advanced Object
 meta: test
 category: Javascript
 ---

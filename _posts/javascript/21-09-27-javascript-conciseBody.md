@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/ Concise body
+title: Javascript / Concise body
 meta: Systax
 category: Javascript
 ---

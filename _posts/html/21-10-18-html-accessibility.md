@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: HTML/ Accessibility(a11y) 
+title: HTML / Accessibility(a11y) 
 meta: Accessibility in HTML
-resource: https://www.a11yproject.com/
+source: https://www.a11yproject.com/
 category: htmlAndCss
 ---
 웹사이트를 만들 때는 언제나 몇몇의 사람들은 다른 방법으로 이용한다는 것을 명심하자. 예를 들면 많은 사용자들은 시각적인 어려움을 가지고 있다. 웹 초창기에는 [Web Accessibility Initiative](https://en.wikipedia.org/wiki/Web_Accessibility_Initiative)(led by W3C)가 모든 사람들에게 정보 접근성을 증진시키기 위해 개발된 표준이다. 
@@ -21,14 +21,14 @@ category: htmlAndCss
 웹 페이지의 정보를 추가하는 것을 도와주기 위해 ARIA는 `role`이 라는 속성을 제공한다. 이 role 요소는 스크린 리더가 요소들을 읽는 방식을 맥락을 추가하여 부드럽게 읽어준다.
 맥락을 추가하는 만큼 많은 시간과 노력이 들지만 여력이 된다면 필수적으로 진행하자.
 
-```js
+```
 <span class="aside" role="note">에이다 러브레이스는 작가가 이 웹페이지에서 가장 좋아하는 프로그래머이다!</span>
 ```
 [note](https://www.w3.org/TR/html-aria/#index-aria-note)는 a, abbr, address, area, aside 등에 사용이 추천 되는 role이다. 주요소는 아니지만 맥락상 필요 컨텐츠라면 사용하자.
 
 ## ARIA Properties
 ARIA properties는 우리가 실제로 HTML에서 사용 가능한 속성이다. 이 속성들은 스크린 리더 사용자들에게 요소들에 대한 추가적인 정보를 제공한다.
-```js
+```
 <img src="#" alt="세나도아스 계곡 그림"/>
 <p aria-label="Artist">아르멘드 카브레라, 2010</p>
 ```

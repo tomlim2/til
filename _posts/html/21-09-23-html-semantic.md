@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: HTML/CSS/ Improving semantic HTML&CSS **
+title: HTML&CSS / Improving semantic HTML&CSS **
 meta: Basic Structure example
 category: htmlAndCss
 ---

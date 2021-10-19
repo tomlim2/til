@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: CSS/ Grid
+title: CSS / Grid
 meta: Color references
 category: htmlAndCss
 ---

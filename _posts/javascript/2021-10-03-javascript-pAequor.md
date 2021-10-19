@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript/_Project/ Mysterious Organism
+title: Javascript / Project / Mysterious Organism
 meta: test
 source: www.codecademy.com
 category: Javascript
