@@ -37,7 +37,66 @@ ARIA properties 리스트는 [MDN](https://developer.mozilla.org/en-US/docs/Web/
 ## Alt Attribute
 `img` 등 몇 HTML 요소들은 `alt`라고 불리우는 가지고 있다. `aria-label`과 비슷하지만 여러 기능들이 추가되어있다. 스크린 리더는 alt 속성의 값을 크게 읽는다. `<a>` 태그에 사용될 경우 링크가 어디로 연결되었는지 설명해야한다. 그리고 150자 이하로 작성 되어야 한다.
 
-## 스크린 리더 옵션(Screen Reader Options)
+## 사용 예시
+```
+<head>
+    <title>A Brief History of Programming</title>
+</head>
+
+<body>
+
+    <header>
+        <h3>A BRIEF HISTORY OF</h3>
+        <h1>PROGRAMMING</h1>
+    </header>
+
+    <nav>
+        <ul role="presentation">
+            <li><a href="#early">Early</a></li>
+            <li><a href="#middle">Middle</a></li>
+            <li><a href="#late">Late</a></li>
+            <li><a href="#current">Current</a></li>
+        </ul>
+    </nav>
+
+    <div id="early" class="container">
+        <span class="aside" role="note">Ada Lovelace is the favorite programmer of the author of this web page!</span>
+
+        <h2>Early</h2>
+        <h4>Pre-1900</h4>
+        <div class="p-container" role="presentation">
+            <p>Below is an image of Ada Lovelace, born in 1815 (<em>Died: 1852</em>). She worked with Charles Babbage
+                and
+                is known as the first programmer.</p>
+            <p>Below is an image of Charles Babbage, born in 1791 (<em>Died: 1871</em>). Babbage is considered the
+                father
+                of the computer.</p>
+        </div>
+
+        <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-lovelace.jpg" alt="Ada Lovelace" />
+        <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-babbage.jpg" alt="Charles Babbage" />
+
+        <div class="timeline" role="presentation">
+            <div class="date-square" role="presentation">
+                <p aria-label="Date of Lovelace photo">1840</p>
+            </div>
+            <div class="date-square" role="presentation">
+                <p aria-label="Date of Babbage photo">1850</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-logo2.png" id="logo" />
+        <ul role="presentation">
+            <li>The Programming Historical Society</li>
+            <li>about@programminghs.org</li>
+        </ul>
+    </footer>
+</body>
+```
+
+## 스크린 리더
 - (OS X) VoiceOver
 - (Windows) NVDA
 - (Google Chrome) ChromeVox
