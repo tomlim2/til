@@ -18,8 +18,8 @@ $ npm install react-router-dom
 ```
 $ npm install node-sass
 ```
-- `CRA ver "4.0.3"` 과 `node-sass ver 6.0` 이랑 호환이 안되는 이슈가 있음, 이슈 해결 전까지 `node-sass ver 4.14.1` 로 버전지정해서 설치해야 함
-- 버전 지정해서 설치하는 명령어: `npm install node-sass@4.14.1 —-save`
+- `CRA ver "4.0.3"` 과 `node-sass ver 6.0` 이랑 호환이 안되는 이슈가 있다고 한다. 
+- 4.14버전으로 지정해야 하고 명령어는 `npm install node-sass@4.14.1`이다.
 
 ## Step 4: .eslintcache 파일 .gitignore에 추가
 ```
@@ -42,18 +42,17 @@ __:: src 폴더__
     - Main 폴더 >>> Main.js, Main.scss
 
 ```
-- 로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않습니다. 
-- 반드시 폴더 안에 아무 파일이나 하나 생성해서 올려주세요. 빈 .js 파일이든 .md파일이든 상관없습니다.
+- 로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않기에 빈 폴더에 임의의 파일을 생성한다. 예) `temp.js`, `temp.md`
 ```
 
 :::: components 폴더
 ```
-- 만약 Main.js 에서 사용되는 컴포넌트는 Main 폴더 하위에서 해당 컴포넌트 폴더를 생성해서 관리해 주세요! 
+- Main.js 에서 사용되는 컴포넌트는 Main 폴더 하위에서 해당 컴포넌트 폴더를 생성해서 관리한다.
   ex) Main폴더 - Article 폴더 - Article.js, Article.scss 
-- components 폴더에서는 모든 페이지에서 사용되는 컴포넌트(ex. Header, Footer)를 관리합니다.
-- 이번 프로젝트에서는 Main 페이지에서 사용할 공통의 Nav Component를 하나 만들어서 import해서 사용해 주시기 바랍니다.
+- components 폴더에서는 모든 페이지에서 사용되는 컴포넌트(ex. Header, Footer)를 관리한다.
+- 이번 프로젝트에서는 Main 페이지에서 사용할 공통의 Nav Component를 하나 만들어서 import해서 사용한다.
 ```
-- components 폴더 >>> Nav 폴더 >>> Nav.js, Nav.scss
+- components/Nav/Nav.js, Nav.scss
 
 :::: styles 폴더
 
@@ -78,7 +77,7 @@ __:: src 폴더__
 
 :::: Routes.js
 
-- 팀원 당 컴포넌트 두 개(Login, Main)에 대한 경로를 따로 따로 설정해 줍니다. 
+- 팀원 당 컴포넌트 두 개(Login, Main)에 대한 경로를 설정해 준다.
 
 ```jsx
 // 준식's 컴포넌트
@@ -97,15 +96,7 @@ import MainJongTaek from './pages/jongtaekoh/Main/Main';
 ```
 
 :::: assets/images 폴더
-- 다음과 같이 css 에서 background-image 속성을 사용해서 이미지를 삽입하는 경우가 있습니다. 
-
-```jsx
-.feedImage {
-  background-image: url('/images/feedImage.jpg'); // 에러! url은 public 폴더에 접근하는 게 불가능합니다.
-}
-```
-
-- css 에서는 public 폴더에 접근하는 것이 불가능 하므로, 위와 같은 경우엔 이미지 파일들을 src/assets/images 디렉토리에서 관리해 주세요!
+- css에서 background-image 속성을 사용해서 이미지를 삽입하는 경우가 있다. 이와 같은 경우엔 이미지 파일들을 src/assets/images 디렉토리에서 관리한다.
 
 ```jsx
 .feedImage {
@@ -116,12 +107,12 @@ import MainJongTaek from './pages/jongtaekoh/Main/Main';
 __:: public 폴더__
 
 :::: data 폴더
-- data 폴더는 추후에 mock data를 만들어서 불러올 때 사용합니다. 우선은 참고만 해주세요.
+- data 폴더는 추후에 mock data를 만들어서 불러올 때 사용한다.
 
 :::: images 폴더
-- images 폴더 하위에 본인의 이름으로 각각의 폴더를 생성합니다.
-- 필요한 이미지들은 그 폴더 하위에서 관리해 주세요.
-- 폴더 안에서도 Main 폴더, Login 폴더를 만들어서 페이지 별로 깔끔하게 관리해주는 것도 좋습니다. 참고해 주세요.
+- images 폴더 하위에 팀원 이름으로 폴더를 생성한다.
+- 필요한 이미지들은 그 폴더 하위에서 관리한다.
+- 폴더 안에서도 Main 폴더, Login 폴더를 만들어서 페이지 별로 깔끔하게 관리 해야한다.
 
 ## Step 6: [ESLint](https://eslint.org/docs/user-guide/getting-started) + [Prettier](https://prettier.io/) 세팅
 ESLint과 Prettier는 코드를 정리해주는 확장 프로그램이다. 
