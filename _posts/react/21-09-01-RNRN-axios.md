@@ -5,18 +5,23 @@ meta: React-Router
 source: https://www.npmjs.com/package/axios
 category: ReactAndReactNative
 ---
-API에 활용하는 툴 중 하나인 axios를 사용한 예시를 적어놓았다. 
+API에 활용하는 툴 중 하나인 axios를 사용한 예시를 적어놓았다.
 
 ## Install axios
-Documentation: [npmjs.com](https://www.npmjs.com/package/axios) 
+
+Documentation: [npmjs.com](https://www.npmjs.com/package/axios)
+
 ```jsx
-$ npm install axios
+npm install axios
 ```
 
-## React 영화 웹 
+## React 영화 웹
+
 API from [YTS Proxy](https://github.com/serranoarevalo/yts-proxy). [API endpoint list](https://yts.mx/api)
 
 For the endpoint [`/list_movies.json`](https://yts.mx/api#list_movies) use `https://yts-proxy.now.sh/list_movies.json`
+
+{% raw %}
 
 ```jsx
 import axios from 'axios';
@@ -64,8 +69,14 @@ class Home extends React.Component{
 };
 ```
 
+{% endraw %}
+
 ## Weather app
+
 API from [openweather](https://openweathermap.org/api)
+
+{% raw %}
+
 ```jsx
 import * as Location from 'expo-location';
 
@@ -114,4 +125,7 @@ export default class extends React.Component {
   }
 }
 ```
+
+{% endraw %}
+
 expo-cli에서 latitude와 longitude를 얻어서 openweather API에 입력함으로써 현재 내 위치의 날씨 정보를 가져온다.

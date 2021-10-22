@@ -5,6 +5,7 @@ meta: test
 category: Javascript
 ---
 객체에 좀더 깊게 파고들었다. 아래와 같은 리스트들로 본다.
+
 * how to use the `this` keyword.
 * conveying privacy in JavaScript methods.
 * defining getters and setters in objects.
@@ -12,6 +13,7 @@ category: Javascript
 * using destructuring techniques.
 
 ## The `this` keyword
+
 ```js
 const robot = {
   model: '1E78V2',
@@ -26,6 +28,7 @@ console.log(robot.provideInfo());
 ```
 
 ## Privacy
+
 ```js
 const robot = {
   _energyLevel: 'high',
@@ -41,7 +44,9 @@ robot.recharge();
 ```
 
 ## Getters
+
 Getters are methods that get and return the internal properties of an object.
+
 ```js
 const robot = {
   _model: '1E78V2',
@@ -78,6 +83,7 @@ person.fullName; // 'John Doe'
 ```
 
 ## Setter
+
 We can also create setter methods which reassign values of existing properties within an object.
 
 ```js
@@ -120,6 +126,7 @@ tinCan.beep();//Beep Boop
 ```
 
 ## Property Value Shorthand
+
 ES6 introduced some new shortcuts for assigning properties to variables known as _destructuring_.
 
 ```js
@@ -140,6 +147,7 @@ newRobot.beep();//Beep Boop
 ```
 
 ## Destructured Assignment
+
 ```js
 const robot = {
   model: '1E78V2',
@@ -159,10 +167,12 @@ functionality.beep();//Beep Boop
 ```
 
 ## Built-in Object Methods
+
 .hasOwnProperty(), .valueOf(), Object.assign(), Object.entries(), Object.keys() 등 많은 객체용 매서드들이 많다.
 [MDN’s object instance documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object#Methods)에서 확인하자.
 
 ## Meal Maker
+
 ```js
 const menu = {
   _courses: {
@@ -215,6 +225,7 @@ console.log(meal);
 ```
 
 ## Team Stats
+
 ```js
 const team = {
   _players: [{
@@ -263,5 +274,6 @@ console.log(team['_games']);
 ```
 
 ## Resource
+
 * MDN - [Introducing JavaScript objects](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
 * MDN - [Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)

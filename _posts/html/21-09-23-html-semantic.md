@@ -7,6 +7,7 @@ category: htmlAndCss
 밑의 자료들은 semantic HTML&CSS에 대한 일반적인 구현형식과 태그들을 간략하게 정리하였다. 웹 구축이 필요할시 항상 읽고 시작하자.
 
 ## General
+
 Semantic HTML&CSS 구축시 컴퓨터, 개발자, 구글 등 검색엔진의 코드의 가독성을 높이기 위해 고안된 프로그래밍 방식이다. 이를 구현하기 위해 일반적인 웹에 대한 권장 틀들과 다양한 태그들이 있다.
 
 HTML에 이미지를 넣는다고 한다면,
@@ -15,13 +16,12 @@ HTML에 이미지를 넣는다고 한다면,
 
 협업 관점에서는 `background-image`를 이용한 이미지 삽입의 html syntax는 `<section class='hero-image'>히어로 이미지 입니다.</section>`이 될것이다. 이는 다른 `section`들과 함께 스크린 하나를 차지하는 덩어리로 인식된다. 이미지 삽입 태그인 img의 context는 `와~~ <img alt='화창한 날' src='sunny.png'> 오늘 같은 화창한날엔 라면!`일 것이다. `section`이나 `div`를 이용한 이미지 삽입보다 더욱 글 속의 삽입된 이미지라는 인식을 가지게 된다. 이처럼 semantic HTML&CSS 지향적인 코드 작성은 다른 개발자들과의 원할한 협업을 위해 그리고 후의 유지보수에도 커다란 이점을 가지게 된다.
 
-
-
 ## Resource
+
 * Semantic [HTML](https://www.internetingishard.com/html-and-css/semantic-html/)&[CSS](https://css-tricks.com/semantic-class-names/)
 
-
 ## HTML 예시
+
 ```html
 <!DOCTYPE html>
 <html>
@@ -69,12 +69,15 @@ HTML에 이미지를 넣는다고 한다면,
   </body>
 </html>
 ```
+
 ## 태그 정리
+
 * 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
 * `<section>`은 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸 때 사용한다.
 * `<aside>`는 메인 컨텐츠에 관련은 있으나 그 컨텐츠를 이해하는데 필수가 아닌 정보를 보여줄때 쓴다.
 
 ## CSS 예시
+
 ```css
 /* Site Stylesheet
   1. Global Styles
@@ -132,11 +135,15 @@ h2,
 ======================================== */
 .site-main {}
 ```
+
 ## CSS - Cascade order for pseudo-classes
+
 ```css
 :hover, :visited, :active, :link
 ```
+
 ## CSS - Useful selector for Navigation
+
 ```css
 .breadcrumb li.location+li.location::before {
   color: gray;
@@ -149,9 +156,11 @@ h2,
   vertical-align: super;
 }
 ```
+
 ## [UI pattern](http://ui-patterns.com/)
 
 ## Styling inspiration
+
 * Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/utilities/text/)
 * Google’s [Material Design](https://material.io/design/)
 * Twitter's [Bootstrap](https://getbootstrap.com/docs/4.0/components/buttons/)

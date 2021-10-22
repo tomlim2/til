@@ -7,8 +7,10 @@ category: ReactAndReactNative
 Todos는 [React JS Crash Course (2019)](https://www.youtube.com/watch?v=sBws8MSXN7A)을 진행하면서 만든 리엑트 웹이다. 큰 기능들은 해야할 일들을 작성하고, 삭제하고, 체크하는 기능이 있다.
 
 ## Data from [json placeholder](https://jsonplaceholder.typicode.com/todos)
+
 위의 사이트에서 아래와 같은 코드와 post 등 간단한 기능들을 제공해준다.
-```
+
+```json
 [
   {
     "userId": 1,
@@ -33,6 +35,7 @@ Todos는 [React JS Crash Course (2019)](https://www.youtube.com/watch?v=sBws8MSX
 ```
 
 ## App.js
+
 ```jsx
 state = {
     todos:[
@@ -62,6 +65,7 @@ addTodo = (title) => {
     /* THEN update data to state and the web */
 }
 ```
+
 - `componentDidMount`에 `axios`를 사용하여 데이터를 받는다.
 - 받은 데이터는 `state` object 안에 있는 `todos` array에 입력된다.
 - func인 `addTodo`는 해당 데이터를 제공해주는 웹 사이트의 post기능을 이용한다.
@@ -81,11 +85,13 @@ addTodo = (title) => {
     <Route path="/about" component={About} />
 </Router>
 ```
+
 - `<AddTodo />` component 안에 `addTodo`에 설정되어 있는 값과 연결한다.
 
-
 ## AddTodo.js (`<AddTodo />` component)
+
 {% raw %}
+
 ```jsx
 state = {
     title: ''
@@ -126,6 +132,7 @@ render() {
     )
 }
 ```
+
 {% endraw %}
 
 - 사용자들이 `<input>`에 입력한 값을 state 안에 저장한다.

@@ -6,9 +6,13 @@ source: www.codecademy.com
 category: Javascript
 ---
 Code Academy Challenge Project: Mysterious Organism에서 사용한 코드이다. 다른 튜토리얼들은 step-by-step의 형식이었지만 이 프로젝트는 목적만 주고 코드는 찾고 생각하면서 푸는 프로젝트였다.
+
 ## Context
+
 You’re part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study.
+
 ## Codes
+
 ```js
 // Returns a random DNA base
 const returnRandBase = () => {
@@ -134,12 +138,20 @@ const findTheTwoMostRelated = (array) => {
   let hi = twoTemp.filter(vl => vl[1] >= Math.max(...numberArr));
 }
 ```
+
 ### `.mutate()`
+
 15개의 dna 중 하나를 선택하여 본래의 dna를 제외한 다른 세 개의 dna로 변형시킨다. 예를 들면 변형시킬 dna가 'A'라면 'A'를 제외한 ['T', 'C', 'G'] 중 임의의 dna로 대입시킨다.
+
 ### `.compareDNA()`
+
 다른 qAequor의 object와 비교하여 dna 배열이 얼마나 일치하느냐를 비교한 qAequor의 specimenNum과 일치률을 출력시킨다.
 결과값으로 두 개의 요소를 가진 배열을 주며 첫 번째 요소에서는 비교된 두 pAequor의 넘버를 가지고 두 번째 요소에서는 두 DNA의 위치와 값의 일치률을 가지고 있다.
+
 ### `.willLikelySurvive()`
+
 설정상 dna 중 'C'와 'G'이 외부환경에 대한 생존률을 높여주는 요소이다. 이 메서드는 해당 dna의 'C'와 'G'의 비율(생존률)이 60% 이상인지 아닌지를 boolean값으로 출력한다.
+
 ### `.complementStrand()`
+
 dna의 complement strand를 출력한다. 'A'는 'T'로, 'T'는 'A', 'C'는 'G'로 'G'는 'C'로 바꿔준다.

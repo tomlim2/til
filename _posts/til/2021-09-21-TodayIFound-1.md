@@ -7,6 +7,7 @@ category: til
 상호작용으로 사용하면 재미있어 보이는 자바스크립트 코드 모음집
 
 ## changeColor()
+
 ```js
 function getRandomColor(){
     let letters = '0123456789ABCDEF';
@@ -23,6 +24,7 @@ function changeColor(){
 ```
 
 ## random typeface changer
+
 ```js
 function newStyle() {
   let newColor = '';

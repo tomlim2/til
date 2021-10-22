@@ -9,9 +9,10 @@ category: Javascript
 ![d]({{site.baseurl}}/img/21-10-11-piano.png)
 _출처 -[Codeacamedy](https://www.codecademy.com/)_
 
+## 코드
 
-## 코드 
 DOM 컨셉을 이해하기 위한 프로젝트인만큼 js만 정리했다. 사운드 구현은 시간이 된다면 해보자.
+
 ```js
 // 13개의 키의 ID 이름을 가지고 있는 배열
 const keys = ['c-key', 'd-key', 'e-key', 'f-key', 'g-key', 'a-key', 'b-key', 'high-c-key', 'c-sharp-key', 'd-sharp-key', 'f-sharp-key', 'g-sharp-key', 'a-sharp-key'];

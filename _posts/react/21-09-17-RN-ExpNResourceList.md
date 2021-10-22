@@ -4,15 +4,25 @@ title: React Native / Basic examples & resources
 meta: React Native guide
 category: ReactAndReactNative
 ---
-Code Academy를 통해 React Native를 공부하면서 배우고 중요하다고 생각하는 부분들을 적어보았다. 
+Code Academy를 통해 React Native를 공부하면서 배우고 중요하다고 생각하는 부분들을 적어보았다.
 
 ## Core components
+
 ### Iamge
+
+{% raw %}
+
 ```jsx
 <Image source = {require('./react-native.jpg')} style={{width:100, height:100}}></Image>
 );
 ```
+
+{% endraw %}
+
 ### Counting press with limited number
+
+{% raw %}
+
 ```jsx
 import React, { useState } from 'react';
 
@@ -38,7 +48,12 @@ const App = () => {
 };
 ```
 
+{% endraw %}
+
 ### Scroll View
+
+{% raw %}
+
 ```jsx
 <ScrollView horizontal>
   <View style={{ width: 300, height: 300, backgroundColor: 'red' }} />
@@ -47,7 +62,12 @@ const App = () => {
 </ScrollView>
 ```
 
+{% endraw %}
+
 ### Input text with dot
+
+{% raw %}
+
 ```jsx
 import React, { useState } from 'react';
 import { View, Text, TextInput } from 'react-native';
@@ -75,7 +95,12 @@ const App = () => {
 };
 ```
 
+{% endraw %}
+
 ### Combining components
+
+{% raw %}
+
 ```jsx
 const App = () => (
   <View style={{ flex: 1, justifyContent: 'center' }}>
@@ -90,7 +115,12 @@ export const Box = (props) => (
 );
 ```
 
+{% endraw %}
+
 ## Styling
+
+{% raw %}
+
 ```jsx
 import { StyleSheet, View, Pressable } from 'react-native';
 
@@ -155,7 +185,10 @@ const styles = StyleSheet.create({
 });
 ```
 
+{% endraw %}
+
 ## Connecting Data through `.Map()`
+
 ```jsx
 //reactNative
 data.woofs.map(woof => (
@@ -166,6 +199,7 @@ data.woofs.map(woof => (
   />
 ));
 ```
+
 ```jsx
 //react
 {movies.map(movie => (
@@ -182,9 +216,11 @@ data.woofs.map(woof => (
 ```
 
 ## Connecting data through [Flatlist]((https://reactnative.dev/docs/flatlist))
+
 `.map()`를 대안으로 사용하는걸 추천한다. ScrollView의 일부 기능들도 있으며 가독성 또한 좋다. [공식문서]((https://reactnative.dev/docs/flatlist))와 [사용예시](https://snack.expo.dev/@younsoolim/test-2021-09-19_woof)를 활용하자.
 
 ## Navigation
+
 Drawer, Stack, Tab 이 셋이 메인 네비게이션 패턴들이다.
 
 ```jsx
@@ -256,11 +292,14 @@ const App = () => (
   </NavigationContainer>
 );
 ```
+
 [Authentication flow](https://reactnavigation.org/docs/auth-flow/)와 [Tab 커스터마이즈](https://reactnavigation.org/docs/tab-based-navigation/#customizing-the-appearance)를 참조하자
 
 ## Conclusion
+
 한번 무언가 만들어보자.
 
 ## Resources
+
 * 커스터마이즈 할때는 react native [styleGuide](https://reactnative.dev/docs/style)를 꼭 확인하자
 * 시간날 때 [Thinking in react](https://reactjs.org/docs/thinking-in-react.html)를 읽어보자

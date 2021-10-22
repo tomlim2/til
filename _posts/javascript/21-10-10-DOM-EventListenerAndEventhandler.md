@@ -8,28 +8,33 @@ category: Javascript
 _출처 -[Codeacamedy](https://www.codecademy.com/)_
 
 ## `.addEventListener()`
+
 ```js
 let eventTarget = document.getElementById('targetElement');
  
 eventTarget.addEventListener('click', function() {...})
 ```
+
 * `document.getElementById('targetElement')`을 사용하여 event target을 설정하였다.
 * `eventTarget`에 DOM에 있는 `.addEventListener()` 매서드를 등록하여 구현하였다.
 * `.addEventListener()` 매서드는 두 개의 인자를 가진다.
-    * 문자열인 event type
-    * 함수인 event handler
+  * 문자열인 event type
+  * 함수인 event handler
 * 위의 예시는 사용자들이 `eventTarget`에 클릭을 했을 때 작동되는 `'click'` 이벤트를 사용하였다.
 * 코드블럭 안의 **event handler**은 `'click'` 이벤트들이 감지되었을때 실행된다.
 
 ## `.onevent`
+
 ```js
 let eventTarget = document.getElementById('targetElement');
  
 eventTarget.onclick = function() {...}
 ```
+
 또한 **event handler**를 DOM 요소들에 `.onevent` 값을 붙여서 사용할 수 있다. 특정 이벤트를 등록하기 위한 패턴은 이벤트 형식 이른에 lowercased로 `.on`을 붙여서 사용된다.
 
 ### Toggle view/close buttons
+
 ```js
 let view = document.getElementById('view-button'); // 처음엔 view버튼만 있다.
 let close = document.getElementById('close-button'); // 닫기 버튼
@@ -61,17 +66,22 @@ close.addEventListener('click', textReturn);
 ```
 
 ## Event Handler 없애기
+
 `.removeEventListener()`는 `.addEventListener()`와 반대되는 매서드이다. 이 매서드는 event target의 EventListener가 더 이상 필요없을 때 그 기능을 제거할때 사용한다. `.removeEventListener()` 또한 두 가지의 인자를 받는다.
+
 * 문자열인 event type
 * 함수인 event handler
 
 ## [Event Object Properties](https://developer.mozilla.org/en-US/docs/Web/API/Event#properties)
-자바스크립트는 이벤트들을 그에 관련된 데이터들과 기능들과 함께 메소드와 값들을 event object로서 저장한다. 이벤트가 트리거 됬을때 이 event object가 인자처럼 event handler에 통과된다. 
+
+자바스크립트는 이벤트들을 그에 관련된 데이터들과 기능들과 함께 메소드와 값들을 event object로서 저장한다. 이벤트가 트리거 됬을때 이 event object가 인자처럼 event handler에 통과된다.
+
 * `.target` - property to reference the element that the event is registered to.
 * `.type` - property to access the name of the event.
 * `.timeStamp` - property to access the number of milliseconds that passed since the document loaded and the event was triggered.
 
 ### 예시
+
 ```js
 let social = document.getElementById('social-media');
 let share = document.getElementById('share-button');
@@ -87,6 +97,7 @@ share.addEventListener('click', sharePhoto)
 ```
 
 ### 예시2
+
 ```js
 let button = document.getElementById('color-button');
 let mysteryButton = document.getElementById('next-button');
@@ -106,6 +117,7 @@ mysteryButton.addEventListener('wheel', colorChange) //휠 값이 적용될 때�
 ```
 
 ## Event Types
+
 * `'click'`
 * `'wheel'`
 * `'mousedown'`
@@ -117,6 +129,7 @@ mysteryButton.addEventListener('wheel', colorChange) //휠 값이 적용될 때�
 * `'keypress'`키를 눌렀다 뗐을 때
 
 ### 예시1 - 박스들
+
 ```js
 let itemOne = document.getElementById('list-item-one');
 let itemTwo = document.getElementById('list-item-two');
@@ -152,7 +165,9 @@ itemTwo.addEventListener('mouseup', changeBackground)
 itemThree.addEventListener('mouseout', changeText)
 itemFour.addEventListener('mousedown', showItem)
 ```
+
 ### 예시2 - 공 튕기기
+
 ```js
 let ball = document.getElementById('float-circle');
 

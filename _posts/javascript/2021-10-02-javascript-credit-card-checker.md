@@ -6,11 +6,13 @@ category: Javascript
 ---
 카드체커를 자바스크립트로 구현한 코드이다.
 
-## [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm#Description);
+## [Luhn algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm#Description)
+
 ![Luhn algorithm]({{site.baseurl}}/img/21-10-01-validator-diagram.svg)
 _the chart from [Codeacademy](www.codecademy.com)_
 
 ## 카드회사 고유식별번호
+
 카드번호 첫번째 숫자는 카드회사를 식별할 수 있는 고유번호이다.
 
 First Digit | Company
@@ -21,7 +23,9 @@ First Digit | Company
 6 | Discover
 
 ## Code
-보통 알고 있는 카드번호는 16자리 숫자이지만 15자리도 존재하기에 코드짤때 유의해야한다. 
+
+보통 알고 있는 카드번호는 16자리 숫자이지만 15자리도 존재하기에 코드짤때 유의해야한다.
+
 ```js
 //유효한 카드, 미유효한 카드, 알수없는 카드의 카드넘버
 const valid1 = [4, 5, 3, 9, 6, 7, 7, 9, 0, 8, 0, 1, 6, 8, 0, 8];
@@ -94,6 +98,7 @@ const idInvalidCardCompanies = array => {
 ```
 
 ## Conclusion
-가장 핵심적인 부분만 만들었고 나중에 한번 이 코드를 좀 더 간략하게 해보자. 찾아보면 [간략화 되어있는 코드](https://gist.github.com/DiegoSalazar/4075533)가 간략화가 되어 있다. 
+
+가장 핵심적인 부분만 만들었고 나중에 한번 이 코드를 좀 더 간략하게 해보자. 찾아보면 [간략화 되어있는 코드](https://gist.github.com/DiegoSalazar/4075533)가 간략화가 되어 있다.
 
 기능들(ex - 카드를 읽었을때 바로 카드사에 이메일을 보낸다던가, 유효기간이 지난 카드 혹은 분실신고되어 있는 카드는 어떻게 처리할것인가)이나 context들(ex - 카드리더기로 들어오는 카드넘버들을 어떻게 빨리 처리하여 저 코드 안에 넣는가)을 좀더 감미해보자.

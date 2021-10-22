@@ -6,13 +6,14 @@ category: ReactAndReactNative
 ---
 이해는 잘 하지못한 상태이다. react가 화면에 출력되는(render) 사이클이다.
 
-## Commonly Used Lifecycle Methods 
+## Commonly Used Lifecycle Methods
+
 ![lifecycle diagram]({{site.baseurl}}/img/21-08-28-react-1.png)
 React version >= 16.4 (출처:[React lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/))
 
-
 ## componentDidMount()
-출처는 [reactjs.org](https://reactjs.org/docs/react-component.html#componentdidupdate). 매우 자주 사용된다. 처음 페이지 로딩중에 만일 로딩이 된다면 홈화면으로 가게 만드는 일을 주로한다. 
+
+출처는 [reactjs.org](https://reactjs.org/docs/react-component.html#componentdidupdate). 매우 자주 사용된다. 처음 페이지 로딩중에 만일 로딩이 된다면 홈화면으로 가게 만드는 일을 주로한다.
 
 ```jsx
 componentDidUpdate(prevProps, prevState, snapshot)
@@ -26,7 +27,11 @@ componentDidUpdate(prevProps) {
   }
 }
 ```
+
 ## 예시1 - [React 영화 웹](https://tomlim2.github.io/movie_2019v/)([개인 프로젝트](https://tomlim2.github.io/til/project/2021/08/25/react-movie.html))
+
+{% raw %}
+
 ```jsx
 state = {
     isLoading: true,
@@ -67,7 +72,11 @@ render(){
     )
   }
 ```
+
+{% endraw %}
+
 ## 예시2 - React Native 날씨 앱 ([개인 프로젝트](https://tomlim2.github.io/til/project/2021/08/30/react-native-weatherApp.html))
+
 ```jsx
 state = {
       isLoading: true

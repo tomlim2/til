@@ -19,6 +19,7 @@ category: Javascript
 * [More Examples](#more-examples)
 
 ## Understanding Arrow Functions
+
 ```js
 var example = function() {
   // code to execute
@@ -26,6 +27,7 @@ var example = function() {
 
 example();
 ```
+
 ```js
 var example = () => {
   // code to execute
@@ -33,22 +35,28 @@ var example = () => {
 
 example();
 ```
+
 ```js
 var example = parameter1 => {
   // code to execute
 }
 ```
+
 ---
+
 ## `.forEach()`
+
 ```js
 let fish = [ "piranha", "barracuda", "cod", "eel" ];
 ```
+
 ```js
 // Print out each item in the array
 fish.forEach(individualFish => {
     console.log(individualFish);
 })
 ```
+
 ```js
 //Output
 piranha
@@ -56,14 +64,18 @@ barracuda
 cod
 eel
 ```
+
 이 매서드와 같은 값을 출력하는 또 다른 방법은 for loop의 사용이다.
+
 ```js
 // Loop through the length of the array
 for (let i = 0; i < fish.length; i++) {
     console.log(fish[i]);
 }
 ```
+
 ## more
+
 ```js
 const veggies = ['broccoli', 'spinach', 'cauliflower', 'broccoflower'];
 
@@ -77,9 +89,13 @@ const declineEverything = veg => veg.forEach(politelyDecline);
 const acceptEverything = veg => veg.forEach(e => console.log(`Ok, I guess I will eat some ${e}.`);
 }
 ```
+
 ---
+
 ## `.map()`
+
 `map()` 매서드를 사용하게 되면 새로운 배열을 만든다.
+
 ```js
 let fish = [ "piranha", "barracuda", "cod", "eel" ];
 
@@ -90,6 +106,7 @@ let printFish = fish.map(individualFish => {
 
 printFish;
 ```
+
 ```js
 //Output
 piranha
@@ -97,7 +114,9 @@ barracuda
 cod
 eel
 ```
+
 또한 `map()`을 통해서 각 배열의 항목들을 수정할 수 있다.
+
 ```js
 // Pluralize all items in the fish array
 let pluralFish = fish.map(individualFish => {
@@ -106,12 +125,14 @@ let pluralFish = fish.map(individualFish => {
 
 pluralFish;
 ```
+
 ```js
 //Output
 [ 'piranhas', 'barracudas', 'cods', 'eels' ]
 ```
 
 ### example
+
 ```js
 // const complete = el => el.toUpperCase() + '!';
 // const shoutGreetings = arr => arr.map(complete);
@@ -123,9 +144,13 @@ const greetings = ['hello', 'hi', 'heya', 'oi', 'hey', 'yo'];
 console.log(shoutGreetings(greetings))
 // Should print [ 'HELLO!', 'HI!', 'HEYA!', 'OI!', 'HEY!', 'YO!' ]
 ```
+
 ---
+
 ## `.filter()`
+
 `filter()`는 결과 값을 새로운 배열에 저장한다. 기존 배열에는 아무런 영향을 주지 않는다.
+
 ```js
 let fruits = ['apple', 'banana', 'grapes', 'mango', 'orange'];
 
@@ -136,6 +161,7 @@ function filtered (Arg1, Arg2) {
 console.log(filtered(fruits, "ap")); 
 //[ 'apple', 'grapes' ]
 ```
+
 ```js
 let seaCreatures = [ "shark", "whale", "squid", "starfish", "narwhal" ];
 
@@ -146,11 +172,14 @@ let filteredList = seaCreatures.filter(creature => {
 
 filteredList;
 ```
+
 ```js
 //Output
 [ 'shark', 'squid', 'starfish' ]
 ```
-### example
+
+:: example
+
 ```js
 const justCoolStuff = (arr1, arr2) =>  newArr = arr1.filter(el => arr2.includes(el));
 
@@ -163,7 +192,9 @@ console.log(justCoolStuff(myStuff, coolStuff))
 ```
 
 ---
+
 ## `.reduce()`
+
 ```js
 let numbers = [ 42, 23, 16, 15, 4, 8 ];
 
@@ -174,12 +205,16 @@ let sum = numbers.reduce((a, b) => {
 
 sum;
 ```
+
 ```js
 //Output
 108
 ```
+
 ---
+
 ## `.find()`
+
 ```js
 let seaCreatures = [ "whale", "octopus", "shark", "cuttlefish", "flounder" ];
 ```
@@ -192,15 +227,20 @@ const isCephalopod = cephalopod => {
 
 seaCreatures.find(isCephalopod);
 ```
+
 ```js
 //Output
 octopus
 ```
+
 ---
+
 ## `.findIndex()`
+
 ```js
 let seaCreatures = [ "whale", "octopus", "shark", "cuttlefish", "flounder" ];
 ```
+
 ```js
 // Check if a given value is a cephalopod
 const isCephalopod = cephalopod => {
@@ -209,11 +249,14 @@ const isCephalopod = cephalopod => {
 
 seaCreatures.findIndex(isCephalopod);
 ```
+
 ```js
 //Output
 1
 ```
+
 만약 조건에 충족되는 결과가 없다면 아래와 같이 -1을 출력한다.
+
 ```js
 const isThereAnEel = eel => {
     return [ "eel" ].includes(eel);
@@ -221,13 +264,18 @@ const isThereAnEel = eel => {
 
 seaCreatures.findIndex
 ```
+
 ```js
 //Output
 -1
 ```
+
 ---
+
 ## `.every`
+
 ### example - Vegan on the dinner
+
 ```js
 const isTheDinnerVegan = arr => arr.every(food => food.source === 'plant');
 
@@ -235,9 +283,13 @@ const dinner = [{name: 'hamburger', source: 'meat'}, {name: 'cheese', source: 'd
 
 console.log(isTheDinnerVegan(dinner))//false
 ```
+
 ---
+
 ## `.sort()`
+
 ### example - Teeth number
+
 ```js
 const speciesArray = [ {speciesName:'shark', numTeeth:50}, {speciesName:'dog', numTeeth:42}, {speciesName:'alligator', numTeeth:80}, {speciesName:'human', numTeeth:32}];
 
@@ -245,10 +297,15 @@ const sortSpeciesByTeeth = arr => arr.sort((speciesObj1, speciesObj2) => species
 
 // [ { speciesName: 'human', numTeeth: 32 }, { speciesName: 'dog', numTeeth: 42 }, { speciesName: 'shark', numTeeth: 50 }, { speciesName: 'alligator', numTeeth: 80 } ]
 ```
+
 ---
+
 ## `.repeat`
+
 ### example - `.pad()`
+
 ![diagram demonstrating pad()]({{site.baseurl}}/img/21-10-01-pad.svg)
+
 ```js
 pad(string, length, cha){
   if(string.length >= length){
@@ -265,10 +322,15 @@ pad(string, length, cha){
   return paddedString;
 },
 ```
+
 ---
+
 ## `for...in`
+
 ### example - `.invert()`
+
 invert()는 인자에 객체를 넣으면 객체의 key와 value를 뒤바꿔준다.
+
 ```js
 invert(obj){
     let invertedObject = {};
@@ -295,6 +357,7 @@ findKey(obj, func){
     return undefined;
   },
 ```
+
 ```js
 var users = {
   'barney':  { 'age': 36, 'active': true },
@@ -317,8 +380,13 @@ _.findKey(users, ['active', false]);
 _.findKey(users, 'active');
 // => 'barney'
 ```
+
 ### example - [`.dropwhile()`](https://lodash.com/docs/4.17.15#dropWhile)
+
 Creates a slice of array excluding elements dropped from the beginning. Elements are dropped until predicate returns falsey. The predicate is invoked with three arguments: (value, index, array).
+
+[`.drop(array, [n=1])`](https://lodash.com/docs/4.17.15#drop) creates a slice of `array` with `n` elements dropped from the beginning
+
 ```js
 dropWhile(array, predicate){
     let cb = (element, index) => {return !predicate(element, index, array);}
@@ -327,16 +395,21 @@ dropWhile(array, predicate){
     return droppedArray;
 }
 ```
-[`.drop(array, [n=1])`](https://lodash.com/docs/4.17.15#drop) creates a slice of `array` with `n` elements dropped from the beginning
+
 ---
+
 ## `.push()`
+
 ```js
 let arr = [1,2,3];
 arr.push(4); 
 // arr is now [1,2,3,4]
 ```
+
 ---
+
 ## `.pop()`
+
 ```js
 let threeArr = [1, 4, 6];
 let oneDown = threeArr.pop();
@@ -344,8 +417,11 @@ let oneDown = threeArr.pop();
 console.log(oneDown); // Returns 6
 console.log(threeArr); // Returns [1, 4]
 ```
+
 ---
+
 ## `.shift()`
+
 ```js
 const array1 = [1, 2, 3];
 
@@ -357,8 +433,11 @@ console.log(array1);
 console.log(firstElement);
 // expected output: 1
 ```
+
 ---
+
 ## `.slice()`
+
 ```js
 let fruits = ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
 let citrus = fruits.slice(1, 3)
@@ -366,7 +445,9 @@ let citrus = fruits.slice(1, 3)
 // fruits contains ['Banana', 'Orange', 'Lemon', 'Apple', 'Mango']
 // citrus contains ['Orange','Lemon']
 ```
+
 음수로 입력할 경우 뒤에서부터 자른 array를 만든다.
+
 ```js
 let nums = [1,2,3,4,5]
 let nums_new = nums.slice(-2)
@@ -374,15 +455,20 @@ let nums_new = nums.slice(-2)
 console.log(nums) // [ 1, 2, 3, 4, 5 ]
 console.log(nums_new) // [ 4, 5 ]
 ```
+
 ---
+
 ## `.splice()`
+
 댓글 삭제기능 등을 구현할때 많이 쓰인다.
+
 ```js
 splice(start)
 splice(start, deleteCount)
 splice(start, deleteCount, item1)
 splice(start, deleteCount, item1, item2, itemN)
 ```
+
 ```js
 const months = ['Jan', 'March', 'April', 'June'];
 months.splice(1, 0, 'Feb');
@@ -395,6 +481,7 @@ months.splice(4, 1, 'May');
 console.log(months);
 // expected output: Array ["Jan", "Feb", "March", "April", "May"]
 ```
+
 ```js
 let basket = [['양파','곰팡이'],['곰팡이','빵','딸기잼'],['귤','곰팡이','사과']];
 
@@ -412,8 +499,11 @@ function removeGerm(arr) {
 console.log(removeGerm(basket));
 // [ [ '양파' ], [ '빵', '딸기잼' ], [ '귤', '사과' ] ];
 ```
+
 ---
+
 ## `.concat()`
+
 ```js
 let pasta = ['tomato', 'basil', 'onion','chicken'];
 let pizza = ['tomato', 'cheese', 'onion','olive','beef'];
@@ -425,9 +515,13 @@ function totalIngredients (Arg1, Arg2) {
   console.log(totalIngredients());
 //[ 'tomato', 'basil', 'onion', 'chicken', 'cheese', 'olive', 'beef' ]
 ```
+
 ---
+
 ## for loop
+
 기본문장
+
 ```js
 let result = 0;
 for(let i=0; i <= 10 ; i++) {
@@ -443,6 +537,7 @@ for(let i=0; i <= 10 ; i+=1) {
 }
 console.log(result) // 45
 ```
+
 ```js
 function makeSquare () {
   let arr = new Array(10);
@@ -471,7 +566,9 @@ for(let i=0; i <= 10 ; i++) {
  
 console.log(result)
 ```
+
 ## [`.chunk()`](https://lodash.com/docs/4.17.15#chunk)
+
 ```js
 chunk(array, size){
     if(size === undefined){
@@ -486,9 +583,13 @@ chunk(array, size){
       return arrayChunks
 }
 ```
+
 ---
+
 ## More Examples
+
 ### Whale talk
+
 ```js
 let input = 'Hi, Human';//You can type sentence here
 let vowels = ['a', 'e', 'i', 'o', 'u'];
@@ -509,6 +610,7 @@ console.log(resultArray.join('').toUpperCase());//IUUA
 ```
 
 ### Mini Linter
+
 ```js
 let story = 'Last weekend, I took literally the most beautiful bike ride of my life. The route is called "The 9W to Nyack" and it actually stretches all the way from Riverside Park in Manhattan to South Nyack, New Jersey. It\'s really an adventure from beginning to end! It is a 48 mile loop and it basically took me an entire day. I stopped at Riverbank State Park to take some extremely artsy photos. It was a short stop, though, because I had a really long way left to go. After a quick photo op at the very popular Little Red Lighthouse, I began my trek across the George Washington Bridge into New Jersey.  The GW is actually very long - 4,760 feet! I was already very tired by the time I got to the other side.  An hour later, I reached Greenbrook Nature Sanctuary, an extremely beautiful park along the coast of the Hudson.  Something that was very surprising to me was that near the end of the route you actually cross back into New York! At this point, you are very close to the end.';
 
@@ -561,6 +663,7 @@ console.log(betterWordsSingleString)
 ```
 
 ### Groceries
+
 ```js
 const groceries = list => {
   let result = '';
@@ -582,7 +685,9 @@ groceries( [{item: 'Bread'}, {item: 'Butter'}] );
 groceries( [{item: 'Cheese Balls'}] );
 // returns 'Cheese Balls'
 ```
+
 ### Secret Message
+
 ```js
 let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '-2015,', 'Chris', 'Pine,', 'Learn', 'JavaScript'];
 
