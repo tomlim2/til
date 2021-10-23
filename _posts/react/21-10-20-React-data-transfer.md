@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: React / Example / 컴포넌트 데이터 주고 받기 1
-meta: React 데이터 주고 받는 예시 모음 - 1
+meta: 리엑트 데이터 주고 받는 패턴 - 해야할 일 추가하기
 category: ReactAndReactNative
 ---
 Todos는 [React JS Crash Course (2019)](https://www.youtube.com/watch?v=sBws8MSXN7A)을 진행하면서 만든 리엑트 웹이다. 큰 기능들은 해야할 일들을 작성하고, 삭제하고, 체크하는 기능이 있다.
@@ -136,4 +136,4 @@ render() {
 {% endraw %}
 
 - 사용자들이 `<input>`에 입력한 값을 state 안에 저장한다.
-- Function `onSubmit`의 `this.props.addTodo(this.state.title)`을 통해 `addTodo` 속성 값이 된다.
+- Function `onSubmit`의 `this.props.addTodo(this.state.title)`을 통해 `App.js`의 `addTodo()`를 `this.state.title`를 넣어 실행시킨다.

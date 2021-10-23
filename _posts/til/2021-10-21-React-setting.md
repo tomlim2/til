@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: 21-10-21 Github / React / VScode / [Frontend] React CRA Setting Guidelines
-meta: 협업용 React CRA Setting Guidelines
+meta: 리엑트 협업용 CRA 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
 category: til
 ---
 이 세팅은 21년 10월 위코드 Westagram 프로젝트 기준입니다. CRA는 Create React App의 약자이다.
@@ -31,7 +31,6 @@ npm install node-sass
 
 ```bush
 // .gitignore
-
 .eslintcache
 ```
 
@@ -49,11 +48,11 @@ _출처 - 웨스타그램_
   - Login 폴더 >>> Login.js, Login.scss
   - Main 폴더 >>> Main.js, Main.scss
 
->로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않기에 빈 폴더에 임의의 파일을 생성한다. 예) `temp.js`, `temp.md`
+> **Note**: 로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않기에 빈 폴더에 임의의 파일을 생성한다. 예) `temp.js`, `temp.md`
 
 :::: components 폴더
 
-> Main.js 에서 사용되는 컴포넌트는 Main 폴더 하위에서 해당 컴포넌트 폴더를 생성해서 관리한다. ex) Main폴더 - Article 폴더 - Article.js, Article.scss
+> **Note**: `Main.js` 에서 사용되는 컴포넌트는 Main 폴더 하위에서 해당 컴포넌트 폴더를 생성해서 관리한다. ex) Main폴더 - Article 폴더 - Article.js, Article.scss
 
 - components 폴더에서는 모든 페이지에서 사용되는 컴포넌트(ex. Header, Footer)를 관리한다.
 - 이번 프로젝트에서는 Main 페이지에서 사용할 공통의 Nav Component를 하나 만들어서 import해서 사용한다.

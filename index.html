@@ -3,21 +3,25 @@ layout: home
 pageClass: home-container
 priority: 1.0
 ---
-<!-- <ol>
-    {% for subject in site.data.subject-types limit:5 %}
-    <li>
-        <a href="{{site.baseurl}}/children/{{subject.folder}}/">{{subject.title}}</a>
-    </li>
-    {% endfor %}
-</ol> -->
 <div class="section firstSection">
+    <h2>New Posts</h2>
+    <ul>
+        {% assign sorted = site.posts | sort: 'date' | reverse %}
+        {% for item in sorted limit: 5 %}
+        <li>
+            <a href="{{site.baseurl}}{{item.url}}">{{ item.title }}</a>
+            <p>// {{item.meta}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
     <h2>Today I learned</h2>
     <ul>
         {% for post in site.categories.til%}
-        <!-- limit:2  -->
         <li>
             <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-            <!-- <p>{{post.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
@@ -66,18 +70,6 @@ priority: 1.0
         <li>
             <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
             <!-- <p>{{project.meta}}</p> -->
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="section">
-    <h2>Test for test</h2>
-    <ul>
-        {% for test-for-test in site.categories.test-for-test %}
-        <li>
-            <a href="{{site.baseurl}}{{test-for-test.url}}">{{test-for-test.title}}</a>
-            <!-- <p>{{test-for-test.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>

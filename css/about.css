@@ -154,18 +154,14 @@
     line-height: 1.7;    
 }
 
-.item6 .frame div{
+article#description-writing{
     padding: 20px 20px;
     letter-spacing:-0.02em;
-    font-weight: var(--font-light);
+    font-weight: var(--font-regular);
 }
 
 #description:hover .frame{
     background-color: var(--color-about-point);
-}
-
-#about-word-1{
-    font-weight: var(--font-bold);
 }
 
 #about-word-2{

@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: 21-10-21 Git / Github / General Work Flow
-meta: Git과 Github 쓰는 방법 (cli ver)
+meta: 깃과 깃허브 이해와 일반적인 작업방식 정리
 source: https://guides.github.com/introduction/flow/
 category: til
 ---

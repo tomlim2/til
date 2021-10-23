@@ -1,3 +1,6 @@
 markdown: kramdown
 baseurl: /til
 exclude: ['README.md']
+collections:
+  posts:
+    output: true

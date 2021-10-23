@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Javascript / Lottie Files / Test / lottie-player & jlottie
+title: Javascript / Lottie Files / lottie-player & jlottie**
 meta: Evergreen (Updated 210820)
-category: test-for-test
+category: Javascript
 ---
 웹, 앱용 애니메이션 플러그인으로 가볍고 빠르다. 스타일은 path, 플랫, 단색에 유리하다.
 
