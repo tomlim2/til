@@ -10,7 +10,7 @@ priority: 1.0
         {% for item in sorted limit: 5 %}
         <li>
             <a href="{{site.baseurl}}{{item.url}}">{{ item.title }}</a>
-            <p>// {{item.meta}}</p>
+            <p>{{item.meta}}</p>
         </li>
         {% endfor %}
     </ul>

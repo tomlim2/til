@@ -1,15 +1,16 @@
 .highlight pre{
-    line-height: 16px;
     padding: 20px;
     overflow: scroll;
 }
 code.highlighter-rouge{
     color: var(--color-black);
-    background-color: var(--color-gray-200);
+    background-color: var(--color-gray-100);
     padding: 3px 6px;
+    display: inline-block;
+    transform: translateY(-1px);
 }
 pre code{
-    color: var(--color-gray-200);
+    color: var(--color-gray-100);
 }
 .highlight pre { background-color: var(--color-navy-800); }
 .highlight pre { background-color: var(--color-navy-800); }

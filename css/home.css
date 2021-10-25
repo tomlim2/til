@@ -15,7 +15,7 @@
   margin-top: 18px;
 }
 .home-container .section:nth-child(1) p{
-  margin: -2px 0 5px 0;
+  margin: -2px 0 5px 1rem;
   color: var(--color-gray-600);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;

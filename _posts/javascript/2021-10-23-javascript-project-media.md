@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: Javascript / Project / Build a Library
-meta: 자바스크립트 클라스 연습하기
+meta: 자바스크립트 클라스 코드 리뷰
 source: www.codecademy.com
 category: Javascript
 ---
