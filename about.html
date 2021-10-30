@@ -43,8 +43,7 @@ mastfooterClass: about-footer
         <div class="item item6" id='description'>
             <div class="frame">
                 <article id="description-writing">
-                    //about me <br>
-                    프론트 엔드 개발자 
+                    프론트 엔드 개발자가 된지 <span id="time-container">0</span>초가 지났어요!
                 </article>
             </div>
         </div>
@@ -86,4 +85,17 @@ mastfooterClass: about-footer
         animationContainer.classList.remove("gary-filter");
         animationContainer.classList.add("black-filter");
     });
+
+    const timeContainer = document.getElementById("time-container");
+    const FESTART_DAY = "2021-10-03";
+    const FESTART_DAY_DATE = new Date(FESTART_DAY);
+    const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+    setInterval(() => {
+    const now = new Date();
+    const difference = Math.floor(
+        (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
+    );
+    timeContainer.innerText = intlNumberFormatter.format(difference);
+    }, 1000);
 </script>

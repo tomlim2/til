@@ -1,15 +1,18 @@
 ---
 layout: post-base
-title: Javascript / Project / Build a Library
+title: Javascript / Project / Build a Library & School Catalogue
 meta: 자바스크립트 클라스 코드 리뷰
-source: www.codecademy.com
 category: Javascript
+tags: [Javascript, Project, Code Review]
 ---
+
+## Build a Library
+
 도서관의 도서, CD 등을 정리하는 `class` 베이스 자바스크립트이다. 이 프로젝트에는 도서, CD, 그리고 영화 세 가지의 미디어를 다룬다: . 이 프로젝트에서는 하나의 `Media` class와 세 가지의 subclasses들을 갖는다: `Book`, `Movie`, `CD`
 
-## 코드
+## Code Review
 
-### Parent Class
+### Parent-class
 
 - Media에서 공통으로 사용할 속성 값들은 `title`, `rating`, `isCheckedOut`이다.
 - `isCheckedOut`는 class 외부에서 체크아웃 여부를 설정할 수 있게 하기 위해 setter를 사용한다.
@@ -121,3 +124,83 @@ console.log(speed.isCheckedOut); // true
 In .addRating(), make sure input is between 1 and 5.
 - Create a method called shuffle for the CD class. The method returns a randomly sorted array of all the songs in the songs property.
 - Create class called Catalog that holds all of the Media items in our library.
+
+---
+
+## School Catalogue
+
+학교 카테고리를 만드는 작업으로 기본 골자는 위의 Build Library와 비슷하다.
+
+## Code Review
+
+### Parent-class
+
+`numberOfStudents`는 외부의 입력값으로 인해 언제든지 숫자를 변경할 수 있기에 `setter`를 설정한다.
+
+```js
+class School {
+  constructor(name, level, numberOfStudents){
+    this._name = name,
+    this._level = level,
+    this._numberOfStudents = numberOfStudents
+  }
+  get name(){
+    return this._name;
+  }
+  get level(){
+    return this._level;
+  }
+  get numberOfStudents(){
+    return this._numberOfStudents;
+  }
+  set numberOfStudents(newNumberOfStudents){
+    if (typeof newNumberOfStudents === 'number'){
+      this._numbderOfStudents = newNumberOfStudents;
+    } else {
+      console.log('Invalid input: numberOfStudents must be set to a Number.')
+    }
+  }
+  quickFacts(){
+    console.log(`${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`)
+  }
+  static pickSubstituteTeacher(substituteTeachers){
+    return substituteTeachers[Math.floor(Math.random()*(substituteTeachers.length-1))];
+  }
+}
+```
+
+### Sub-classes
+
+초중고대학교의 클라스를 만들기 위해서 `super`에서 `name`, `level`, `numberOfStudent`을 `Scool`에서 전부 계승 받지만 level 값은 초등, 중등, 고등, 대학으로 나누어져 있고 먼저 입력할 수 있기에 `super(name, '학교레벨', numberOfStudent)`로 입력한다.
+
+```js
+class PrimarySchool extends School {
+  constructor(name, numberOfStudent, pickupPolicy){
+    super(name, 'primary', numberOfStudent);
+    this._pickupPolicy = pickupPolicy;
+  }
+  get pickupPolicy() {
+    return this._pickupPolicy;
+  }
+}
+
+class HighSchool extends School {
+  constructor(name, numberOfStudent, sportsTeams){
+    super(name, 'high', numberOfStudent);
+    this._sportsTeams = sportsTeams;
+  }
+  get sportsTeams(){
+    return this._sportsTeam
+  }
+}
+
+const lorraineHansbury = new PrimarySchool ('Lorraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.')
+
+const alSmith = new HighSchool ('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+```
+
+## Resource
+
+- [Understanding Classes in JavaScript](https://www.taniarascia.com/understanding-classes-in-javascript/)
+- [Reference: Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [Code Academy](www.codecademy.com)

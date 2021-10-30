@@ -2,7 +2,6 @@
 layout: post-base
 title: 21-10-21 Git / Github / General Work Flow
 meta: 깃과 깃허브의 이해와 일반적인 작업방식 정리
-source: https://guides.github.com/introduction/flow/
 category: til
 ---
 Git은 웹 개발자들을 위한 the industry-standard version control system이다.
@@ -12,7 +11,7 @@ GitHub는 내 프로젝트의 파일들의 수정사항들을 트래킹하고 �
 GitHub와 Git은 비슷한 이름들이지만 GitHub는 서비스이고 Git은 개발자 툴이다. Github 이외의 서비스에서도 Git을 사용할 수 있다.
 
 ![github workflow]({{site.baseurl}}/img/21-10-22-understandingWorkflow.png)
-출처 - [https://guides.github.com/pdfs/githubflow-online.pdf](https://guides.github.com/pdfs/githubflow-online.pdf)
+_출처 - [https://guides.github.com/pdfs/githubflow-online.pdf](https://guides.github.com/pdfs/githubflow-online.pdf)_
 
 ## 1.Create a branch
 

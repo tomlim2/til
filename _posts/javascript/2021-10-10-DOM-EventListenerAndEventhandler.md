@@ -1,8 +1,9 @@
 ---
 layout: post-base
 title: Javascript / DOM / events
-meta: Event
+meta: 자바스크립트 이벤트 트리거 개론
 category: Javascript
+tags: [javascript, DOM]
 ---
 ![d]({{site.baseurl}}/img/21-10-10-dog.png)
 _출처 -[Codeacamedy](https://www.codecademy.com/)_

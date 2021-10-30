@@ -1,9 +1,12 @@
 ---
 layout: post-base
 title: Javascript / Lottie Files / lottie-player & jlottie**
-meta: Evergreen (Updated 210820)
+meta: 그래픽, 마이크로 애니메이션 구현을 위한 플러그인 탐방
 category: Javascript
+tags: [Javascript, Animation, Evergreen, Object]
 ---
+Evergreen
+
 웹, 앱용 애니메이션 플러그인으로 가볍고 빠르다. 스타일은 path, 플랫, 단색에 유리하다.
 
 ## HTML lottie-player 사용예시: [내 About 페이지]({{site.baseurl}}/about.html)

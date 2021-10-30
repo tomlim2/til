@@ -1,12 +1,10 @@
 ---
 layout: post-base
 title: Javascript / Project / Mysterious Organism
-meta: test
-source: www.codecademy.com
+meta: 자바스크립트 객체로 미확인 유기체 시뮬레이팅 하기
 category: Javascript
+tags: [Javascript, Project, Code Review]
 ---
-Code Academy Challenge Project: Mysterious Organism에서 사용한 코드이다. 다른 튜토리얼들은 step-by-step의 형식이었지만 이 프로젝트는 목적만 주고 코드는 찾고 생각하면서 푸는 프로젝트였다.
-
 ## Context
 
 You’re part of a research team that has found a new mysterious organism at the bottom of the ocean near hydrothermal vents. Your team names the organism, Pila aequor (P. aequor), and finds that it is only comprised of 15 DNA bases. The small DNA samples and frequency at which it mutates due to the hydrothermal vents make P. aequor an interesting specimen to study. However, P. aequor cannot survive above sea level and locating P. aequor in the deep sea is difficult and expensive. Your job is to create objects that simulate the DNA of P. aequor for your research team to study.
@@ -155,3 +153,7 @@ const findTheTwoMostRelated = (array) => {
 ### `.complementStrand()`
 
 dna의 complement strand를 출력한다. 'A'는 'T'로, 'T'는 'A', 'C'는 'G'로 'G'는 'C'로 바꿔준다.
+
+## Resource
+
+- www.codecademy.com

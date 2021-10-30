@@ -11,25 +11,56 @@
 <body>
     <h1>개발 놀이터:)</h1>
     프로그래밍 시작한지 <span id="time-container">0</span>초가 지났어요!
+    <h2>dolist</h2>
+    <ul>
+        <li>
+            <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">
+                JavaScript Design Patterns by Andy Osmani
+            </a>
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">
+                Client-Side-Form-Validation
+            </a> 
+        </li>
+        <li>
+            <a href="https://www.codecademy.com/resources/blog/errors-in-code-think-differently/">
+                디버깅을 대하는 우리의 자세
+            </a> 
+        </li>
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">
+                MDN JavaScript Error documentation
+            </a> 
+        </li>
+        
+    </ul>
+    
     <script>
+        //localStorage exercise
+
+        /* 
         localStorage.setItem('name', 'Tom')
         console.log(localStorage.getItem('name'));
         localStorage.clear('name');
         sessionStorage.setItem('car', 'wow');
         sessionStorage.clear('car');
         document.cookie = 'username = Tom Thomas';
-
+        */
+        const areaOfCircle = radius => Math.PI * radius * radius; //Concise body
+        
         const timeContainer = document.getElementById("time-container");
-        const FESTART_DAY = "10-03-2021";
+        const FESTART_DAY = "2021-10-03";
         const FESTART_DAY_DATE = new Date(FESTART_DAY);
         const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+        
 
         setInterval(() => {
         const now = new Date();
         const difference = Math.floor(
             (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
         );
-
         timeContainer.innerText = intlNumberFormatter.format(difference);
         }, 1000);
     </script>

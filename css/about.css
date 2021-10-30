@@ -58,7 +58,6 @@
 
 /* myName */
 .item1 .frame .text{
-    color: var(--color-black); 
     line-height: 1.1em;
     font-size: 3em;
 }
@@ -72,7 +71,8 @@
 }
 
 #myName:hover .frame{
-    background-color: var(--color-about-point);
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 /* hero image */
@@ -108,9 +108,6 @@
 .item3:hover .cover{
     transform: scale(0,1);
 }
-.item3:hover .frame .text a{
-    color: var(--color-about-point);
-}
 
 /* link to developer */
 .item4{
@@ -119,10 +116,6 @@
     grid-row-start: 2;
     grid-row-end: 4;
     background-color: var(--color-black);
-}
-
-.item4:hover .frame .text a{
-    color: var(--color-about-point);
 }
 
 .item4 .frame .cover {
@@ -142,10 +135,6 @@
     cursor: pointer;
 }
 
-.item5:hover{
-    background-color: var(--color-about-point);
-}
-
 /* description */
 .item6 .frame {
     display: inherit;
@@ -161,39 +150,21 @@ article#description-writing{
 }
 
 #description:hover .frame{
-    background-color: var(--color-about-point);
+    background-color: var(--color-black);
+    color: var(--color-white);
 }
 
 #about-word-2{
     transition-duration: 1600ms;
 }
 
-#about-word-3{
-    transition-duration: 800ms;
-    transition-delay: 400ms;
-}
-
-#description:hover #about-word-2{
-    opacity: 0;
-}
-#description:hover #about-word-3{
-    color: var(--color-red);
-}
-
-
 /* jlottie */
-.item7{
-    background-color: var(--color-black);
-}
-
 .item7 .frame{
     cursor: pointer;
-    background-color: var(--color-white);
 }
 
 #item7:hover .frame{
     transform: scale(.95);
-    background-color: var(--color-about-point);
 }
 
 #item7 .frame:active{

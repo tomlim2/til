@@ -1,8 +1,9 @@
 ---
 layout: post-base
 title: Javascript / Array&literation Methods **
-meta: test
+meta: 자바스트립트 배열과 반복문 메서드
 category: Javascript
+tags: [Javascript, Method, Evergreen]
 ---
 
 * [Arrow function](#understanding-arrow-functions)

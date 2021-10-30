@@ -1,8 +1,9 @@
 ---
 layout: post-base
 title: Javascript / Project / Credit Card Checker
-meta: test
+meta: 알고리즘을 이용한 신용카드 확인 코드 리뷰
 category: Javascript
+tags: [Javascript, Project, Code Review]
 ---
 카드체커를 자바스크립트로 구현한 코드이다.
 

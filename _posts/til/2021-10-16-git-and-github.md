@@ -2,7 +2,6 @@
 layout: post-base
 title: 21-10-16 Git / Github / cli / 사용법
 meta: Git과 Github 쓰는 방법 (cli ver)
-source: https://education.github.com/git-cheat-sheet-education.pdf
 category: til
 ---
 ## Git 자주 사용되는 커멘드
