@@ -1,10 +1,10 @@
 ---
 layout: post-base
-title: React / Project / Westagram / Code Review 2 - Refactoring Checklist
+title: Westagram / Code Review 2 - Refactoring Checklist
 meta: 웨스타그램 프로젝트 리펙토링
-category: ReactAndReactNative
+category: React
 source: https://github.com/wecode-bootcamp-korea/26-React-Westagram-3/pull/1
-tags: [Javascript, React, Code Review, Refactoring]
+tags: [React, Project]
 ---
 
 ## 1. className의 동적 사용

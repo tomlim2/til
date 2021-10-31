@@ -1,15 +1,15 @@
 ---
 layout: post-base
 title: Javascript / Error Handling
-meta: 에러 다루가를 위한 키워드와 예제
+meta: 에러 처리를 위한 키워드와 예제
 category: Javascript
-tags: [Javascript, Error]
+tags: [Javascript, Error Handling]
 ---
 `Error Handiling`을 하는 이유는 발생할 에러들을 예측하고 그에 따른 대응하기 위해서이다.
 
 ## Runtime Errors
 
-프로그래밍할 때 크게 두 분류의 실수가 있다: 코드를 실행하는데 방해 하는 것과 아닌 것. 이 런타임 에러는 프로그램을 멈추고 콘솔에 에러 메세지를 띄운다.
+프로그래밍할 때 크게 두 분류의 에러가 있다: 코드를 실행하는 것을 막는 에러와 막지 않는 에러. 이 런타임 에러는 프로그램을 멈추고 콘솔에 에러 메세지를 띄운다.
 
 - `ReferenceError`: when a variable or function cannot be found.
 - `TypeError`: when a value is not a valid type, see the example below:

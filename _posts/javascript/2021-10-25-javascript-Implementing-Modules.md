@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: Javascript / Implementing Modules using ES6 Syntax
+title: Implementing Modules using ES6 Syntax
 meta: 자바스크립트 ES6를 활용한 모듈 구현
 category: Javascript
-tags: [Javascript, ES6, Module]
+tags: [Javascript]
 ---
 묘듈은 재사용 가능한 코드의 조각들이다. 이 코드들은 그 파일에서 `export`가 되고 다른 파일에서 `import`될 수 있다.
 

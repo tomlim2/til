@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: Javascript / Project / Build a Library & School Catalogue
+title: Build a Library & School Catalogue
 meta: 자바스크립트 클라스 코드 리뷰
 category: Javascript
-tags: [Javascript, Project, Code Review]
+tags: [Javascript, Project]
 ---
 
 ## Build a Library

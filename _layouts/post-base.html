@@ -15,15 +15,14 @@ layout: default
 
     <ul class="page-tags">
         {% if page.tags %}
-        {% for tag in page.tags %}
-        <li class="page-tag">{{ tag }}</li>
-        {% endfor %}
+            {% for tag in page.tags %}
+            <li class="page-tag">{{ tag }}</li>
+            {% endfor %}
         {% endif %}
     </ul>
     {% if page.source %}
     <div class="page-source"><a href="{{page.source}}" target="_blank">{{page.source}}</a></div>
     {% endif %} 
-    
     <hr>
     
     {{content}}

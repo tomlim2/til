@@ -1,10 +1,13 @@
 ---
 layout: post-base
-title: Common / Component Life Cycle
-meta: Useful tool
-category: ReactAndReactNative
+title: Component Life Cycle
+meta: 리엑트 컴포넌트 라이브 사이클란 무엇인가?
+category: React
+tags: [React]
 ---
-이해는 잘 하지못한 상태이다. react가 화면에 출력되는(render) 사이클이다.
+## 기본적인 life cycle
+
+`constructor` → `render` → `componentDidMount` → `( setState )` → `render`
 
 ## Commonly Used Lifecycle Methods
 

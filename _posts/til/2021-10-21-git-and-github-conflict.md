@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: 21-10-21 Github / Conflict resolution flow
+title: Conflict resolution flow
 meta: 깃허브 협업중 충돌 발생시 해결방식 정리
 category: til
+tags: [Github, Git]
 ---
 작업중
 

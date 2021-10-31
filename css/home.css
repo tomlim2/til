@@ -7,15 +7,14 @@
 .home-container .section {
   padding-left: 5px;
   padding-right: 5px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 25px;
 }
 
 .home-container .section:nth-child(1) {
-  margin-top: 18px;
+  margin-top: 25px;
 }
 .home-container .section:nth-child(1) p{
-  margin: -2px 0 5px 1rem;
+  margin: -3px 0 5px 0;
   color: var(--color-gray-600);
   font-family: "IBM Plex Mono", monospace;
   font-weight: 400;
@@ -36,12 +35,13 @@
 }
 
 .home-container ul {
+  padding-left: 0;
   margin-top: 0;
   line-height: 1.7;
-  padding-left: 0;
+  
 }
 
 .home-container h2 {
   margin-top: 0;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.2rem;
 }

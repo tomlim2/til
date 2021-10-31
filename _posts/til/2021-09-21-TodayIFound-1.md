@@ -1,10 +1,11 @@
 ---
 layout: post-base
-title: 21-09-21 Javascript / Fun!
-meta: test
+title: Fun!
+meta: 상호작용으로 사용하면 재미있어 보이는 자바스크립트 코드 모음집
 category: til
+tags: [Javascript]
 ---
-상호작용으로 사용하면 재미있어 보이는 자바스크립트 코드 모음집
+
 
 ## changeColor()
 
@@ -65,4 +66,21 @@ function newStyle() {
   elem.style.fontFamily = newFont; 
 }
 
+```
+
+## [Count seconds]({{site.baseurl}}/test.html)
+
+```js
+const timeContainer = document.getElementById("time-container");
+const FESTART_DAY = "2021-10-03";
+const FESTART_DAY_DATE = new Date(FESTART_DAY);
+const intlNumberFormatter = new Intl.NumberFormat("en-US");
+
+setInterval(() => {
+const now = new Date();
+const difference = Math.floor(
+    (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
+);
+timeContainer.innerText = intlNumberFormatter.format(difference);
+}, 1000);
 ```

@@ -11,29 +11,44 @@
 <body>
     <h1>개발 놀이터:)</h1>
     프로그래밍 시작한지 <span id="time-container">0</span>초가 지났어요!
-    <h2>dolist</h2>
+    <br/><br/>
+    <h2>리소스들</h2>
+    분명 언젠가 도움이 될만한 것들
     <ul>
         <li>
-            <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/">
+            <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="_blank">
                 JavaScript Design Patterns by Andy Osmani
             </a>
         </li>
         <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">
+            <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">
                 Client-Side-Form-Validation
             </a> 
         </li>
         <li>
-            <a href="https://www.codecademy.com/resources/blog/errors-in-code-think-differently/">
-                디버깅을 대하는 우리의 자세
+            <a href="https://www.codecademy.com/resources/blog/errors-in-code-think-differently/" target="_blank">
+                Thinking About Errors in Your Code Differently
             </a> 
         </li>
         <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">
                 MDN JavaScript Error documentation
             </a> 
         </li>
-        
+        <li>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax" target="_blank">
+                CSS / Attribute selector - [href]{}
+            </a> 
+            <br/>
+            img[src*='winter']{height: 50px;} | a[href*='florence'] {color: lightgreen;}>
+        </li>
+        <li>
+            <a href="https://www.chaijs.com/guide/" target="_blank">
+                Chai Documentation
+            </a> 
+            <br/>
+            In this resource, you are presented with the documentation for the Chai assertion library. This is helpful if you want a comprehensive resource for this library which pairs with any JavaScript testing framework.
+        </li>
     </ul>
     
     <script>
@@ -48,13 +63,11 @@
         document.cookie = 'username = Tom Thomas';
         */
         const areaOfCircle = radius => Math.PI * radius * radius; //Concise body
-        
+
         const timeContainer = document.getElementById("time-container");
         const FESTART_DAY = "2021-10-03";
         const FESTART_DAY_DATE = new Date(FESTART_DAY);
         const intlNumberFormatter = new Intl.NumberFormat("en-US");
-
-        
 
         setInterval(() => {
         const now = new Date();

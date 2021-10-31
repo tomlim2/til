@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript / Execution contexts, Hoisting, Scopes, and Closures
+title: Execution contexts, Hoisting, Scopes, and Closures
 meta: 실행 컨텍스트, 호이스팅, 스콥프와 클로저스에 대한 이해
 category: Javascript
 tags: [Javascript, Study]

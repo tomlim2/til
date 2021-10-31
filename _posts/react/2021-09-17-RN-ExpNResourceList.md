@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: React Native / Basic examples & resources
-meta: React Native guide
-category: ReactAndReactNative
+title: Basic examples & resources
+meta: 리엑트 네이티브 예시 모음
+category: React
+tags: [React Native]
 ---
 Code Academy를 통해 React Native를 공부하면서 배우고 중요하다고 생각하는 부분들을 적어보았다.
 

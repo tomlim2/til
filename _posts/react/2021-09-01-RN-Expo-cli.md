@@ -1,10 +1,10 @@
 ---
 layout: post-base
-title: React Native / Expo-cli, Github 연동하기
-meta: React-Router
-category: ReactAndReactNative
+title: Expo-cli, Github 연동하기
+meta: 리엑트 네이티브 작업환경 구축하기
+category: React
+tags: [React Native, Expo-cli, Github]
 ---
-
 
 ## Setup
 

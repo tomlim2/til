@@ -1,13 +1,11 @@
 ---
 layout: post-base
-title: Javascript / TDD / Rooster Regulation
-meta: 모카를 이용한 객체 테스트 만들기 1
+title: TDD / Rooster Regulation
+meta: 모카를 이용한 객체 테스터 만들기
 category: Javascript
-tags: [Javascript, React, Mocha, TDD]
+tags: [Javascript, Mocha, TDD]
 ---
-`rooster`객체의 테스트를 만들자
-
-```jsx
+```js
 // Define a rooster
 Rooster = {};
 
@@ -78,6 +76,15 @@ describe("Rooster", () => {
 });
 ```
 
+![npm test]({{site.baseurl}}/img/2021-10-30-test.png)
+
+## more
+
+![mocha tdd npm test]({{site.baseurl}}/img/2021-10-30-test2.png)
+
 ## Resource
 
+- [Mocha Documentation](mochajs.org/#getting-started)
 - [Code Academy](www.codecademy.com)
+
+---

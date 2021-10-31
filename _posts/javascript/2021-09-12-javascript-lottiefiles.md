@@ -1,11 +1,10 @@
 ---
 layout: post-base
-title: Javascript / Lottie Files / lottie-player & jlottie**
+title: Lottie Files / lottie-player & jlottie**
 meta: 그래픽, 마이크로 애니메이션 구현을 위한 플러그인 탐방
 category: Javascript
-tags: [Javascript, Animation, Evergreen, Object]
+tags: [Javascript, Animation, Evergreen, Lottie Files]
 ---
-Evergreen
 
 웹, 앱용 애니메이션 플러그인으로 가볍고 빠르다. 스타일은 path, 플랫, 단색에 유리하다.
 

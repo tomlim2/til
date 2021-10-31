@@ -26,13 +26,13 @@ mastfooterClass: about-footer
         <div class="item item3" id='linkToDesigner'>
             <div class="frame">
                 <div class="cover"></div>
-                <div class="text"><a href="http://tommlimm.net">/<br>디자이너<br>포트폴리오</a></div>
+                <div class="text"><a href="http://tommlimm.net">/<br>Designer<br>Portfolio</a></div>
             </div>
         </div>
         <div class="item item4" id='linkToDeveloper'>
             <div class="frame">
                 <div class="cover"></div>
-                <div class="text"><a href="/">/<br>개발자 <br> 포트폴리오<br>홈페이지로 가기<br>/</a></div>
+                <div class="text"><a href="/">/<br>hi, how are you?<br>/</a></div>
             </div>
         </div>
         <div class="item item7" id="item7">
@@ -43,7 +43,7 @@ mastfooterClass: about-footer
         <div class="item item6" id='description'>
             <div class="frame">
                 <article id="description-writing">
-                    프론트 엔드 개발자가 된지 <span id="time-container">0</span>초가 지났어요!
+                    프론트 엔드 개발자
                 </article>
             </div>
         </div>
@@ -85,17 +85,4 @@ mastfooterClass: about-footer
         animationContainer.classList.remove("gary-filter");
         animationContainer.classList.add("black-filter");
     });
-
-    const timeContainer = document.getElementById("time-container");
-    const FESTART_DAY = "2021-10-03";
-    const FESTART_DAY_DATE = new Date(FESTART_DAY);
-    const intlNumberFormatter = new Intl.NumberFormat("en-US");
-
-    setInterval(() => {
-    const now = new Date();
-    const difference = Math.floor(
-        (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
-    );
-    timeContainer.innerText = intlNumberFormatter.format(difference);
-    }, 1000);
 </script>

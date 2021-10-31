@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: React / 이미지 삽입하기
-meta: React Native guide
-category: ReactAndReactNative
+title: 이미지 삽입하기
+meta: 리엑트에서 이미지 삽입하는 방법
+category: React
+tags: [React]
 ---
 ```jsx
 ...

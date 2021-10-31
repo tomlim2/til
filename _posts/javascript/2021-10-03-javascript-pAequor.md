@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: Javascript / Project / Mysterious Organism
+title: Mysterious Organism
 meta: 자바스크립트 객체로 미확인 유기체 시뮬레이팅 하기
 category: Javascript
-tags: [Javascript, Project, Code Review]
+tags: [Javascript, Project]
 ---
 ## Context
 

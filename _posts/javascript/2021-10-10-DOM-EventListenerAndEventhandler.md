@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Javascript / DOM / events
+title: DOM / events
 meta: 자바스크립트 이벤트 트리거 개론
 category: Javascript
 tags: [javascript, DOM]

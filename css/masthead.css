@@ -1,6 +1,4 @@
 .masthead{
-    /* background-color: #383838; */
-    color: var(--color-black);
     position: fixed;
     background-color: rgba(255,255,255,.98);;
     z-index: 1;
@@ -8,7 +6,7 @@
     justify-content: center;
     width: 100%;
     height: var(--elements-headerHeight);
-    border-bottom: var(--color-black) solid 1px; 
+    border-bottom: var(--color-border) solid 1px; 
 }
 
 .masthead .nav_box{
@@ -19,7 +17,8 @@
 footer{
     display: flex;
     justify-content: center;
-    border-top: var(--color-black) 1px solid;
+    border-top: var(--color-border) 1px solid;
+    line-height: 1.4;
 }
 
 footer .nav_box{
@@ -27,8 +26,3 @@ footer .nav_box{
     padding-bottom: 10px;
     width: 720px;
 }
-
-.masthead-about{
-    /* background-color: #383838; */
-}
-

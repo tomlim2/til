@@ -39,7 +39,7 @@ ul.breadcrumb{
 }
 
 ul.breadcrumb a{
-    color: var(--color-black);
+    color: var(--color-typo);
 }
 
 ul.breadcrumb li+li::before{

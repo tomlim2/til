@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: 21-08-22 Javascript / 조건문, 연산자, null&undifined
+title: 조건문, 연산자, null&undifined
 meta: test
-category: til
+category: Javascript
+tags: [Javascript]
 ---
 요 몇일 Javascript의 기초를 배우고 syntax와 기본 개념들을 정리할수 있었다. 많은 개념들을 배웠지만 그중 가장 기억에 남는 부분과 중요하다고 느끼는 것들을 기록한다.
 

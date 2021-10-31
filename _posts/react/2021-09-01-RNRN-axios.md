@@ -1,9 +1,10 @@
 ---
 layout: post-base
-title: Common / Axios를 사용한 API 연동 
-meta: React-Router
+title: Axios를 사용한 API 연동 
+meta: 라이브러리를 통한 데이터 통신
 source: https://www.npmjs.com/package/axios
-category: ReactAndReactNative
+category: React
+tags: [React]
 ---
 API에 활용하는 툴 중 하나인 axios를 사용한 예시를 적어놓았다.
 

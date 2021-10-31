@@ -1,10 +1,11 @@
 ---
 layout: post-base
-title: React Native / Project / 간단한 날씨 앱 만들기
-meta: Updated 210820
-category: ReactAndReactNative
+title: 간단한 날씨 앱 / Code Review
+meta: 간단한 날씨 앱 코드 리뷰
+category: React
+tags: [React Native, Project]
 ---
-2021.08.28 ~ 09.04
+2021.08.28 – 09.04
 
 간단한 날씨 앱을 react native로 만든 프로젝트이다. 주요 내용은
 

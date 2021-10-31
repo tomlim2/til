@@ -3,7 +3,7 @@
 }
 
 .about-container .main{
-    border-right: var(--color-black) solid 1px; 
+    border-right: var(--color-border) solid 1px; 
     width: calc(100vw);
     height: calc(100vh - var(--elements-headerHeight));
 }
@@ -15,8 +15,8 @@
     row-gap: 0;   
 }
 .about-container .wrapper .item {
-    border-left: 1px var(--color-black) solid;
-    border-bottom: 1px var(--color-black) solid;
+    border-left: 1px var(--color-border) solid;
+    border-bottom: 1px var(--color-border) solid;
     overflow: hidden;
 }
 
@@ -71,7 +71,7 @@
 }
 
 #myName:hover .frame{
-    background-color: var(--color-black);
+    background-color: var(--color-border);
     color: var(--color-white);
 }
 
@@ -81,7 +81,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: var(--color-black);
+    background-color: var(--color-border);
 }
 
 .item2 .frame .cover {
@@ -98,7 +98,7 @@
 
 /* link to designer */
 .item3{
-    background-color: var(--color-black);
+    background-color: var(--color-border);
 }
 
 .item3 .frame .cover {
@@ -115,7 +115,7 @@
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 4;
-    background-color: var(--color-black);
+    background-color: var(--color-border);
 }
 
 .item4 .frame .cover {
@@ -150,7 +150,7 @@ article#description-writing{
 }
 
 #description:hover .frame{
-    background-color: var(--color-black);
+    background-color: var(--color-border);
     color: var(--color-white);
 }
 

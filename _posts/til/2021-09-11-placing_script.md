@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: 21-09-11 HTML / script 태그
+title: script 태그 위치
 meta: test
 category: til
+tags: [HTML]
 ---
 `<script>` 태그는 javascript의 목적성에 따라 `<head>` 혹은 `<body>` 태그 안쪽에 위치한다.
 

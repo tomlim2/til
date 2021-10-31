@@ -56,11 +56,13 @@
     --color-red: #E91C11;
     --color-yellow: #FFD300;
     --color-black: #000000;
+    --color-warm-black: #201e2e;
     --color-white: #ffffff;
     --elements-headerHeight: 50px;
     --elements-headerZ: 15;
 
-    --color-about-point: var(--color-yellow);
+    --color-typo: var(--color-navy-900);
+    --color-border: var(--color-navy-900);
     --font-light: 300;
     --font-regular: 400;
     --font-bold: 500;
@@ -69,5 +71,5 @@
 
 ::selection {
     color: var(--color-black);
-    background: var(--color-lightGreen);
+    background: var(--color-yellow);
   }

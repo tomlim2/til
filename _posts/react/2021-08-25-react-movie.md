@@ -1,11 +1,12 @@
 ---
 layout: post-base
-title: React / Project / 간단한 영화 웹 만들기
-meta: Updated 210820
+title: 간단한 영화 웹 / Code Review
+meta: 간단한 영화 웹 코드 리뷰
 source: https://nomadcoders.co/react-fundamentals/lobby
-category: ReactAndReactNative
+category: React
+tags: [React, Project]
 ---
-2021.08.25 ~ 28
+2021.08.25 – 28
 
 react기반으로 간단한 영화 데스크탑 버전 웹페이지를 만드는 프로젝트. 주기능은
 

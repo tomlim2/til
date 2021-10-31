@@ -9,7 +9,7 @@ priority: 1.0
         {% assign sorted = site.posts | sort: 'date' | reverse %}
         {% for item in sorted limit: 5 %}
         <li>
-            <a href="{{site.baseurl}}{{item.url}}">{{ item.title }}</a>
+            <a href="{{site.baseurl}}{{item.url}}">{{ item.tags[0] }} / {{ item.title }}</a>
             <p>{{item.meta}}</p>
         </li>
         {% endfor %}
@@ -19,9 +19,9 @@ priority: 1.0
 <div class="section">
     <h2>Today I learned</h2>
     <ul>
-        {% for post in site.categories.til%}
+        {% for post in site.categories.til %}
         <li>
-            <a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+            <a href="{{site.baseurl}}{{post.url}}">{{ post.tags[0] }} / {{post.title}}</a>
         </li>
         {% endfor %}
     </ul>
@@ -30,7 +30,7 @@ priority: 1.0
 <div class="section">
     <h2>React</h2>
     <ul>
-        {% for react in site.categories.ReactAndReactNative %}
+        {% for react in site.categories.React %}
         <li>
             <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
             <!-- <p>{{react.meta}}</p> -->
@@ -54,7 +54,7 @@ priority: 1.0
 <div class="section">
     <h2>HTML&CSS</h2>
     <ul>
-        {% for htmlAndCss in site.categories.htmlAndCss %}
+        {% for htmlAndCss in site.categories.HTMLnCSS %}
         <li>
             <a href="{{site.baseurl}}{{htmlAndCss.url}}">{{htmlAndCss.title}}</a>
             <!-- <p>{{htmlAndCss.meta}}</p> -->

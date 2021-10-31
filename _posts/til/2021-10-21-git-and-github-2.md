@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: 21-10-21 Git / Github / General Work Flow
+title: General Work Flow
 meta: 깃과 깃허브의 이해와 일반적인 작업방식 정리
 category: til
+tags: [Github, Git]
 ---
 Git은 웹 개발자들을 위한 the industry-standard version control system이다.
 

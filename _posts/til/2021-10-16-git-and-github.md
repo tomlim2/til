@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: 21-10-16 Git / Github / cli / 사용법
+title: Command line 사용법
 meta: Git과 Github 쓰는 방법 (cli ver)
 category: til
+tags: [Github, Git]
 ---
 ## Git 자주 사용되는 커멘드
 
