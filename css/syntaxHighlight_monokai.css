@@ -7,7 +7,7 @@
 code.highlighter-rouge{
     color: var(--color-typo);
     background-color: var(--color-gray-100);
-    padding: 3px 6px;
+    padding: 1px 6px;
     display: inline-block;
     transform: translateY(-1px);
 }

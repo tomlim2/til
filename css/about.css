@@ -57,21 +57,25 @@
 }
 
 /* myName */
-.item1 .frame .text{
-    line-height: 1.1em;
-    font-size: 3em;
+.item1 .frame h1{
+    font-size: 3.25rem;
+    line-height: 1;
 }
 
-.item1 .frame #krName{
-    font-weight: var(--font-bold);
+#enName{
+    margin-top: 4px;
+    font-weight: var(--font-light);
+    font-size: 2.5rem;
+    line-height: 1;
+    text-align: center;
 }
-.item1 .frame #enName{
-    line-height: 1.1em;
-    font-size: .75em;
+#myName .frame{
+    transition-duration: 400ms;
+    transition-property: color, background;
 }
 
 #myName:hover .frame{
-    background-color: var(--color-border);
+    background: var(--color-border);
     color: var(--color-white);
 }
 

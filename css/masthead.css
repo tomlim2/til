@@ -10,7 +10,8 @@
 }
 
 .masthead .nav_box{
-    padding-top: 1rem;
+    font-weight: var(--font-light);
+    padding-top: .75rem;
     width: 720px;
 }
 

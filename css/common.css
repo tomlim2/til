@@ -8,6 +8,7 @@ body {
   font-weight: var(--font-regular);
   word-break: keep-all;
   font-size: 16px;
+  line-height: 1.55;
   color: var(--color-typo);
 }
 
@@ -39,8 +40,7 @@ h3 {
 }
 
 p {
-  margin: 15px 0;
-  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 em {
@@ -71,6 +71,20 @@ li {
   display: list-item;
 }
 
+img {
+  width: 700px;
+}
+
+a {
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  text-decoration: none;
+  color: var(--color-typo);
+}
+a:hover {
+  text-decoration: underline;
+}
+
 table {
   color: rgba(0, 0, 0, 0.75);
   font-size: 16px;
@@ -91,12 +105,11 @@ code {
 }
 
 code.language-bush {
-  background-color: var(--color-gray-200);
-  color: var(--color-black);
+  background-color: var(--color-gray-100);
+  color: var(--color-typo);
 }
 
 hr {
-  margin-top: 2.5rem;
   border: none;
 }
 
@@ -112,7 +125,7 @@ blockquote p {
 
 .blog-container .language-plaintext .highlight pre,
 pre {
-  background-color: var(--color-gray-200);
+  background-color: var(--color-gray-100);
 }
 
 pre {
@@ -144,7 +157,7 @@ pre {
 }
 
 h1.page-title{
-  margin-top: 3.5rem;
+  margin-top: 2.5rem;
   font-size: 2.3rem;
   line-height: 1.2;
   font-weight: var(--font-bold);
@@ -166,7 +179,6 @@ h1.page-title{
   display: inline-block;
   padding: 0 1px;
 
-  font-size: 1rem;
   color: var(--color-typo);
   font-weight: var(--font-light);
 
@@ -184,25 +196,10 @@ h1.page-title{
 .default-box .blog-container {
   padding-top: 54px;
   padding-bottom: 10px;
-  line-height: 1.8;
 }
 
 .about-container {
   padding-top: 50px;
-}
-
-img {
-  width: 700px;
-}
-
-a {
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-  text-decoration: none;
-  color: var(--color-black);
-}
-a:hover {
-  text-decoration: underline;
 }
 
 .blog-container a {

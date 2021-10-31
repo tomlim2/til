@@ -36,79 +36,81 @@ Clean up your code, reducing any duplication you may have introduced. This inclu
 
 Treat your test suite with as much respect as you would your live code, as it can quickly become difficult to maintain if not handled with care. You should feel confident enough in the tests you’ve written that you can make your changes without breaking anything.
 
-## Code Review
+---
 
-### Basic structure to make test
+## Factorial Feature
 
-```js
-const Cup = {};
+### How To Calculate Factorial
 
-cup.pour = () => { return 'Poured once!' }
-cup.fill = () => { return 'Cup filled!' }
-}
+You take an integer and you multiply that by all the integers that are less than it.
 
-module.exports = Cup;
+The factorial of an integer `n` is denoted by an exclamation mark `n`!, so 5! is equal to:
+
+```text
+ 5 × 4 × 3 × 2 × 1 = 120
 ```
 
-```js
-describe('cup', ()=>{
-  describe('.pour', ()=>{
-  });
-  describe('.fill', ()=>{
-  });
-})
-```
+### Edge Case
 
-### Accumulating numbers in an array
+An edge case is a problem or situation that occurs only at an extreme (maximum or minimum) operating parameter.
+
+In this case an edge-case is that 0 factorial (or 0!) is 1.
+
+### Step 1-1 red
 
 ```js
+//index.html
 const Calculate = {
-  sum(inputArray) {
-    if(inputArray.length === 0){
-      return 0
-    };
-    return inputArray.reduce((sum, value) => {
-      return sum + value;
-    });
-  }
 }
 
 module.exports = Calculate;
 ```
 
 ```js
-const assert = require('assert');
-const Calculate =  require('../index.js')
+//index_test.js
+var assert = require("assert");
+var Calculate =  require('../index.js')
 
 describe('Calculate', () => {
-  describe('.sum',() => {
-    it('returns the sum of an array of numbers', () => {
+  describe('.factorial', () => {
+    it('returns correct value of 5!',()=>{
+      assert.equal(Calculate.factorial(5), 120);
+    })
+  });
+});
+```
 
-      const expectedResult = 6;
-      const inputArray = [1,2,3]
-      const result = Calculate.sum(inputArray)
-      
+### Step 1-2 Green
+
+```js
+//index.html
+const Calculate = {
+  factorial(inputNumber){
+    return 120
+  }
+}
+
+module.exports = Calculate;
+```
+
+### Step 1-3 Refactoring
+
+```js
+//index_test.js
+describe('Calculate', () => {
+  describe('.factorial', () => {
+    it('returns correct value of 5!',()=>{
+      //Setup
+      const inputNember = 5;
+      const expectedResult = 120;
+
+      //Exercise
+      const result = Calculate.factorial(inputNember)
+
+      //Verify
       assert.equal(result, expectedResult);
-    });
-    
-    it('returns the sum of a four item list', ()=>{
-
-      const expectedResult = 22;
-      const inputArray = [4,6,5,7];
-      const result = Calculate.sum(inputArray);
       
-      assert.equal(result, expectedResult)
-      
-    });
-    
-    it('returns zero when the array is empty', ()=>{
-
-       const expectedResult = 0;
-       const inputArray = [];
-       const result = Calculate.sum(inputArray);
-
-       assert.equal(result, expectedResult)
-    });
+    })
   });
 });
 ```
