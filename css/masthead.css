@@ -10,9 +10,8 @@
 }
 
 .masthead .nav_box{
-    font-weight: var(--font-light);
-    padding-top: .75rem;
     width: 720px;
+    padding-top: .75rem;
 }
 
 footer{

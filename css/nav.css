@@ -1,9 +1,13 @@
 /* primary nav */
-.nav-top{
-    font-size: 1.25rem;
+.nav_box a{
+    color: var(--color-navy-400);
 }
-.current{
-    font-weight: var(--font-bold);
+
+.nav-top{
+    font-size: 1.35rem;
+}
+a.current{
+    color: var(--color-typo);
 }
 
 ul.nav{

@@ -115,6 +115,53 @@ describe('Calculate', () => {
 });
 ```
 
+### Step 2-1 Red
+
+```js
+//index_test.js
+describe('Calculate', () => {
+  describe('.factorial', () => {
+    it('returns correct value of 5!',()=>{
+      //Setup
+      const inputNember = 5;
+      const expectedResult = 120;
+
+      //Exercise
+      const result = Calculate.factorial(inputNember)
+
+      //Verify
+      assert.equal(result, expectedResult);
+      
+    })
+    it('returns correct value of 3!',()=>{
+      //Setup
+      const inputNember = 3;
+      const expectedResult = 6;
+
+      //Exercise
+      const result = Calculate.factorial(inputNember)
+
+      //Verify
+      assert.equal(result, expectedResult);
+      
+    })
+  });
+});
+```
+
+### Step 2-2 Green
+
+```js
+//index.html
+const Calculate = {
+  factorial(inputNumber){
+    return 120
+  }
+}
+
+module.exports = Calculate;
+```
+
 ## Resource
 
 - [Mocha Documentation](mochajs.org/#getting-started)

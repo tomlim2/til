@@ -6,12 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        input:checked {
+            background: red;
+        }
+
+        .fix {
+            width: 100px;
+        }
+
+        .box {
+            background-color: green;
+            position: relative;
+            mask-image: url(./img/star.svg);
+            mask-mode: alpha;
+            width: 100%;
+            height: 100px;
+        }
+
+        .hi {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    </style>
 </head>
 
 <body>
     <h1>8월의 개발 놀이터:)</h1>
     프로그래밍 시작한지 <span id="time-container">0</span>초!
-    <br/><br/>
+    <br /><br />
+    <label class="container">One
+        <div class="fix">
+            <div class="box">
+            </div>
+        </div>
+
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+    </label>
     <ul>
         <li>
             <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/" target="_blank">
@@ -21,34 +54,36 @@
         <li>
             <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation" target="_blank">
                 Client-Side-Form-Validation
-            </a> 
+            </a>
         </li>
         <li>
             <a href="https://www.codecademy.com/resources/blog/errors-in-code-think-differently/" target="_blank">
                 Thinking About Errors in Your Code Differently
-            </a> 
+            </a>
         </li>
         <li>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error" target="_blank">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+                target="_blank">
                 MDN JavaScript Error documentation
-            </a> 
+            </a>
         </li>
         <li>
             <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors#syntax" target="_blank">
                 CSS / Attribute selector - [href]{}
-            </a> 
-            <br/>
+            </a>
+            <br />
             img[src*='winter']{height: 50px;} | a[href*='florence'] {color: lightgreen;}>
         </li>
         <li>
             <a href="https://www.chaijs.com/guide/" target="_blank">
                 Chai Documentation
-            </a> 
-            <br/>
-            In this resource, you are presented with the documentation for the Chai assertion library. This is helpful if you want a comprehensive resource for this library which pairs with any JavaScript testing framework.
+            </a>
+            <br />
+            In this resource, you are presented with the documentation for the Chai assertion library. This is helpful
+            if you want a comprehensive resource for this library which pairs with any JavaScript testing framework.
         </li>
     </ul>
-    
+
     <script>
         //localStorage exercise
 
@@ -68,11 +103,11 @@
         const intlNumberFormatter = new Intl.NumberFormat("en-US");
 
         setInterval(() => {
-        const now = new Date();
-        const difference = Math.floor(
-            (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
-        );
-        timeContainer.innerText = intlNumberFormatter.format(difference);
+            const now = new Date();
+            const difference = Math.floor(
+                (now.getTime() - FESTART_DAY_DATE.getTime()) / 1000
+            );
+            timeContainer.innerText = intlNumberFormatter.format(difference);
         }, 1000);
     </script>
 </body>

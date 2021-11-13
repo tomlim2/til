@@ -40,9 +40,9 @@ npm install node-sass
 ![웨스타그램 프로젝트 파일 구성도]({{site.baseurl}}/img/21-10-21-cra-setting.jpg)
 _출처 - 웨스타그램_
 
-:: src 폴더
+### src 폴더
 
-:::: pages 폴더
+### :::: pages 폴더
 
 - 각자의 이름으로 된 폴더를 생성합니다.
 - 그 안에 Login, Main 폴더를 생성합니다.
@@ -51,7 +51,7 @@ _출처 - 웨스타그램_
 
 > **Note**: 로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않기에 빈 폴더에 임의의 파일을 생성한다. 예) `temp.js`, `temp.md`
 
-:::: components 폴더
+### :::: components 폴더
 
 > **Note**: `Main.js` 에서 사용되는 컴포넌트는 Main 폴더 하위에서 해당 컴포넌트 폴더를 생성해서 관리한다. ex) Main폴더 - Article 폴더 - Article.js, Article.scss
 
@@ -59,7 +59,7 @@ _출처 - 웨스타그램_
 - 이번 프로젝트에서는 Main 페이지에서 사용할 공통의 Nav Component를 하나 만들어서 import해서 사용한다.
 - components/Nav/Nav.js, Nav.scss
 
-:::: styles 폴더
+### :::: styles 폴더
 
 - reset.scss - default css 속성 초기화
 - common.scss - 모든 페이지에 공통적으로 적용될 css 속성들
@@ -80,7 +80,7 @@ _출처 - 웨스타그램_
 }
 ```
 
-:::: Routes.js
+### :::: Routes.js
 
 - 팀원 당 컴포넌트 두 개(Login, Main)에 대한 경로를 설정해 준다.
 
@@ -100,7 +100,7 @@ import MainJongTaek from './pages/jongtaekoh/Main/Main';
 <Route exact path='/main-jongtaek' component={MainJongTaek} />
 ```
 
-:::: assets/images 폴더
+### :::: assets/images 폴더
 
 - css에서 background-image 속성을 사용해서 이미지를 삽입하는 경우가 있다. 이와 같은 경우엔 이미지 파일들을 src/assets/images 디렉토리에서 관리한다.
 
@@ -110,13 +110,13 @@ import MainJongTaek from './pages/jongtaekoh/Main/Main';
 }
 ```
 
-:: public 폴더
+### public 폴더
 
-:::: data 폴더
+### :::: data 폴더
 
 - data 폴더는 추후에 mock data를 만들어서 불러올 때 사용한다.
 
-:::: images 폴더
+### :::: images 폴더
 
 - images 폴더 하위에 팀원 이름으로 폴더를 생성한다.
 - 필요한 이미지들은 그 폴더 하위에서 관리한다.
@@ -130,7 +130,7 @@ ESLint는 코드 스타일 가이드이며 작성된 코드의 구문을 분석�
 
 Prettier는 ESLint와 비슷한 기능을 가지고 있지만 자동으로 코드의 스타일을 맞춰주는 것에 강력한 기능을 지원하고 있기 때문에 빈번히 ESLint와 함께 사용되고 있다.
 
-:: 설치
+### 설치
 
 확장 프로그램을 설치하고 VScode에서 `cmd` + `p`를 눌러서 `.vscode/settings.json`를 실행시킨다.
 
@@ -144,9 +144,9 @@ Prettier는 ESLint와 비슷한 기능을 가지고 있지만 자동으로 코�
 npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
-:: 추천 설정
+### 추천 설정
 
-:::: `.vscode/settings.json`
+### :::: `.vscode/settings.json`
 
 ```bush
 {
@@ -162,7 +162,7 @@ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-:::: `.eslintrc`에서
+### :::: `.eslintrc`에서
 
 - 팀원이 모두 맥 유저일 경우
 
@@ -220,7 +220,7 @@ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-:::: `.prettierrc`
+### :::: `.prettierrc`
 
 ```bush
 {
@@ -231,14 +231,19 @@ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 }
 ```
 
-::the error (prettier/prettier)
+## ::the error (prettier/prettier)
+
 ![setting json]({{site.baseurl}}/img/21-10-21-prettier-error.png)
 
 해당 에러가 생긴 파일에 가서 저장(`cmd` + `s`)를 하면 해결된다.
 
 이 에러는 두 확장프로그램이 성공적으로 설치가 완료되고 npm start를 하면 위와 같이 발생할 수 있다. 원인은 prettier와 eslint에 저장된 syntax 스타일과 작성한 코드의 syntax 스타일이 맞지 않아서 생기는 에러이다. 저장을 하면 자동으로 스타일을 수정해준다(magic).
 
-## Step 7: github repo 연동 및 push
+## Step 8: `README.md` 작성
+
+팀명, 팀원 및 간단한 인사 작성.
+
+## Step 9: github repo 연동 및 push
 
 초기 세팅이 완료되면 github에 올려 줍니다.
 
@@ -257,7 +262,7 @@ git push origin master
 
 ```
 
-## Step 8: github clone and create new feature branch
+## Step 10: github clone and create new feature branch
 
 다른 팀원들은 해당 repo를 clone 받고, `npm install` 후에 feature branch를 새로 생성한다.
 
@@ -271,7 +276,7 @@ npm install
 git branch feature/joonsikyang
 ```
 
-## Step 9: merge main
+## Step 11: merge main
 
 마스터에서 수정사항이 생겼다면 아래와 같은 flow로 최신화 시킨다.
 
