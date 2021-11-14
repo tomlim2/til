@@ -1,94 +1,62 @@
 ---
 layout: post-base
-title: Like / Retrospect 1 - Overview
-meta: 나이키 클론 프로젝트 회고 개요
+title: Like / Retrospect 2 - Product size selector
+meta: 수량 선택 기능 구현 중
 category: projects
 tags: [React, Project]
-source: https://drive.google.com/file/d/1TyeGsUcogieXJmMcxchkl2-tk5qylNw8/view?usp=sharing
+source: https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend
 ---
 
-- **기간**: 2021년 11월 01일 – 12일
-- **프로젝트 매니저**: 이지은
-- **프런트 엔드**: 신유진, 임연수, 전지완
-- **백 엔드**: 김봉철, 이지은
+상세페이지에 사이즈를 선택하는 기능 구현할때 사용한 코드이다. 구현할 때 포인트는 어떻게 수많은 사이즈들 중 하나를 선택하면 해당 사이즈가 활성화되고 이전에 선택되었던 다른 사이즈가 리셋되게 하느냐였다.
 
-개발 초기 세팅부터 전부 직접 구현했으며, 실제 사용할 수 있는 서비스 수준으로 개발하는 것을 목표로 라이키 팀원들과 즐겁게 작업한 1차 프로젝트입니다.
+## Code Review
 
-## Tech stack
+```jsx
+export class SizeOption extends Component {
+  pushSizeAndQuantity = () => {
+    const { setMaxQuantity, selectSize, maxQuantity, sizeName } = this.props;
+    const available = maxQuantity !== 0;
 
-- **Front-End** : HTML5, SASS, React, AWS S3
-- **Back-End** : Python, Django, MySQL, jwt, bcypt, AWS EC2, Redis
-- **Common** : Git, Github, Slack, Trello, Postman
+    if (available) {
+      setMaxQuantity(maxQuantity);
+      selectSize(sizeName);
+    }
+  };
 
-## 구현된 화면과 기능들
+  render() {
+    const { maxQuantity, sizeName, selectedSize } = this.props;
+    const selected = selectedSize === sizeName;
+    const available = maxQuantity !== 0;
+    
+    return (
+      <span
+        onClick={this.pushSizeAndQuantity}
+        className={`SizeOption ${selected && 'selected'} ${
+          available && 'activate'
+        }`}
+      >
+        {sizeName}
+      </span>
+    );
+  }
+}
+```
 
-#### 네비게이션
+## Outputs
 
-- 카테고리 데이터를 이용하여 네비게이션의 메뉴명과 서브메뉴명 업데이트
+![size, quantity selector]({{site.baseurl}}/img/2021-11-14-Like/sizeNQuantitySelector.gif)
 
-#### 상세페이지 / 리뷰 아코디언
+## [React](https://reactjs.org/) is declarative
 
-- 사이즈별 선택시 해당 사이즈의 최대 수량 업데이트
-- 리뷰 별점 표기 가능
+버튼이 다른 버튼을 끌 필요가 없고 그냥 그 버튼만 키게 만들면 된다.
 
-#### 미니장바구니 / 장바구니페이지 / 주문내역페이지
+## Resource
 
-- `GET`, `POST`, `DELETE`로 실제 장바구니 목록 추가, 삭제, 구매 플로우 백엔드와 통신 구현
-
-### 신유진
-
-#### 로그인 & 회원가입
-
-- 로그인 모달 구현
-- 로그인과 회원기입 유효성 검사 로직구현
-
-### 전지완
-
-#### 메인 페이지
-
-- 쿼리를 이용한 카테고리 필터 기능 구현
-
-## 4. 결과물
-
-### 로그인
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 2 50 32 PM" src="https://user-images.githubusercontent.com/22067260/141607594-8cea47d7-89c8-43c8-97e7-e142cb6947d5.png">
-
-### 회원가입
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 1 16 03 PM" src="https://user-images.githubusercontent.com/22067260/141605403-02dbca63-8e94-4f36-a443-402e61daa55c.png">
-
-### 메인 페이지
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 1 10 22 PM" src="https://user-images.githubusercontent.com/22067260/141605212-3e8a7e92-9ed0-4a71-b091-1c91c6ff708e.png">
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 1 14 42 PM" src="https://user-images.githubusercontent.com/22067260/141607599-034a4712-ea15-4e07-aae4-b730b0dfc6a2.png">
-
-### 상세 페이지
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 2 12 09 PM" src="https://user-images.githubusercontent.com/22067260/141606669-6b040a91-f51f-4913-99f2-cecbeb1a2a38.png">
-
-### 장바구니 및 주문조회
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 2 31 36 PM" src="https://user-images.githubusercontent.com/22067260/141607177-7a4748f3-64c1-4229-a2ad-499d6b9d5896.png">
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 2 32 14 PM" src="https://user-images.githubusercontent.com/22067260/141607185-73b62508-a4b5-4baf-8dd6-82cec09a5d3e.png">
-
-### 주문조회
-
-<img width="1440" alt="Screen Shot 2021-11-13 at 2 32 39 PM" src="https://user-images.githubusercontent.com/22067260/141607195-163b8458-bfae-41a8-9f60-6c1732d00bb6.png">
-
-## 소감
-
-프론트 엔드와 백 엔드가 연계되어 하나의 웹사이트를 구현하는 과정을 경험한 첫번째 프로젝트였다. 제일 기억에 남는 코드는 상세페이지에 사이즈 주문 수량 체크하는 부분이었다. 이 기능을 구현하면 리엑트가 선언형이라는 대한 전반적인 이해를 할 수 있었다.
-
->_수 많은 프로젝트를 해왔지만 이 팀처럼 성과와 함께 분위기가 좋은 팀은 정말 드물었다. 봉철, 유진, 지완, 지은님 최고의 행운이 함께하길 진심으로 빌어요:)_
-
-## Links
-
-- [AWS S3로 배포한 웹 사이트](http://wecode26likeproject.s3-website.ap-northeast-2.amazonaws.com/)
-- [라이키 시연 영상](https://drive.google.com/file/d/1TyeGsUcogieXJmMcxchkl2-tk5qylNw8/view?usp=sharing)
-- [Front-end github](https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend.git)
-- [Back-end github](https://github.com/wecode-bootcamp-korea/26-1st-LIKE-backend.git)
-- [Trello](https://trello.com/b/b9cKMX5x/like-%ED%8C%80)
-- [API 설계](https://www.notion.so/LIKE-34de3722ecbe46eabcd5669789a499b1)
+- [React](https://reactjs.org/)
+- Like / 라이키, 나이키 클론 프로젝트
+  - [홈 페이지](http://wecode26likeproject.s3-website.ap-northeast-2.amazonaws.com/)는 [AWS S3](https://aws.amazon.com/?nc2=h_lg)를 이용해 배포하였다.
+  - [시연 영상](https://drive.google.com/file/d/1QfJUuwgZz7eYWqR9iYJ71wAxjD2XTrBy/view?usp=sharing)
+  - [Front-end github](https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend.git)
+  - [Back-end github](https://github.com/wecode-bootcamp-korea/26-1st-LIKE-backend.git)
+  - [백엔드 API 설계](https://www.notion.so/LIKE-34de3722ecbe46eabcd5669789a499b1)
+  - [Trello](https://trello.com/b/b9cKMX5x/like-%ED%8C%80)

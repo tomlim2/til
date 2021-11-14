@@ -1,21 +1,3 @@
-.highlight pre{
-    margin-bottom:10px;
-    padding: 20px;
-    overflow: scroll;
-}
-
-code.highlighter-rouge{
-    color: var(--color-typo);
-    background-color: var(--color-gray-100);
-    padding: 1px 6px;
-    display: inline-block;
-    transform: translateY(-1px);
-}
-
-pre code{
-    color: var(--color-gray-100);
-}
-
 .highlight pre { background-color: var(--color-warm-black); }
 .highlight pre { background-color: var(--color-warm-black); }
 .highlight .c { color: var(--color-gray-600); } /* Comment */
