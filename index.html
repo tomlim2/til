@@ -88,6 +88,18 @@ priority: 1.0
 </div>
 
 <div class="section lastSection">
+    <h2>Algorithm</h2>
+    <ul>
+        {% for algorithm in site.categories.algorithm %}
+        <li>
+            <a href="{{site.baseurl}}{{algorithm.url}}">{{algorithm.title}}</a>
+            <!-- <p>{{algorithm.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section lastSection">
     <h2>Trouble Shooting</h2>
     <ul>
         {% for troubleShoot in site.categories.troubleShoot %}

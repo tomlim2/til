@@ -55,6 +55,8 @@ expo cli Xcode needs to be installed (don't worry, you won't have to use it), wo
 
 ## Code overview in Weather.js
 
+{% raw %}
+
 ```jsx
 import { View, Text, StyleSheet, StatusBar } from "react-native";
 import PropTypes from "prop-types";
@@ -122,6 +124,8 @@ const styles = StyleSheet.create({
     },
 })
 ```
+
+{% endraw %}
 
 전체적인 흐름은 App.js에서 온도와 날씨 상태 정보를 가져와 그 정보에 맞는 아이콘, 배경화면 색, 글들을 스크린에 보여준다.
 

@@ -14,7 +14,7 @@ tags: [HTML, Accessibility]
 - ARIA Properties
 - `alt` Attributes
 
-## [Semantic HTML Elements]({% post_url 21-09-23-html-semantic %})
+## Semantic HTML Elements
 
 [스크린 리더](https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%81%AC%EB%A6%B0_%EB%A6%AC%EB%8D%94)([Screen reader](https://en.wikipedia.org/wiki/Screen_reader))의 사용을 돕기 위한 가장 빠른 방법은 Semantic Tag를 사용하는 것이다. 예를 들어서 개발자들은 네비게이션 바를 반드시 `header` 안에 집어넣어야한다. 물론 div 요소에 header의 클라스를 넣어 쓸수는 있지만 native semantics(`<header></header>`) 스크린 리더기를 사용하는 사람에게 웹사이트를 좀더 효율적으로 네비게이트하고 이해하게 해준다.
 
@@ -114,7 +114,7 @@ ARIA properties 리스트는 [MDN](https://developer.mozilla.org/en-US/docs/Web/
 
 ## Conclusion
 
-Refactoring할 때 조금씩 해내보자. [색 사용]({% post_url 21-09-24-css-color %})할 때도 이 점을 유의하자. 적어도 내가 만드는 것들은 최대한 다양한 사람들이 이용할 수 있게 디자인하자(August).
+Refactoring할 때 조금씩 해내보자. 색 사용할 때도 이 점을 유의하자. 적어도 내가 만드는 것들은 최대한 다양한 사람들이 이용할 수 있게 디자인하자(August).
 
 - 웹사이트 기본 글씨 크기는 16px이다.
 - `role = "main"`는 웹사이트에서 한 번만 쓸 수 있다.
