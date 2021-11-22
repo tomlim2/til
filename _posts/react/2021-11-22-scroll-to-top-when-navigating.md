@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: Scroll to top when navigating (React Router v6)
-meta: 네비게이트하면 라우터를 활용한 화면 최상단으로 가게 하는 로직
+meta: 네비게이트하면 화면을 최상단으로 가게 하는 로직
 category: React
 tags: [React]
 ---
