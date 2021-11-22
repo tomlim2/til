@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Scroll to Top When Navigating (React router dom v6)
+title: Scroll to top when navigating (React Router v6)
 meta: 네비게이트하면 라우터를 활용한 화면 최상단으로 가게 하는 로직
 category: React
 tags: [React]
@@ -19,3 +19,7 @@ window.scrollTo(0, 0);
 
 ...
 ```
+
+## Resource
+
+- [React Router v6](https://reactrouter.com/)
