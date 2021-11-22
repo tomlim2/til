@@ -57,5 +57,3 @@ searchCard = (userInput) => {
 ## Resource
 
 - [Wecode](www.wecode.co.kr)
-
----
