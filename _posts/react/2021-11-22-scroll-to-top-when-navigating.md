@@ -23,3 +23,4 @@ window.scrollTo(0, 0);
 ## Resource
 
 - [React Router v6](https://reactrouter.com/)
+- [kindacode](https://www.kindacode.com/article/react-router-dom-scroll-to-top-on-route-change/)
