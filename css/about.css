@@ -153,6 +153,7 @@ article#description-writing{
     font-weight: var(--font-regular);
 }
 
+#description:hover a,
 #description:hover .frame{
     background-color: var(--color-border);
     color: var(--color-white);
