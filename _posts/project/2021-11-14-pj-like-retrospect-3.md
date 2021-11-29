@@ -72,7 +72,7 @@ export class ReviewStarBar extends Component {
 
 ![what is modules?]({{site.baseurl}}/img/2021-11-14-Like/reviewStars.png)
 
-## Improvements
+## Things to improve
 
 - 재활용성 증진
   - `font-size`에 영향을 받는게 만들면 좋을거 같다.

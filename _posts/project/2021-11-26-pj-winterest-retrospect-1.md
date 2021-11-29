@@ -103,7 +103,7 @@ source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?u
 
 ### 전체 페이지 다크모드
 
-![kakao login]({{site.baseurl}}/img/2021-11-27-Winterest/winterest_darkmode.gif)
+![Dark mode]({{site.baseurl}}/img/2021-11-27-Winterest/winterest_darkmode.gif)
 
 ## 소감
 
