@@ -6,11 +6,7 @@ category: Javascript
 tags: [Javascript]
 source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals
 ---
-여러가지 심히 유익한 애니메이션에 대한 정보들이다. 나중에 하나씩 해보자.
-
-## Things to keep in mind about setTimeout() and setInterval()
-
-### Recursive timeouts
+여러가지 심히 유익한 자바스크립트 애니메이션에 대한 정보들이다.
 
 All code is example of [mdn](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals). I impelemented some of code using this documentation on [my test site](/test.html)
 

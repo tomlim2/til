@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: Async and await
-meta: promises 퀴즈 오답 노트
+meta: Async, await 사용 예시
 category: Javascript
 tags: [Javascript]
 source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
@@ -165,8 +165,13 @@ async function getData() {
     console.log(error);
   }
 }
- 
 ```
+
+## Conclusion
+
+일단 과거에 해본 프로젝트부터 리펙토링하면서 조금씩 변환시켜보자. 
+
+하루에 몰아서 asynchronous에 관한 mdn 문서의 내용들을 계속 올리게 되었다. 아무래도 이전의 프로젝트에서 데이터를 받는 과정의 중요성을 느끼고 나중에 개선할 때 유용하게 쓰일거 같아서이다. 또한 다른 매서드 혹은 방법론들과는 다르게 확실한 가이드 라인이 있어서 더욱 몰아보게 된거 같다.
 
 ## Resource
 
