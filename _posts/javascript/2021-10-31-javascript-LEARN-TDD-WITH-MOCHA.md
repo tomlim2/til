@@ -155,16 +155,93 @@ describe('Calculate', () => {
 //index.html
 const Calculate = {
   factorial(inputNumber){
-    return 120
+    for (let i = inputNumber-1; i>= 1; i--){
+      inputNumber = inputNumber * i
+    }
+    return inputNumber;
   }
 }
 
 module.exports = Calculate;
 ```
 
+### Step 2-3 Refactoring
+
+```js
+//index.html
+const Calculate = {
+  factorial(inputNumber){
+    for (let i = inputNumber-1; i>= 1; i--){
+      inputNumber *= i
+    }
+    return inputNumber;
+  }
+}
+
+module.exports = Calculate;
+```
+
+### Step 3-1 Edge case Red
+
+```js
+//index_test.js
+describe('Calculate', () => {
+  describe('.factorial', () => {
+    ...
+    it('returns correct value of 0!',()=>{
+      assert.equal(Calcluate.factorial(0), 1);
+      
+    })
+  });
+});
+```
+
+### Step 3-2 Edge case Green
+
+```js
+//index.html
+const Calculate = {
+  factorial(inputNumber){
+
+    if (inputNumber === 0){
+      return 1;
+    }
+
+    for (let i = inputNumber-1; i>= 1; i--){
+      inputNumber *= i
+    }
+    return inputNumber;
+  }
+}
+
+module.exports = Calculate;
+```
+
+### Step 3-3 Edge case Refactoring
+
+```js
+//index_test.js
+describe('Calculate', () => {
+  describe('.factorial', () => {
+    ...
+    it('returns correct value of 0!',()=>{
+
+      // Setup
+      const inputNumber = 0;
+      const expectedNumber = 1;
+
+      // Exercise
+      const result = Calculate.factorial(inputNumber);
+
+      // Verify
+      assert.equal(result, expectedNumber);
+      
+    })
+  });
+});
+```
+
 ## Resource
 
 - [Mocha Documentation](mochajs.org/#getting-started)
 - [Code Academy](codecademy.com)
-
----

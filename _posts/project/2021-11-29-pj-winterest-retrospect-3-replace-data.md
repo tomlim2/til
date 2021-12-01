@@ -8,6 +8,8 @@ source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?u
 ---
 
 ```jsx
+...
+
 const giveRandomHeight = pins => {
   const result = pins.message.map(pin => {
     pin.image_height += randomHeight();
@@ -16,30 +18,25 @@ const giveRandomHeight = pins => {
   return result;
 };
 
-const useScrollFetch = url => {
-  const [pins, setPins] = useState([]);
+...
 
-  useEffect(() => {
-    getImages(url);
-  }, [url]);
-
-  const getImages = url => {
-    fetch( url, {
-      headers: { Authorization: API.token },
+const getImages = url => {
+  fetch( url, {
+    headers: { Authorization: API.token },
+  })
+    .then(res => res.json())
+    .then(pinsData => {
+      setPins(prevPins => {
+        if (prevPins === []) {
+          return giveRandomHeight(pinsData);
+        } else {
+          return [...prevPins, ...giveRandomHeight(pinsData)];
+        }
+      });
     })
-      .then(res => res.json())
-      .then(pinsData => {
-        setPins(prevPins => {
-          if (prevPins === []) {
-            return giveRandomHeight(pinsData);
-          } else {
-            return [...prevPins, ...giveRandomHeight(pinsData)];
-          }
-        });
-      })
-  };
-  return { pins };
 };
+
+...
 ```
 
 `.map()` 매서드를 이용하여 `fetching`하여 받은 데이터의 일부 높이 값을 수정하여 `pins`에 저장하여 사용하였다.
