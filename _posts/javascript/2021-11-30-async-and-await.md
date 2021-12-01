@@ -1,15 +1,15 @@
 ---
 layout: post-base
-title: Javascript promises Quizs
+title: Async and await
 meta: promises 퀴즈 오답 노트
 category: Javascript
 tags: [Javascript]
 source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
 ---
 
-### Fufilled, Failed, Pending
+## example 1 - async와 await를 이용한 promise syntax
 
-### What state will this promise be in after 0 seconds?
+기존의 fetch의 promise를 async와 await를 이용해 표현해보자.
 
 ```js
 fetch('coffee.jpg')
@@ -29,6 +29,8 @@ fetch('coffee.jpg')
   console.log('There has been a problem with your fetch operation: ' + e.message);
 });
 ```
+
+async와 await를 사용하면 아래와 같다.
 
 ```js
 async function myFetch() {
@@ -52,6 +54,8 @@ myFetch()
 });
 ```
 
+아래와 같이 가독성은 물론 확장성도 있다.
+
 ```js
 async function myFetch() {
   let response = await fetch('coffee.jpg');
@@ -70,7 +74,7 @@ myFetch().then((blob) => {
 }).catch(e => console.log(e));
 ```
 
-## example2
+## example 2 - 쿼리
 
 ```js
 const dataMuseUrl = 'https://api.datamuse.com/words?';
@@ -145,6 +149,8 @@ const displayShortUrl = (event) => {
 shortenButton.addEventListener('click', displayShortUrl);
 ```
 
+## example 3 - POST
+
 ```js
 async function getData() {
   try {
@@ -164,6 +170,6 @@ async function getData() {
 
 ## Resource
 
-- [Cooperative asynchronous JavaScript: Timeouts and intervals](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals)
-- [Choosing the right approach](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Choosing_the_right_approach)
+- [MDN - Async and await](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await)
+- [MDN - Choosing the right approach](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Choosing_the_right_approach)
 - [Code Academy](codecademy.com)
