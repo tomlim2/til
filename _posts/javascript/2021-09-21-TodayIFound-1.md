@@ -2,7 +2,7 @@
 layout: post-base
 title: Fun!
 meta: 상호작용으로 사용하면 재미있어 보이는 자바스크립트 코드 모음집
-category: til
+category: javascript
 tags: [Javascript]
 ---
 
