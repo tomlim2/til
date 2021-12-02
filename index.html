@@ -76,6 +76,30 @@ priority: 1.0
 </div>
 
 <div class="section">
+    <h2>First settings</h2>
+    <ul>
+        {% for setting in site.categories.setting %}
+        <li>
+            <a href="{{site.baseurl}}{{setting.url}}">{{setting.title}}</a>
+            <!-- <p>{{setting.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Git</h2>
+    <ul>
+        {% for git in site.categories.git %}
+        <li>
+            <a href="{{site.baseurl}}{{git.url}}">{{git.title}}</a>
+            <!-- <p>{{git.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
     <h2>Design</h2>
     <ul>
         {% for item in site.categories.Design %}

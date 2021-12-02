@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: Frontend / CRA Setting for Weterest
+title: CRA Setting - React Hook, Styled-component, VScode, ESLint, Prettier
 meta: 리엑트 세팅 가이드라인 - 21년 11월 위코드 2차 프로젝트 버전
-category: til
-tags: [React, VScode, ESLint, Prettier]
+category: setting
+tags: [Setting, React, VScode, ESLint, Prettier]
 ---
 이 세팅은 21년 11월 위코드 2차 프로젝트 기준입니다. 1차 프로젝트에 비해 react-router-dom v6와 styled-components이 추가되었다.
 

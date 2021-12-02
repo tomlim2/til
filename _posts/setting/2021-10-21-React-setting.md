@@ -1,9 +1,9 @@
 ---
 layout: post-base
-title: Frontend / CRA Setting Guidelines
+title: CRA Setting - React, SASS, VScode, ESLint, Prettier
 meta: 리엑트 협업용 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
-category: til
-tags: [React, VScode, ESLint, Prettier]
+category: setting
+tags: [Setting, React, VScode, ESLint, Prettier]
 ---
 이 세팅은 21년 10월 위코드 Westagram 프로젝트 기준입니다. CRA는 Create React App의 약자이다.
 
