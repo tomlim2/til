@@ -102,10 +102,22 @@ priority: 1.0
 <div class="section">
     <h2>Design</h2>
     <ul>
-        {% for item in site.categories.Design %}
+        {% for design in site.categories.design %}
         <li>
-            <a href="{{site.baseurl}}{{item.url}}">{{item.title}}</a>
-            <!-- <p>{{item.meta}}</p> -->
+            <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
+            <!-- <p>{{design.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>css</h2>
+    <ul>
+        {% for css in site.categories.css %}
+        <li>
+            <a href="{{site.baseurl}}{{css.url}}">{{css.title}}</a>
+            <!-- <p>{{css.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
