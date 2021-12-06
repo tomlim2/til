@@ -1,11 +1,10 @@
 ---
 layout: post-base
-title: CRA Setting - React, SASS, VScode, ESLint, Prettier
-meta: 리엑트 협업용 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
+title: CRA Setting - React Hook, Sass, VScode, ESLint, Prettier
+meta: 리엑트 세팅 가이드라인 - 21년 11월 위코드 2차 프로젝트 버전
 category: setting
 tags: [Setting, React, VScode, ESLint, Prettier]
 ---
-이 세팅은 21년 10월 위코드 Westagram 프로젝트 기준입니다. CRA는 Create React App의 약자이다.
 
 ## Step 1: CRA 설치
 
@@ -37,17 +36,14 @@ npm install node-sass
 
 ## Step 5: CRA 폴더 및 파일 구성
 
-![웨스타그램 프로젝트 파일 구성도]({{site.baseurl}}/img/21-10-21-cra-setting.jpg)
-_출처 - 웨스타그램_
 
 ### src 폴더
 
 ### :::: pages 폴더
 
-- 각자의 이름으로 된 폴더를 생성합니다.
-- 그 안에 Login, Main 폴더를 생성합니다.
-  - Login 폴더 >>> Login.js, Login.scss
-  - Main 폴더 >>> Main.js, Main.scss
+- Login, Main 폴더를 생성합니다.
+  - Login 폴더 >>> Login.js
+  - Main 폴더 >>> Main.js
 
 > **Note**: 로컬에서 폴더만 생성하고 빈 폴더로 두고 PR을 올릴 경우 폴더가 GitHub에 올라가지 않기에 빈 폴더에 임의의 파일을 생성한다. 예) `temp.js`, `temp.md`
 
@@ -57,47 +53,135 @@ _출처 - 웨스타그램_
 
 - components 폴더에서는 모든 페이지에서 사용되는 컴포넌트(ex. Header, Footer)를 관리한다.
 - 이번 프로젝트에서는 Main 페이지에서 사용할 공통의 Nav Component를 하나 만들어서 import해서 사용한다.
-- components/Nav/Nav.js, Nav.scss
+- `components/Nav/Nav.js`
 
 ### :::: styles 폴더
 
-- reset.scss - default css 속성 초기화
-- common.scss - 모든 페이지에 공통적으로 적용될 css 속성들
-- variables.scss - 함께 쓰는 공통 css 속성(ex. theme color)
-
-```scss
-@mixin flexCenter {
- display: flex;
- align-items: center;
- justify-content: center;
-}
-
-// sass 파일에서
-@import '../variables.scss'
-
-.logo {
- @include flexCenter;
-}
-```
-
-### :::: Routes.js
-
-- 팀원 당 컴포넌트 두 개(Login, Main)에 대한 경로를 설정해 준다.
+- `GlobalStyle.js` - 전역 css 초기화 및 모든 페이지에 공통적으로 적용될 css 속성들
 
 ```jsx
-// 준식's 컴포넌트
-import LoginJoon from './pages/joonsikyang/Login/Login';
-import MainJoon from './pages/joonsikyang/Main/Main';
+import { createGlobalStyle } from 'styled-components';
+import reset from 'styled-reset';
 
-// 종택's 컴포넌트
-import LoginJongTaek from './pages/jongtaekoh/Login/Login';
-import MainJongTaek from './pages/jongtaekoh/Main/Main';
+const GlobalStyle = createGlobalStyle`
+  ${reset}
+  
+  * {
+    box-sizing: border-box;
+  }
 
-// import 한 컴포넌트에 대한 경로를 각각 설정해줍니다.
-<Route exact path='/login-joonsik' component={LoginJoon} />
-<Route exact path='/main-joonsik' component={MainJoon} />
-<Route exact path='/login-jongtaek' component={LoginJongTaek} />
-<Route exact path='/main-jongtaek' component={MainJongTaek} />
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', Arial, Helvetica, sans-serif;
+  }
+`;
+
+export default GlobalStyle;
+```
+
+<br />
+
+- `theme.js` - 함께 쓰는 공통 css 속성(ex. theme color)
+
+```jsx
+const theme = {
+  background: '#FFFEFC',
+  white: '#FFFFFF',
+  black: '#000000',
+  vermilion: '#ff7425',
+  orange: '#FF9900',
+  opacityOrange: 'rgba(242,153,74,0.5)',
+  yellow: '#FFD66C',
+  grey: 'rgba(196,196,196,0.3)',
+  middleGrey: 'rgba(65,65,65,0.4)',
+  deepGrey: '#828282',
+  lightOrange: 'rgba(255,195,170,0.3)',
+  fontColor: '#2D2B2B',
+  fontTitle: "'Noto Sans KR', sans-serif;",
+  fontContent: "'Noto Sans KR', sans-serif;",
+};
+
+export default theme;
+```
+
+<br />
+
+- `index.js`
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './styles/GlobalStyle';
+import Routers from './Routers';
+import theme from './styles/theme';
+
+ReactDOM.render(
+  <>
+    <GlobalStyle />
+    <ThemeProvider theme={theme}>
+      <Routers />
+    </ThemeProvider>
+  </>,
+  document.getElementById('root')
+);
+
+```
+
+### :::: `Routers.js`
+
+```jsx
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Nav from './components/Nav/Nav';
+import Detail from './pages/Detail/Detail';
+import Login from './pages/Login/Login';
+import Main from './pages/Main/Main';
+import MyPage from './pages/MyPage/MyPage';
+import Upload from './pages/Upload/Upload';
+
+const Routers = () => {
+  return (
+    <BrowserRouter>
+      <Nav />
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/upload" element={<Upload />} />
+        <Route path="/myPage" element={<MyPage />} />
+        <Route path="/detail" element={<Detail />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default Routers;
+```
+
+### :::: Config.js
+
+- `index.js`와 같은 위치에 두면 된다.
+
+```jsx
+const BASE_URL = 'http://15.164.170.124:8000';
+
+export const API = {
+  signUp: `${BASE_URL}/users/signup`,
+  baseUrl: `${BASE_URL}`,
+  token:
+    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g',
+};
+
+export const MockUp = {
+  categories: '/data/nav/categories.json',
+  token:
+    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g',
+};
 ```
 
 ### :::: assets/images 폴더
@@ -118,7 +202,6 @@ import MainJongTaek from './pages/jongtaekoh/Main/Main';
 
 ### :::: images 폴더
 
-- images 폴더 하위에 팀원 이름으로 폴더를 생성한다.
 - 필요한 이미지들은 그 폴더 하위에서 관리한다.
 - 폴더 안에서도 Main 폴더, Login 폴더를 만들어서 페이지 별로 깔끔하게 관리 해야한다.
 
@@ -132,7 +215,7 @@ Prettier는 ESLint와 비슷한 기능을 가지고 있지만 자동으로 코�
 
 ### 설치
 
-확장 프로그램을 설치하고 VScode에서 `cmd` + `p`를 눌러서 `.vscode/settings.json`를 실행시킨다.
+확장 프로그램을 설치하고 VScode에서 `cmd` + `p`를 눌러서 `> settings.json`를 실행시킨다.
 
 ![setting json]({{site.baseurl}}/img/21-10-21-settingsJson.jpg)
 

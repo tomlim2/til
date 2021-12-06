@@ -10,12 +10,11 @@ priority: 1.0
         {% for item in sorted limit: 5 %}
         <li>
             <a href="{{site.baseurl}}{{item.url}}">{{ item.tags[0] }} / {{ item.title }}</a>
-            <p>{{item.meta}} / <span class="date">{{item.date | date: '%B %d, %Y'}}</span></p>
+            <p>{{item.meta}} / <span class="date">{{item.date | date_to_string}}</span></p>
         </li>
         {% endfor %}
     </ul>
 </div>
-
 <div class="section">
     <h2>Today I learned</h2>
     <ul>
@@ -46,18 +45,6 @@ priority: 1.0
         <li>
             <a href="{{site.baseurl}}{{javascript.url}}">{{javascript.title}}</a>
             <!-- <p>{{react.meta}}</p> -->
-        </li>
-        {% endfor %}
-    </ul>
-</div>
-
-<div class="section">
-    <h2>HTML&CSS</h2>
-    <ul>
-        {% for htmlAndCss in site.categories.HTMLnCSS %}
-        <li>
-            <a href="{{site.baseurl}}{{htmlAndCss.url}}">{{htmlAndCss.title}}</a>
-            <!-- <p>{{htmlAndCss.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
@@ -100,12 +87,12 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Design</h2>
+    <h2>HTML</h2>
     <ul>
-        {% for design in site.categories.design %}
+        {% for html in site.categories.html %}
         <li>
-            <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
-            <!-- <p>{{design.meta}}</p> -->
+            <a href="{{site.baseurl}}{{html.url}}">{{html.title}}</a>
+            <!-- <p>{{html.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
@@ -142,6 +129,18 @@ priority: 1.0
         <li>
             <a href="{{site.baseurl}}{{troubleShoot.url}}">{{troubleShoot.title}}</a>
             <!-- <p>{{troubleShoot.meta}}</p> -->
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Design</h2>
+    <ul>
+        {% for design in site.categories.design %}
+        <li>
+            <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
+            <!-- <p>{{design.meta}}</p> -->
         </li>
         {% endfor %}
     </ul>
