@@ -71,7 +71,7 @@ tags: [NodeJs]
 - 422 Unprocessable Entity (WebDAV)
 - 423 Locked (WebDAV)
 - 424 Failed Dependency (WebDAV)
-- 425 Too Early 
+- 425 Too Early
 - 426 Upgrade Required
 - 428 Precondition Required
 - 429 Too Many Requests
