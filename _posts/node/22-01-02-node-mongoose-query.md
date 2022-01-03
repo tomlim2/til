@@ -29,7 +29,6 @@ const getTask = async (req, res) => {
 
     res.status(200).json({ task });
   } catch (error) {
-
     // error for general monogoose error if the database got id with different format
     res.status(500).json({ msg: error });
   }
@@ -38,7 +37,7 @@ const getTask = async (req, res) => {
 
 ## Queries
 
-These are static helper functions for CRUD operations that Mongogoose models provide. 
+These are static helper functions for CRUD operations that Mongogoose models provide.
 
 ## Two errors
 
