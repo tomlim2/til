@@ -1,14 +1,24 @@
 ---
 layout: post-base
-title: Query for string, array, boolean
-meta: 포트 변수 설정하기
+title: Query sort
+meta: 데이터 분류하기
 category: node
 tags: [NodeJs, Express, mongoose]
 ---
 
+{% raw %}
+
+```text
+//Postman
+
+{{URL}}/products?sort=name,price
+```
+
+{% endraw %}
+
 ```js
 const getAllProducts = async (req, res) => {
-  const { featured, company, name } = req.query;
+  const { featured, company, name, sort } = req.query;
   const queryObject = {};
 
   if (featured) {
@@ -20,8 +30,19 @@ const getAllProducts = async (req, res) => {
   if (name) {
     queryObject.name = { name: { $regex: name, $option: "i" } };
   }
-  console.log(queryObject);
-  const products = await Product.find(queryObject);
+
+  // console.log(queryObject);
+  let result = Product.find(queryObject);
+  // sort
+  if (sort) {
+    const sortList = sort.split(",").join(" ");
+    result = result.sort(sortList);
+    console.log(result);
+  } else {
+    result = result.sort("createAt");
+  }
+  const products = await result;
+
   res.status(200).json({ products, nbHits: products.length });
 };
 ```
