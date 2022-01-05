@@ -8,6 +8,9 @@ tags: [NodeJs]
 
 ## MVC(Model View Control)?
 
+![download-1](https://user-images.githubusercontent.com/22067260/148096211-d4c29c4c-85f7-4cc5-a9b4-9a31100cc40c.png)
+![download-2](https://user-images.githubusercontent.com/22067260/148096218-ca1c1324-0fa5-4886-afa4-706efbfc4682.png)
+
 ## Middleware?
 
 ## CRUD vs API?
