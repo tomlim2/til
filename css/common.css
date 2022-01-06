@@ -22,6 +22,7 @@ h3 {
 }
 
 h1 {
+  font-size: 3rem;
   margin-top: 0.5rem;
   margin-bottom: 0rem;
 }
@@ -156,7 +157,7 @@ blockquote p {
   margin: 5px 0;
 }
 
-.blog-container .language-plaintext .highlight pre,
+.base-container .language-plaintext .highlight pre,
 pre {
   background-color: var(--color-gray-100);
 }
@@ -167,7 +168,7 @@ pre {
   line-height: 1.05;
 }
 
-.blog-container .language-plaintext .highlight code {
+.base-container .language-plaintext .highlight code {
   color: var(--color-black);
 }
 
@@ -181,7 +182,7 @@ pre {
   width: 720px;
 }
 
-.blog-container {
+.base-container {
   width: 718px;
 }
 
@@ -226,7 +227,7 @@ h1.page-title{
   font-weight: var(--font-light);
 }
 
-.default-box .blog-container {
+.default-box .base-container {
   padding-top: 54px;
   padding-bottom: 40px;
 }
@@ -235,11 +236,11 @@ h1.page-title{
   padding-top: 50px;
 }
 
-.blog-container a {
+.base-container a {
   color: var(--color-blue-500);
 }
 
-.blog-container h4 a {
+.base-container h4 a {
   color: var(--color-black);
 }
 

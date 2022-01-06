@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Query sort
+title: Query Sort
 meta: 데이터 분류하기
 category: node
 tags: [NodeJs, Express, mongoose]
@@ -13,8 +13,6 @@ tags: [NodeJs, Express, mongoose]
 
 {{URL}}/products?sort=name,price
 ```
-
-{% endraw %}
 
 ```js
 const getAllProducts = async (req, res) => {
@@ -46,6 +44,8 @@ const getAllProducts = async (req, res) => {
   res.status(200).json({ products, nbHits: products.length });
 };
 ```
+
+{% endraw %}
 
 ## resource
 
