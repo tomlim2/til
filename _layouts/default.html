@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="{{site.baseurl}}/favicon2.png" type="image/png" sizes="30x30">
-        <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
-        <title>{% if page.title %}{{page.title}}&nbsp;|&nbsp;{% endif %}임연수/개발자_블로그</title>
-        <meta name="description" content="{{page.meta}}">
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class='masthead {{page.mastheadClass}}'>
-            <div class="nav_box">
-                {% include nav.html navclass='nav-top' %}
-            </div>
-        </header>
-        <div class="default-box main">
-            {{content}}
-        </div>
-        
 
-        <footer class='{{page.mastfooterClass}}'>
-            <div class="nav_box">
-                {% include nav.html navclass='nav-bottom' %}
-                <br><br>
-                이 웹사이트는 개발중이며 현재는 데스크탑 버전에 최적화 되어있습니다;) <br> Copyright, 임연수. All rights reserved.
-            </div>
-        </footer>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{site.baseurl}}/favicon2.png" type="image/png" sizes="30x30">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
+    <title>{% if page.title %}{{page.title}}&nbsp;|&nbsp;{% endif %}임연수의 기술 블로그</title>
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="임연수의 기술 블로그">
+    <meta name="description" content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tomlim2.github.io/til/">
+    <meta property="og:title" content="임연수의 기술 블로그">
+    <meta property="og:description" content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
+    <meta property="og:image" content="">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tomlim2.github.io/til/">
+    <meta property="twitter:title" content="임연수의 기술 블로그">
+    <meta property="twitter:description" content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
+    <meta property="twitter:image" content="">
+
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class='masthead {{page.mastheadClass}}'>
+        <div class="nav_box">
+            {% include nav.html navclass='nav-top' %}
+        </div>
+    </header>
+    <div class="default-box main">
+        {{content}}
+    </div>
+
+
+    <footer class='{{page.mastfooterClass}}'>
+        <div class="nav_box">
+            {% include nav.html navclass='nav-bottom' %}
+            <br><br>
+            이 웹사이트는 개발중이며 현재는 데스크탑 버전에 최적화 되어있습니다;) <br> Copyright, 임연수. All rights reserved.
+        </div>
+    </footer>
+</body>
+
 </html>
