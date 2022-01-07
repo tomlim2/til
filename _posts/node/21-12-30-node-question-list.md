@@ -24,12 +24,27 @@ tags: [NodeJs]
 
 CRUD는 데이터베이스의 CREATE, READ, UPDATE, DELETE 데이터처리 기능을 의미한다.
 
-### REST
+### REST (Representational State Transfer)
+
+REST refers to a group of software architecture design constraints that bring about efficient, reliable and scalable distributed systems.
+
+The basic idea of REST is that a resource, e.g. a document, is transferred via well-recognized, language-agnostic, and reliably standardized client/server interactions. Services are deemed RESTful when they adhere to these constraints.
 
 REST는 다른 어플리케이션에 소비되는 웹 api를 개발하기 위한 가장 인기 있는 설계 방식이다. REST가 웹에 존재하는 리소스들에 URI를 부여하는 방법론. REST api 라고하면 HTTP 프로토콜을 전제로하고 REST를 기반으로 시스템을 분산 설계하는 방식
 
-## URI?
+## URI(Uniform Resource Identifiers)
+
+A Uniform Resource Identifier (URI) is a unique sequence of characters that identifies a logical or physical resource used by web technologies.
+
+## API(Application Programming Interface)
+
+An API is a set of features and rules that exist inside a software program (the application) enabling interaction with it through software - as opposed to a human user interface. The API can be seen as a simple contract (the interface) between the application offering it and other items, such as third party software or hardware.
+
+In Web development, an API is generally a set of code features (e.g. methods, properties, events, and URLs) that a developer can use in their apps for interacting with components of a user's web browser, or other software/hardware on the user's computer, or third party websites and services.
+
+## JWT(Json Web Token)?
 
 ## Srouce
 
 - 위코드 26기 노드 스터디
+- [API](https://developer.mozilla.org/en-US/docs/Glossary/API)

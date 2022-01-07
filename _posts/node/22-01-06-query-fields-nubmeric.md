@@ -31,6 +31,7 @@ const getAllProducts = async (req, res) => {
     queryObject.name = { name: { $regex: name, $option: 'i' } };
   }
 
+  //I need research around this:)
   if (numericFilters) {
     const operatorMap = {
       '>': '$gt',
@@ -52,12 +53,9 @@ const getAllProducts = async (req, res) => {
       }
     });
   }
-  console.log(queryObject);
 
-  // console.log(queryObject);
   let result = Product.find(queryObject);
 
-  // sort
   if (sort) {
     const sortList = sort.split(',').join(' ');
     result = result.sort(sortList);
@@ -66,7 +64,6 @@ const getAllProducts = async (req, res) => {
     result = result.sort('createAt');
   }
 
-  //fields
   if (fields) {
     const fieldsList = fields.split(',').join(' ');
     result = result.select(fieldsList);
