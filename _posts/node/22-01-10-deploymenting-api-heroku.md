@@ -9,6 +9,7 @@ tags:
 ---
 
 전체 플로우
+
 - 보안 패키지 설치
 - 배포용 카피 폴더 만들기
 - heroku로 배포
@@ -24,7 +25,7 @@ tags:
 
 ```js
 // app.js
-app.set('trust proxy', 1)
+app.set("trust proxy", 1);
 app.use(
   rateLimiter({
     windowMs: 15 * 60 * 1000,
@@ -113,15 +114,15 @@ Swagger UI Editor로 가져오고 불필요한 misc 태그를 삭제한다. path
 ```js
 // app.js
 
-const swaggerUI = require('swagger-ui-express')
-const YAML = require('yamljs')
-const swaggerDocument = YAML.load('./swagger.yaml')
+const swaggerUI = require("swagger-ui-express");
+const YAML = require("yamljs");
+const swaggerDocument = YAML.load("./swagger.yaml");
 
-app.get('/',(req,res)=>{
-  res.send('<h1>Jobs API</h1><a href="/api-docs">Documentation</a>')
-})
+app.get("/", (req, res) => {
+  res.send('<h1>Jobs API</h1><a href="/api-docs">Documentation</a>');
+});
 
-app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
+app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(swaggerDocument));
 ```
 
 ```yml
@@ -131,12 +132,14 @@ openapi: 3.0.0
 info:
   title: Jobs API
   contact: {}
-  version: '1.0'
+  version: "1.0"
 servers:
-...
-
 ```
 
 ## conclusion
 
-이 프로젝트는 특히 배포 및 명세서 작성 등등 정말 의미 있었다. cors와 helmet 등 security 셋팅에 필요한 작업들에 의문이 많이 생긴다. 기회가 되면 알아보도록 하자.
+이 프로젝트는 특히 배포 및 명세서 작성 등등 정말 의미 있었다. 아직 갈길은 멀지만 내가 올바른 방향으로 가고 있다는 것을 알 수 있었다.
+
+여기까지 도움을 준 nodejs 스터디 방 백엔드 분들에게 감사를 드립니다.
+
+cors와 helmet 등 security 셋팅에 필요한 작업들에 의문이 많이 생긴다. 기회가 되면 알아보도록 하자. 또한 aws를 통한 배포방법도 한번 알아보자.
