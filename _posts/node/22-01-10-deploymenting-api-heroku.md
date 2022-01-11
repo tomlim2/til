@@ -8,6 +8,13 @@ tags:
   [NodeJs, Express, mongoose, MongoDB, Heroku, Postman, Swagger UI, APIMATIC]
 ---
 
+전체 플로우
+- 보안 패키지 설치
+- 배포용 카피 폴더 만들기
+- heroku로 배포
+- API 명세서 작성
+- 작성된 명세서 배포용, 작업용 워크스페이스으로 가져오기
+
 ## 배포 전 보안에 필요한 패키지들
 
 - helmet
@@ -36,9 +43,9 @@ app.use(xss());
 
 [공식문서](https://devcenter.heroku.com/articles/getting-started-with-nodejs)에 정확한 사용방법이 나와있다. 전체적인 사용법은 github와 유사하여 진입장벽이 낮다.
 
-## 배포
+## 배포하기
 
-전체적인 틀은 배포를 위한 폴더를 만들고 package.json에서 몇가지 설정과 .env의 정보들을 heroku config에 기입하기만 하면 된다.
+package.json에서 몇가지 설정과 .env의 정보들을 heroku config에 기입하기만 하면 된다.
 
 ### 최신폴더 복사하기
 
