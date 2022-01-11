@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: get authentication with middleware
+title: Get authentication with middleware
 meta: express 미들웨어를 통한 인증인가
 category: node
 source: https://job-api-06ys.herokuapp.com/
