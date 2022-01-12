@@ -24,15 +24,13 @@ layout: about
 
 ### MongoDB
 
-noSQL과 Document database 컨셉을 이해하고 있고 MongoDB 콘솔상에서 콜렉션 및 데이터를 수정, 삭제, 작성이 가능합니다. API 제작을 위해 Node.js의 mongoose 패키지를 통해 schema 제작하여 Mongo 데이터 베이스의 CRUD operator 활용이 가능합니다.
+noSQL과 Document database 컨셉을 이해하고 있고 MongoDB 콘솔상에서 콜렉션 및 데이터를 수정, 삭제, 작성이 가능합니다. API 제작을 위해 Node.js의 mongoose를 통해 schema 제작하여 Mongo 데이터 베이스의 CRUD operator 활용이 가능합니다.
 
 ### HTML/CSS
 
 HTML/CSS를 활용하여 인터페이스를 구현하는 데에 문제 없습니다.
 
 ### Redux
-
-전역상태 관리의
 
 ### Recoil
 

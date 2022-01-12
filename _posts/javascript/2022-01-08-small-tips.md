@@ -1,7 +1,7 @@
 ---
 layout: post-base
-title: Small tips
-meta: 여러가지 사용해 볼만한 코드들
+title: How to use Date object
+meta: Date 객체 문자열로 출력하는 방법
 category: Javascript
 tags: [Javascript]
 ---
