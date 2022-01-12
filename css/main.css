@@ -5,5 +5,5 @@
 {% include_relative common.css %}
 {% include_relative masthead.css %}
 {% include_relative nav.css %}
-{% include_relative syntaxHighlight_monokai.css %}
+{% include_relative syntax-highlight-monokai.css %}
 {% include_relative home.css %}
