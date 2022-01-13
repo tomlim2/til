@@ -6,7 +6,6 @@ footer{
 
 footer .content-container{
     border-top: var(--color-border) 4px solid;
-
     padding-top: 10px;
     padding-bottom: 10px;
     width: var(--width-laptop);;

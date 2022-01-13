@@ -13,8 +13,6 @@
   width: var(--width-laptop);
 }
 
-/* primary nav */
-
 .menu a+a{
 margin-left: 15px;  
 }
@@ -47,20 +45,19 @@ margin-left: 15px;
   border: none;
   font-size: 1.5rem;
 }
+
 .search-container input:focus {
   outline: none;
 }
 
 .results-container {
   position: absolute;
-
   width: 720px;
   max-height: 400px;
   padding: 0;
   margin: 0;
   border-bottom: var(--color-border) solid 4px;
   background-color: white;
-
   list-style: none;
   overflow-y: scroll;
   z-index: -1;
@@ -79,8 +76,6 @@ margin-left: 15px;
 .results-container li:hover {
   background-color: #f2f2f2;
 }
-
-/* secondary nav */
 
 ul.breadcrumb li {
   display: inline;

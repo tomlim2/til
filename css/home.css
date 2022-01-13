@@ -14,6 +14,7 @@
 .home-container .section:nth-child(1) {
   margin-top: 25px;
 }
+
 .home-container .section:nth-child(1) p{
   margin: -3px 0 5px 0;
   color: var(--color-gray-600);
@@ -25,12 +26,15 @@
 .home-container .section:nth-last-child(1) {
   margin-bottom: 0px;
 }
+
 .home-container h2 {
   margin-bottom: 8px;
 }
+
 .firstSection h2 {
   margin-top: 0;
 }
+
 .home-container ul li {
   position: relative;
   list-style-type: none;
@@ -39,8 +43,7 @@
 .home-container ul {
   padding-left: 0;
   margin-top: 0;
-  line-height: 1.7;
-  
+  line-height: 1.7; 
 }
 
 .home-container h2 {
