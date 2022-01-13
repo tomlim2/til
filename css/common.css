@@ -178,12 +178,8 @@ pre {
   width: 100%;
 }
 
-.home-container {
-  width: 720px;
-}
-
 .base-container {
-  width: 718px;
+  width: var(--width-laptop);
 }
 
 .breadcrumb{
@@ -228,7 +224,7 @@ h1.page-title{
 }
 
 .default-box .base-container {
-  padding-top: 54px;
+  padding-top: var(--elements-header-height);
   padding-bottom: 40px;
 }
 

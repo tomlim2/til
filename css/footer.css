@@ -9,5 +9,5 @@ footer .content-container{
 
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 720px;
+    width: var(--width-laptop);;
 }

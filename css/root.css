@@ -58,7 +58,8 @@
     --color-black: #000000;
     --color-warm-black: #201e2e;
     --color-white: #ffffff;
-    --elements-headerHeight: 50px;
+    --elements-header-height: 60px;
+    --width-laptop: 720px;
     --elements-headerZ: 15;
 
     --color-typo: var(--color-navy-900);

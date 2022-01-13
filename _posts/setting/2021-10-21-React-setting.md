@@ -1,7 +1,7 @@
 ---
 layout: post-base
-title: CRA Setting - React, SASS, VScode, ESLint, Prettier
-meta: 리엑트 협업용 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
+title: CRA Setting - React, SASS
+meta: 리엑트 초기 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
 category: setting
 tags: [Setting, React, VScode, ESLint, Prettier]
 ---

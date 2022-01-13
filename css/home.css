@@ -1,6 +1,7 @@
 .home-container {
+  width: var(--width-laptop);
   margin: 0;
-  padding-top: 44px;
+  padding-top: var(--elements-header-height);
   padding-bottom: 0px;
 }
 
@@ -16,7 +17,7 @@
 .home-container .section:nth-child(1) p{
   margin: -3px 0 5px 0;
   color: var(--color-gray-600);
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Noto Sans Mono", monospace;
   font-weight: 400;
   font-size: .85rem;
 }

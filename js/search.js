@@ -185,12 +185,12 @@
         json: [],
         success: Function.prototype,
         searchResultTemplate:
-          '<a href="{url}" title="{title}"><li>{title}</li></a>',
+          '<a href="{url}" title="{meta}"><li>{title}</li></a>',
         templateMiddleware: Function.prototype,
         sortMiddleware: function () {
           return 0;
         },
-        noResultsText: "No results found",
+        noResultsText: "<li>No results found</li>",
         limit: 10,
         fuzzy: !1,
         debounceTime: null,
