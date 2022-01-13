@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: center;
+    line-height: 1.4;
+}
+
+footer .content-container{
+    border-top: var(--color-border) 4px solid;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 720px;
+}

@@ -17,37 +17,39 @@
     <meta property="og:url" content="https://tomlim2.github.io/til/">
     <meta property="og:title" content="임연수의 기술 블로그">
     <meta property="og:description" content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
-    <meta property="og:image" content="https://user-images.githubusercontent.com/22067260/148548806-98c111d8-790a-4a13-8095-84844514320b.jpg">
+    <meta property="og:image"
+        content="https://user-images.githubusercontent.com/22067260/148548806-98c111d8-790a-4a13-8095-84844514320b.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://tomlim2.github.io/til/">
     <meta property="twitter:title" content="임연수의 기술 블로그">
-    <meta property="twitter:description" content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
-    <meta property="twitter:image" content="https://user-images.githubusercontent.com/22067260/148548806-98c111d8-790a-4a13-8095-84844514320b.jpg">
+    <meta property="twitter:description"
+        content="{% if page.meta %}{{page.meta}}&nbsp;|&nbsp;{% endif %}모르는 것을 알아가는 재미">
+    <meta property="twitter:image"
+        content="https://user-images.githubusercontent.com/22067260/148548806-98c111d8-790a-4a13-8095-84844514320b.jpg">
 
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300;400;500&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
+
     <header class='masthead {{page.mastheadClass}}'>
-        <div class="nav_box">
+        <div class="nav-box">
             {% include nav.html navclass='nav-top' %}
         </div>
     </header>
+
     <div class="default-box main">
         {{content}}
     </div>
 
-
     <footer class='{{page.mastfooterClass}}'>
-        <div class="nav_box">
-            {% include nav.html navclass='nav-bottom' %}
-            <br><br>
-            이 웹사이트는 개발중이며 현재는 데스크탑 버전에 최적화 되어있습니다;) <br> Copyright, 임연수. All rights reserved.
-        </div>
+        <div class="content-container">이 웹사이트는 개발중이며 현재는 데스크탑 버전에 최적화 되어있습니다;) <br> Copyright, 임연수. All rights reserved.</div>
+
     </footer>
 </body>
 

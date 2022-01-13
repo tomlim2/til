@@ -2,7 +2,7 @@
 layout: post-base
 title: count up number animation
 meta: 자바스크립트 애니메이션 이해하기 1
-category: react
+category: React
 tags: [react, javascript]
 ---
 
