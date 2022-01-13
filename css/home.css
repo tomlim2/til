@@ -12,7 +12,11 @@
 }
 
 .home-container .section:nth-child(1) {
-  margin-top: 25px;
+  margin-top: 20px;
+}
+
+.home-container .section:nth-child(1) h2{
+  margin-top: 0;
 }
 
 .home-container .section:nth-child(1) p{
@@ -29,10 +33,6 @@
 
 .home-container h2 {
   margin-bottom: 8px;
-}
-
-.firstSection h2 {
-  margin-top: 0;
 }
 
 .home-container ul li {
