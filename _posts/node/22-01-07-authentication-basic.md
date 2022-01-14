@@ -2,7 +2,7 @@
 layout: post-base
 title: Authentication basic MVC with JWT
 meta: 인증인가 기본 프로세스
-category: node
+category: NodeJs
 tags: [NodeJs, Express, mongoose]
 ---
 

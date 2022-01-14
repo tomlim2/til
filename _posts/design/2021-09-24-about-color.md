@@ -2,7 +2,7 @@
 layout: post-base
 title: Color
 meta: 개발을 위한 디자인 리소스
-category: design
+category: Design
 tags: [design]
 ---
 

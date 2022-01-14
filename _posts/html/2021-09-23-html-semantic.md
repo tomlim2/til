@@ -2,7 +2,7 @@
 layout: post-base
 title: Improving Semantic **
 meta: 웹사이트 개발 시작전 상기해야할 요소들
-category: html
+category: Html
 tags: [HTML, CSS, Evergreen]
 ---
 밑의 자료들은 semantic HTML&CSS에 대한 일반적인 구현형식과 태그들을 간략하게 정리하였다. 5분 안에 읽을 수 있도록 더 간결하고 깊게 쓰도록 항상 갱신하자.

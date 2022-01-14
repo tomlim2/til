@@ -2,7 +2,7 @@
 layout: post-base
 title: Question List - MVC, Middleware, CRUD vs API, URI
 meta: 진행하면서 헷갈리거나 애매한 개념들
-category: node
+category: NodeJs
 tags: [NodeJs]
 ---
 

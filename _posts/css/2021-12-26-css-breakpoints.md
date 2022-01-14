@@ -2,7 +2,7 @@
 layout: post-base
 title: Breakpoints & resolutions
 meta: 반응형 화면 크기
-category: css
+category: Css
 tags: [css]
 ---
 

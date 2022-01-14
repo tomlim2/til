@@ -2,7 +2,7 @@
 layout: post-base
 title: Like / Retrospect 6 - Publishing with AWS S3
 meta: AWS S3를 이용하여 배포하는 법 정리
-category: projects
+category: Projects
 tags: [React, AWS]
 source: https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend
 ---

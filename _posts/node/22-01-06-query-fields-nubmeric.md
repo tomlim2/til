@@ -2,7 +2,7 @@
 layout: post-base
 title: Query fields, pagination, numericFilters
 meta: 데이터 분류하기
-category: node
+category: NodeJs
 tags: [NodeJs, Express, mongoose]
 ---
 

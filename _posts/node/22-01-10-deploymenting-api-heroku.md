@@ -2,7 +2,7 @@
 layout: post-base
 title: Deploy Job API to Heroku
 meta: Job API 배포하기
-category: node
+category: NodeJs
 source: https://job-api-06ys.herokuapp.com/
 tags:
   [NodeJs, Express, mongoose, MongoDB, Heroku, Postman, Swagger UI, APIMATIC]

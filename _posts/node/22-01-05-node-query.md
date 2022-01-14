@@ -2,7 +2,7 @@
 layout: post-base
 title: Query for String, Array, Boolean
 meta: 쿼리 사용 예시
-category: node
+category: NodeJs
 tags: [NodeJs, Express, mongoose]
 ---
 

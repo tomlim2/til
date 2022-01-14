@@ -2,7 +2,7 @@
 layout: post-base
 title: Port variable
 meta: 포트 변수 설정하기
-category: node
+category: NodeJs
 tags: [NodeJs, Express, mongoose]
 ---
 

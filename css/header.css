@@ -1,11 +1,12 @@
 .masthead {
-  position: fixed;
-  background-color: rgba(255, 255, 255, 0.98);
-  z-index: 1;
   display: flex;
   justify-content: center;
+  position: fixed;
   width: 100%;
   height: var(--elements-header-height);
+  padding-top: 2px;
+  background-color: rgba(255, 255, 255, 0.98);
+  z-index: 1;
 }
 
 .masthead .nav-box {
@@ -14,7 +15,7 @@
 }
 
 .menu a+a{
-margin-left: 15px;  
+margin-left: .75rem;  
 }
 
 .nav-container {
@@ -27,7 +28,7 @@ margin-left: 15px;
 }
 
 .nav-container div:nth-last-child(1) {
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: right;
 }
 

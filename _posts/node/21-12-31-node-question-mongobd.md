@@ -2,7 +2,7 @@
 layout: post-base
 title: MongoDB - SQL vs noSQL
 meta: 몽고디비 이해
-category: node
+category: NodeJs
 tags: [NodeJs, MongoDB]
 ---
 

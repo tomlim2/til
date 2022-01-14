@@ -3,7 +3,7 @@ layout: post-base
 title: Accessibility(a11y) 
 meta: Accessibility in HTML
 source: https://www.a11yproject.com/
-category: html
+category: Html
 tags: [HTML, Accessibility]
 ---
 웹사이트를 만들 때는 언제나 몇몇의 사람들은 다른 방법으로 이용한다는 것을 명심하자. 예를 들면 많은 사용자들은 시각적인 어려움을 가지고 있다. 웹 초창기에는 [Web Accessibility Initiative](https://en.wikipedia.org/wiki/Web_Accessibility_Initiative)(led by W3C)가 모든 사람들에게 정보 접근성을 증진시키기 위해 개발된 표준이다.

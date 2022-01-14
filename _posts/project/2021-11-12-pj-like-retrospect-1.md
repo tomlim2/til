@@ -2,7 +2,7 @@
 layout: post-base
 title: Like / Retrospect 1 - Overview
 meta: 나이키 클론 프로젝트 회고 개요
-category: projects
+category: Projects
 tags: [React, Project, HTML5, SASS, Javascript, AWS S3]
 source: https://drive.google.com/file/d/1TyeGsUcogieXJmMcxchkl2-tk5qylNw8/view?usp=sharing
 ---

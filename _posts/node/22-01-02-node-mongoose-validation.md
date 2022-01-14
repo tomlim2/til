@@ -2,7 +2,7 @@
 layout: post-base
 title: MongoDB - mongoose validation
 meta: 스키마의 필요한 기본적인 유효성 검사
-category: node
+category: NodeJs
 source: https://mongoosejs.com/docs/validation.html
 tags: [NodeJs, MongoDB, Express, mongoose]
 ---

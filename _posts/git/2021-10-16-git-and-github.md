@@ -2,7 +2,7 @@
 layout: post-base
 title: Command line 사용법
 meta: Git과 Github 쓰는 방법 (cli ver)
-category: git
+category: Git
 tags: [Git / Github]
 ---
 ## Git 자주 사용되는 커멘드

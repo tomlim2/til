@@ -2,7 +2,7 @@
 layout: post-base
 title: NFT KROC  phase n/ 머치스퀘어 / Retrospect - Overview
 meta: NFT KROC 회고
-category: projects
+category: Projects
 tags: [React, Recoil, SASS, Javascript, Firebase, HTML5]
 ---
 
