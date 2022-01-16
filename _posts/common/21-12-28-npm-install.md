@@ -2,7 +2,7 @@
 layout: post-base
 title: Installing specific version in npm
 meta: 특정 버전으로 인스톨하는 CLI
-category: common
+category: Common
 tags: [npm, terminal, cli]
 ---
 

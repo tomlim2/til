@@ -40,7 +40,7 @@ h3 {
   font-size: 1.25rem;
 }
 
-h4{
+h4 {
   font-weight: var(--font-bold);
 }
 
@@ -55,7 +55,7 @@ em {
 }
 
 strong {
-   font-weight: var(--font-bold);
+  font-weight: var(--font-bold);
 }
 
 ol,
@@ -69,12 +69,12 @@ ul {
   list-style-type: disc;
 }
 
-ul li ul{
+ul li ul {
   list-style-type: circle;
   padding-inline-start: 20px;
 }
 
-ol{
+ol {
   list-style: decimal-leading-zero;
 }
 
@@ -106,30 +106,28 @@ td {
   padding: 0px 60px;
 }
 
-
-.highlight pre{
-  margin-bottom:10px;
+.highlight pre {
+  margin-bottom: 10px;
   padding: 20px;
   overflow: scroll;
 }
 
-
 code {
-  font-size: .9rem;
-  font-family: 'Noto Sans Mono', monospace;
+  font-size: 0.9rem;
+  font-family: "Noto Sans Mono", monospace;
   font-weight: 400;
   line-height: 1.5;
 }
 code.language-bush,
 .highlighter-rouge .highlight .highlight code {
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
-pre code{
+pre code {
   color: var(--color-gray-100);
 }
 
-code.highlighter-rouge{
+code.highlighter-rouge {
   color: var(--color-typo);
   background-color: var(--color-gray-100);
   padding: 1px 6px;
@@ -140,8 +138,6 @@ code.language-bush {
   background-color: var(--color-gray-100);
   color: var(--color-typo);
 }
-
-
 
 hr {
   border: none;
@@ -155,6 +151,10 @@ blockquote {
 
 blockquote p {
   margin: 5px 0;
+}
+
+.base-container {
+  width: calc(var(--width-laptop) - 10px);
 }
 
 .base-container .language-plaintext .highlight pre,
@@ -178,48 +178,46 @@ pre {
   width: 100%;
 }
 
-.base-container {
-  width: var(--width-laptop);
+
+
+.breadcrumb {
+  margin: 0;
 }
 
-.breadcrumb{
-  margin:0;
-}
-
-h1.page-title{
+h1.page-title {
   margin-top: 2.5rem;
   font-size: 2.3rem;
   line-height: 1.2;
   font-weight: var(--font-bold);
 }
 
-.page-meta{
+.page-meta {
   margin-top: 0.3rem;
   font-size: 1.4rem;
   font-weight: var(--font-regular);
 }
 
-.page-tags{
+.page-tags {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.page-tags .page-tag{
+.page-tags .page-tag {
   display: inline-block;
   padding: 0 1px;
 
   color: var(--color-typo);
   font-weight: var(--font-light);
 
-  cursor:default;
+  cursor: default;
 }
 
-.page-tags li+li::before{
-  content:"· "
+.page-tags li + li::before {
+  content: "· ";
 }
 
-.page-source{
+.page-source {
   font-weight: var(--font-light);
 }
 

@@ -3,7 +3,7 @@ layout: post-base
 title: Command line list
 meta: 커멘드 라인 리스트
 source: https://www.techrepublic.com/article/16-terminal-commands-every-user-should-know/
-category: common
+category: Common
 tags: [terminal, cli]
 ---
 

@@ -2,7 +2,7 @@
 layout: post-base
 title: MIME type
 meta: MIME type
-category: common
+category: Common
 source: https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types
 tags: [common]
 ---
