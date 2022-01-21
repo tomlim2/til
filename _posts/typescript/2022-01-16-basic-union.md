@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Typescript basic - Union
+title: Basic - Union
 meta: 유니온 유형
 category: Typescript
 tags: [typescript, javascript]

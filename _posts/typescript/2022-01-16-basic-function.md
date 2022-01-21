@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Typescript basic - Function
+title: Basic - Function
 meta: 함수 및 함수 유형
 category: Typescript
 tags: [typescript, javascript]
@@ -12,8 +12,12 @@ tags: [typescript, javascript]
 function add(a: number, b: number): number {
   return a + b;
 }
+```
 
-function printOutput (value:any): void{
-    console.log(value)
+`void`는 반환값이 undifined가 되어야하는 특수한 유형이다.
+
+```typescript
+function printOutput(value: any): void {
+  console.log(value);
 }
 ```

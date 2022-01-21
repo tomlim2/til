@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Typescript basic - Generic
+title: Basic - Generic
 meta: 제네릭 이해하기
 category: Typescript
 tags: [typescript, javascript]

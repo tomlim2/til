@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Typescript basic - Type aliases
+title: Basic - Type aliases
 meta: Type aliases 사용법
 category: Typescript
 tags: [typescript, javascript]
