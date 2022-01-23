@@ -1,15 +1,13 @@
 <nav class="nav-container">
     <div class="logo">
         <div class="img-wrapper">
-          <a href="/"><img src="{{site.baseurl}}/favicon.png" alt="로고"></a>  
+            <a href="/"><img src="{{site.baseurl}}/favicon.png" alt="로고"></a>
         </div>
     </div>
     <div class="menu search-container" id="search-container">
         <input type="text" id="search-input" placeholder="Search or jump to...">
     </div>
     <div class="menu">
-        <a href="{{site.baseurl}}/"
-            class="{% if page.url == '/' or page.layout contains 'base' %} current {% endif %}">HOME</a>
         <a href="{{site.baseurl}}/about" class="{% if page.url == '/about.html' %} current {% endif %}">ABOUT</a>
     </div>
 </nav>
