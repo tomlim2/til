@@ -3,13 +3,13 @@ layout: post-base
 title: CRA Setting - React Hook, Sass
 meta: 리엑트 초기 세팅 가이드라인 - 21년 12월 머치스퀘어 프로젝트 버전
 category: setting
-tags: [Setting, React, VScode, ESLint, Prettier]
+tags: [Setting, React, Sass, VScode, ESLint, Prettier]
 ---
 
 ## Step 1: CRA 설치
 
 ```bush
-npx create-react-app westagram-project
+npx create-react-app <project name>
 ```
 
 ## Step 2: React Router 설치
@@ -35,7 +35,6 @@ npm install node-sass
 ```
 
 ## Step 5: CRA 폴더 및 파일 구성
-
 
 ### src 폴더
 

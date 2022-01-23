@@ -4,8 +4,8 @@ layout: about
 
 # 임연수
 
-[github.com/tomlim2](https://github.com/tomlim2)
-| tomandlim@gmail.com
+[깃허브](https://github.com/tomlim2) / [포트폴리오](https://younsoo.notion.site/younsoo/05f1a0048db546ad877bfd645fc181b0)
+/ tomandlim@gmail.com
 
 한국 서울에서 일하는 프론트 엔드 개발자입니다.
 

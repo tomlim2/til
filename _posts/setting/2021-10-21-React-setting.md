@@ -10,7 +10,7 @@ tags: [Setting, React, VScode, ESLint, Prettier]
 ## Step 1: CRA 설치
 
 ```bush
-npx create-react-app westagram-project
+npx create-react-app <project name>
 ```
 
 ## Step 2: React Router 설치

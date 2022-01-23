@@ -28,6 +28,17 @@ priority: 1.0
 </div>
 
 <div class="section">
+    <h2>NextJs</h2>
+    <ul>
+        {% for nextjs in site.categories.nextjs %}
+        <li>
+            <a href="{{site.baseurl}}{{nextjs.url}}">{{nextjs.title}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<div class="section">
     <h2>Typescript</h2>
     <ul>
         {% for typescript in site.categories.typescript %}
@@ -159,4 +170,3 @@ priority: 1.0
     </ul>
 </div>
 
-<script src="{{site.baseurl}}/js/search.js" type="text/javascript"></script>
