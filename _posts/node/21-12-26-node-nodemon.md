@@ -2,7 +2,7 @@
 layout: post-base
 title: Command for setting; nodemon
 meta: 설정하기 위한 가이드
-category: NodeJs
+category: nodejs
 tags: [NodeJs]
 ---
 

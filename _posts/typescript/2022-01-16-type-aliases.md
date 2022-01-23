@@ -2,7 +2,7 @@
 layout: post-base
 title: Basic - Type aliases
 meta: Type aliases 사용법
-category: Typescript
+category: typescript
 tags: [typescript, javascript]
 ---
 

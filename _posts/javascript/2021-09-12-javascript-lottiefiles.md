@@ -2,7 +2,7 @@
 layout: post-base
 title: Lottie Files / lottie-player & jlottie**
 meta: 그래픽, 마이크로 애니메이션 구현을 위한 플러그인 탐방
-category: Javascript
+category: javascript
 tags: [Javascript, Animation, Evergreen, Lottie Files]
 ---
 

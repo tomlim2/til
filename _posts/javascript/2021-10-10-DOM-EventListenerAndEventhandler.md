@@ -2,7 +2,7 @@
 layout: post-base
 title: DOM / events
 meta: 자바스크립트 이벤트 트리거 개론
-category: Javascript
+category: javascript
 tags: [javascript, DOM]
 ---
 ![d]({{site.baseurl}}/img/21-10-10-dog.png)

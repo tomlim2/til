@@ -2,7 +2,7 @@
 layout: post-base
 title: HTTP response status codes
 meta: 응답 상태 코드들
-category: NodeJs
+category: nodejs
 source: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 tags: [NodeJs]
 ---

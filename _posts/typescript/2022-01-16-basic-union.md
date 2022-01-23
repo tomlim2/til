@@ -2,7 +2,7 @@
 layout: post-base
 title: Basic - Union
 meta: 유니온 유형
-category: Typescript
+category: typescript
 tags: [typescript, javascript]
 ---
 

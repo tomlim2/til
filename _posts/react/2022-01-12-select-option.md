@@ -2,7 +2,7 @@
 layout: post-base
 title: select과 option 태그
 meta: select과 option 사용예시!
-category: React
+category: react
 tags: [react, javascript]
 ---
 

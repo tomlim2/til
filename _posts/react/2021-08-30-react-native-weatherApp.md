@@ -2,7 +2,7 @@
 layout: post-base
 title: 간단한 날씨 앱 / Code Review
 meta: 간단한 날씨 앱 코드 리뷰
-category: React
+category: react
 tags: [React Native, Project]
 ---
 2021.08.28 – 09.04

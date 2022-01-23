@@ -2,7 +2,7 @@
 layout: post-base
 title: CRA Setting - React Hook, Sass
 meta: 리엑트 초기 세팅 가이드라인 - 21년 12월 머치스퀘어 프로젝트 버전
-category: Setting
+category: setting
 tags: [Setting, React, VScode, ESLint, Prettier]
 ---
 

@@ -2,7 +2,7 @@
 layout: post-base
 title: CRA Setting - React, SASS
 meta: 리엑트 초기 세팅 가이드라인 - 21년 10월 위코드 웨스타그램 프로젝트 버전
-category: Setting
+category: setting
 tags: [Setting, React, VScode, ESLint, Prettier]
 ---
 이 세팅은 21년 10월 위코드 Westagram 프로젝트 기준입니다. CRA는 Create React App의 약자이다.

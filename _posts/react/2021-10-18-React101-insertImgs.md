@@ -2,7 +2,7 @@
 layout: post-base
 title: 이미지 삽입하기
 meta: 리엑트에서 이미지 삽입하는 방법
-category: React
+category: react
 tags: [React]
 ---
 ```jsx

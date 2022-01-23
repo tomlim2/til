@@ -2,7 +2,7 @@
 layout: post-base
 title: Winterest / Retrospect 1 - Overview
 meta: 핀터레스트 클론 프로젝트 회고 개요
-category: Projects
+category: projects
 tags: [React, ReactHook, Redux, Project, HTML5, Styled-component, Javascript, AWS S3]
 source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?usp=sharing
 ---

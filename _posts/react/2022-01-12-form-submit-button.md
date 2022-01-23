@@ -2,7 +2,7 @@
 layout: post-base
 title: form과 submit type의 button
 meta: form과 버튼 사용예시!
-category: React
+category: react
 tags: [react, javascript]
 ---
 

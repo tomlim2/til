@@ -2,7 +2,7 @@
 layout: post-base
 title: Query Sort
 meta: 데이터 분류하기
-category: NodeJs
+category: nodejs
 tags: [NodeJs, Express, mongoose]
 ---
 

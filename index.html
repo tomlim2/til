@@ -19,7 +19,7 @@ priority: 1.0
 <div class="section">
     <h2>React</h2>
     <ul>
-        {% for react in site.categories.React %}
+        {% for react in site.categories.react %}
         <li>
             <a href="{{site.baseurl}}{{react.url}}">{{react.title}}</a>
         </li>
@@ -30,7 +30,7 @@ priority: 1.0
 <div class="section">
     <h2>Typescript</h2>
     <ul>
-        {% for typescript in site.categories.Typescript %}
+        {% for typescript in site.categories.typescript %}
         <li>
             <a href="{{site.baseurl}}{{typescript.url}}">{{typescript.title}}</a>
         </li>
@@ -41,7 +41,7 @@ priority: 1.0
 <div class="section">
     <h2>NodeJs</h2>
     <ul>
-        {% for node in site.categories.NodeJs %}
+        {% for node in site.categories.nodejs %}
         <li>
             <a href="{{site.baseurl}}{{node.url}}">{{node.title}}</a>
         </li>
@@ -52,7 +52,7 @@ priority: 1.0
 <div class="section">
     <h2>Javascript</h2>
     <ul>
-        {% for javascript in site.categories.Javascript %}
+        {% for javascript in site.categories.javascript %}
         <li>
             <a href="{{site.baseurl}}{{javascript.url}}">{{javascript.title}}</a>
         </li>
@@ -63,7 +63,7 @@ priority: 1.0
 <div class="section">
     <h2>Project</h2>
     <ul>
-        {% for project in site.categories.Projects %}
+        {% for project in site.categories.projects %}
         <li>
             <a href="{{site.baseurl}}{{project.url}}">{{project.title}}</a>
         </li>
@@ -74,7 +74,7 @@ priority: 1.0
 <div class="section">
     <h2>First settings</h2>
     <ul>
-        {% for setting in site.categories.Setting %}
+        {% for setting in site.categories.setting %}
         <li>
             <a href="{{site.baseurl}}{{setting.url}}">{{setting.title}}</a>
         </li>
@@ -85,7 +85,7 @@ priority: 1.0
 <div class="section">
     <h2>Git</h2>
     <ul>
-        {% for git in site.categories.Git %}
+        {% for git in site.categories.git %}
         <li>
             <a href="{{site.baseurl}}{{git.url}}">{{git.title}}</a>
         </li>
@@ -96,7 +96,7 @@ priority: 1.0
 <div class="section">
     <h2>HTML</h2>
     <ul>
-        {% for html in site.categories.Html %}
+        {% for html in site.categories.html %}
         <li>
             <a href="{{site.baseurl}}{{html.url}}">{{html.title}}</a>
         </li>
@@ -107,7 +107,7 @@ priority: 1.0
 <div class="section">
     <h2>css</h2>
     <ul>
-        {% for css in site.categories.Css %}
+        {% for css in site.categories.css %}
         <li>
             <a href="{{site.baseurl}}{{css.url}}">{{css.title}}</a>
         </li>
@@ -118,7 +118,7 @@ priority: 1.0
 <div class="section lastSection">
     <h2>Algorithm</h2>
     <ul>
-        {% for algorithm in site.categories.Algorithm %}
+        {% for algorithm in site.categories.algorithm %}
         <li>
             <a href="{{site.baseurl}}{{algorithm.url}}">{{algorithm.title}}</a>
         </li>
@@ -129,7 +129,7 @@ priority: 1.0
 <div class="section lastSection">
     <h2>Trouble Shooting</h2>
     <ul>
-        {% for troubleShoot in site.categories.TroubleShoot %}
+        {% for troubleShoot in site.categories.troubleshoots %}
         <li>
             <a href="{{site.baseurl}}{{troubleShoot.url}}">{{troubleShoot.title}}</a>
         </li>
@@ -140,7 +140,7 @@ priority: 1.0
 <div class="section">
     <h2>Design</h2>
     <ul>
-        {% for design in site.categories.Design %}
+        {% for design in site.categories.design %}
         <li>
             <a href="{{site.baseurl}}{{design.url}}">{{design.title}}</a>
         </li>
@@ -151,10 +151,12 @@ priority: 1.0
 <div class="section">
     <h2>Common</h2>
     <ul>
-        {% for common in site.categories.Common %}
+        {% for common in site.categories.common %}
         <li>
             <a href="{{site.baseurl}}{{common.url}}">{{common.title}}</a>
         </li>
         {% endfor %}
     </ul>
 </div>
+
+<script src="./js/search.js" type="text/javascript"></script>

@@ -2,7 +2,7 @@
 layout: post-base
 title: Typescript full-stack 게시판 프로젝트
 meta: 새로 배운 기술들을 써보자!
-category: Projects
+category: projects
 tags:
   [
     React,

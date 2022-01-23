@@ -2,7 +2,7 @@
 layout: post-base
 title: Conflict resolution flow
 meta: 깃허브 협업중 충돌 발생시 해결방식 정리
-category: Git
+category: git
 tags: [Git / Github]
 ---
 작업중

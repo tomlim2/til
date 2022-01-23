@@ -2,7 +2,7 @@
 layout: post-base
 title: Westagram / Code Review 1 - Fetch 통신
 meta:  로그인, 회원가입을 이용한 벡엔드와의 통신 실습
-category: React
+category: react
 source: https://github.com/wecode-bootcamp-korea/26-React-Westagram-3/pull/1
 tags: [React, Project]
 ---

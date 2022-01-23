@@ -2,7 +2,7 @@
 layout: post-base
 title: Advanced Object
 meta: 자바스크립트 객체 사용 예시
-category: Javascript
+category: javascript
 tags: [Javascript]
 ---
 객체에 좀더 깊게 파고들었다. 아래와 같은 리스트들로 본다.

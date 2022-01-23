@@ -2,7 +2,7 @@
 layout: post-base
 title: Basic examples & resources
 meta: 리엑트 네이티브 예시 모음
-category: React
+category: react
 tags: [React Native]
 ---
 Code Academy를 통해 React Native를 공부하면서 배우고 중요하다고 생각하는 부분들을 적어보았다.

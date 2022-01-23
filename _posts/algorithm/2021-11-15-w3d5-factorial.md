@@ -3,7 +3,7 @@ layout: post-base
 title: Code Kata / W3D5 Recursion - Factorial
 meta: 코드카타 3주 5일차 알고리즘 리뷰
 source: https://www.a11yproject.com/
-category: Algorithm
+category: algorithm
 tags: [Javascript, Algorithm]
 ---
 

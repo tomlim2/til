@@ -2,7 +2,7 @@
 layout: post-base
 title: Get authentication with middleware
 meta: express 미들웨어를 통한 인증인가
-category: NodeJs
+category: nodejs
 source: https://job-api-06ys.herokuapp.com/
 tags: [NodeJs, Express, mongoose, MongoDB]
 ---

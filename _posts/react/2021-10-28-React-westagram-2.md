@@ -2,7 +2,7 @@
 layout: post-base
 title: Westagram / Code Review 2 - Refactoring Checklist
 meta: 웨스타그램 프로젝트 리펙토링
-category: React
+category: react
 source: https://github.com/wecode-bootcamp-korea/26-React-Westagram-3/pull/1
 tags: [React, Project]
 ---

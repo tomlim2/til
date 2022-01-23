@@ -2,7 +2,7 @@
 layout: post-base
 title: Pass up data
 meta: 상향식 자식 대 부모 컴포넌트 통신 예시
-category: React
+category: react
 tags: [react, javascript]
 ---
 

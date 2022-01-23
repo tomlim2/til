@@ -2,7 +2,7 @@
 layout: post-base
 title: Array&literation Methods **
 meta: 자바스트립트 배열과 반복문 메서드
-category: Javascript
+category: javascript
 tags: [Javascript, Evergreen]
 ---
 

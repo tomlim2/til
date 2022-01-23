@@ -2,7 +2,7 @@
 layout: post-base
 title: Basic - Generic
 meta: 제네릭 이해하기
-category: Typescript
+category: typescript
 tags: [typescript, javascript]
 ---
 

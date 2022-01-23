@@ -2,7 +2,7 @@
 layout: post-base
 title: Rebase 하는 법
 meta: 깃 리베이스 일반방법론
-category: Git
+category: git
 tags: [Git / Github]
 ---
 

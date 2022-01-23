@@ -2,7 +2,7 @@
 layout: post-base
 title: Snack / Unable to resolve module 'formik.js'
 meta: test
-category: TroubleShoot
+category: troubleshoots
 ---
 add `"formik": "1.3.0"` commend line in `package.json`
 

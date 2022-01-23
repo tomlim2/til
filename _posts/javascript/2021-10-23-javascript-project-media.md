@@ -2,7 +2,7 @@
 layout: post-base
 title: Build a Library & School Catalogue
 meta: 자바스크립트 클라스 코드 리뷰
-category: Javascript
+category: javascript
 tags: [Javascript, Project]
 ---
 

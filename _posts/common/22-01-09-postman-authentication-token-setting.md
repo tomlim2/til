@@ -2,7 +2,7 @@
 layout: post-base
 title: Postman access token setting
 meta: 포스트맨 토큰 설정
-category: Common
+category: common
 tags: [common, postman]
 ---
 

@@ -2,7 +2,7 @@
 layout: post-base
 title: HTTP - My first server
 meta: 처음으로 만들어 본 서버
-category: NodeJs
+category: nodejs
 tags: [NodeJs]
 ---
 

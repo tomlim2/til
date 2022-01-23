@@ -2,7 +2,7 @@
 layout: post-base
 title: Basic - Function
 meta: 함수 및 함수 유형
-category: Typescript
+category: typescript
 tags: [typescript, javascript]
 ---
 

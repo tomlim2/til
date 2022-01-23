@@ -2,7 +2,7 @@
 layout: post-base
 title: Like / Retrospect 3 - Review star in react
 meta: 리뷰용 별 구현
-category: Projects
+category: projects
 tags: [React, Javascript, Sass, Project]
 source: https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend
 ---

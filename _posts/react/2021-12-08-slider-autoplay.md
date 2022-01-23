@@ -2,7 +2,7 @@
 layout: post-base
 title: Slider auto play
 meta: 자바스크립트 애니메이션 이해하기 2
-category: React
+category: react
 tags: [react, javascript]
 ---
 

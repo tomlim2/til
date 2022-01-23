@@ -2,7 +2,7 @@
 layout: post-base
 title: Expo-cli, Github 연동하기
 meta: 리엑트 네이티브 작업환경 구축하기
-category: React
+category: react
 tags: [React Native, Expo-cli, Github]
 ---
 

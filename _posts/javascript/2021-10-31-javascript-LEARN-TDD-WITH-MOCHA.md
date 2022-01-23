@@ -2,7 +2,7 @@
 layout: post-base
 title: Learn TDD with Mocha
 meta: TDD 프로세스 리뷰
-category: Javascript
+category: javascript
 tags: [Javascript, Mocha, TDD]
 ---
 Test-driven development (TDD) is a programming technique that uses test code and implementation code. The test code is written to define the desired behavior of your program. The test output provides descriptive error messages that inform the implementation of your program.

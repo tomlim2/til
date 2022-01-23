@@ -2,7 +2,7 @@
 layout: post-base
 title: Timeouts and Intervals
 meta: setTimeout()와 setInterval()을 사용할 때 알고 있어야 할 것들
-category: Javascript
+category: javascript
 tags: [Javascript]
 source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals
 ---

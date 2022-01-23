@@ -2,7 +2,7 @@
 layout: post-base
 title: Like / Retrospect 2 - Product size selector
 meta: 수량 선택 기능 구현 중
-category: Projects
+category: projects
 tags: [React, Project]
 source: https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend
 ---

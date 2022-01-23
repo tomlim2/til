@@ -2,7 +2,7 @@
 layout: post-base
 title: Async and await
 meta: Async, await 사용 예시
-category: Javascript
+category: javascript
 tags: [Javascript]
 source: https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Async_await
 ---

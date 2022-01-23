@@ -2,7 +2,7 @@
 layout: post-base
 title: 컴포넌트 데이터 주고 받기 1
 meta: 리엑트 데이터 주고 받는 패턴 - 해야할 일 추가하기
-category: React
+category: react
 tags: [React]
 ---
 Todos는 [React JS Crash Course (2019)](https://www.youtube.com/watch?v=sBws8MSXN7A)을 진행하면서 만든 리엑트 웹이다. 큰 기능들은 해야할 일들을 작성하고, 삭제하고, 체크하는 기능이 있다.

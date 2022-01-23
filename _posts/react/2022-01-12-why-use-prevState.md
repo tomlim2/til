@@ -2,7 +2,7 @@
 layout: post-base
 title: prevState
 meta: 내부함수를 이용해 이전 상태를 가져오기
-category: React
+category: react
 tags: [react, javascript]
 ---
 

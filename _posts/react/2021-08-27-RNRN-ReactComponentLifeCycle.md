@@ -2,7 +2,7 @@
 layout: post-base
 title: Component Life Cycle
 meta: 리엑트 컴포넌트 라이브 사이클란 무엇인가?
-category: React
+category: react
 tags: [React]
 ---
 ## 기본적인 life cycle

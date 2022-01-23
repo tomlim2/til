@@ -2,7 +2,7 @@
 layout: post-base
 title: MongoDB - mongoose queries
 meta: Static helper functions for CRUD operations
-category: NodeJs
+category: nodejs
 source: https://mongoosejs.com/docs/queries.html
 tags: [NodeJs, MongoDB, Express, mongoose]
 ---

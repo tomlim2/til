@@ -2,7 +2,7 @@
 layout: post-base
 title: Method to build basic structure for API
 meta: express를 통한 기본적인 API 만들기 플로우
-category: NodeJs
+category: nodejs
 source: https://job-api-06ys.herokuapp.com/
 tags: [NodeJs, Express, mongoose, MongoDB]
 ---

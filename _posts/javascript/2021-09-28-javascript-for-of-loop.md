@@ -2,7 +2,7 @@
 layout: post-base
 title: for loop vs. for…of loop
 meta: test
-category: Javascript
+category: javascript
 tags: [Javascript]
 ---
 for...of는 for loop의 es6 버전이다.

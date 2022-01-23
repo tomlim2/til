@@ -2,7 +2,7 @@
 layout: post-base
 title: object-fit cover
 meta: 이미지 핏
-category: Css
+category: css
 tags: [css]
 ---
 

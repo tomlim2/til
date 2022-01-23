@@ -3,7 +3,7 @@ layout: post-base
 title: 간단한 영화 웹 / Code Review
 meta: 간단한 영화 웹 코드 리뷰
 source: https://nomadcoders.co/react-fundamentals/lobby
-category: React
+category: react
 tags: [React, Project]
 ---
 2021.08.25 – 28

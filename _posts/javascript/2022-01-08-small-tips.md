@@ -2,7 +2,7 @@
 layout: post-base
 title: How to use Date object
 meta: Date 객체 문자열로 출력하는 방법
-category: Javascript
+category: javascript
 tags: [Javascript]
 ---
 

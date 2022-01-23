@@ -2,7 +2,7 @@
 layout: post-base
 title: Monster / Code Review - Search Bar
 meta: 검색창 구현 코드 리뷰
-category: React
+category: react
 tags: [React, Project]
 ---
 ```jsx

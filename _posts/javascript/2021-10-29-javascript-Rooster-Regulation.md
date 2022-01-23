@@ -2,7 +2,7 @@
 layout: post-base
 title: TDD / Rooster Regulation
 meta: 모카를 이용한 객체 테스터 만들기
-category: Javascript
+category: javascript
 tags: [Javascript, Mocha, TDD]
 ---
 ```js

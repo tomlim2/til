@@ -2,7 +2,7 @@
 layout: post-base
 title: Javascript / Error Handling
 meta: 에러 처리를 위한 키워드와 예제
-category: Javascript
+category: javascript
 tags: [Javascript, Error Handling]
 ---
 `Error Handiling`을 하는 이유는 발생할 에러들을 예측하고 그에 따른 대응하기 위해서이다.
