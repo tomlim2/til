@@ -4,7 +4,7 @@ pageClass: home-container
 priority: 1.0
 ---
 <div class="section">
-    <h2>New Posts</h2>
+    <h2 class="section-title">New Posts</h2>
     <ul>
         {% assign sorted = site.posts | sort: 'date' | reverse %}
         {% for item in sorted limit: 5 %}
@@ -17,7 +17,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>React</h2>
+    <h2 class="section-title">React</h2>
     <ul>
         {% for react in site.categories.react %}
         <li>
@@ -28,7 +28,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>NextJs</h2>
+    <h2 class="section-title">NextJs</h2>
     <ul>
         {% for nextjs in site.categories.nextjs %}
         <li>
@@ -39,7 +39,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Typescript</h2>
+    <h2 class="section-title">Typescript</h2>
     <ul>
         {% for typescript in site.categories.typescript %}
         <li>
@@ -50,7 +50,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>NodeJs</h2>
+    <h2 class="section-title">NodeJs</h2>
     <ul>
         {% for node in site.categories.nodejs %}
         <li>
@@ -61,7 +61,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Javascript</h2>
+    <h2 class="section-title">Javascript</h2>
     <ul>
         {% for javascript in site.categories.javascript %}
         <li>
@@ -72,7 +72,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Project</h2>
+    <h2 class="section-title">Project</h2>
     <ul>
         {% for project in site.categories.projects %}
         <li>
@@ -83,7 +83,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>First settings</h2>
+    <h2 class="section-title">First settings</h2>
     <ul>
         {% for setting in site.categories.setting %}
         <li>
@@ -94,7 +94,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Git</h2>
+    <h2 class="section-title">Git</h2>
     <ul>
         {% for git in site.categories.git %}
         <li>
@@ -105,7 +105,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>HTML</h2>
+    <h2 class="section-title">HTML</h2>
     <ul>
         {% for html in site.categories.html %}
         <li>
@@ -116,7 +116,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>css</h2>
+    <h2 class="section-title">css</h2>
     <ul>
         {% for css in site.categories.css %}
         <li>
@@ -127,7 +127,7 @@ priority: 1.0
 </div>
 
 <div class="section lastSection">
-    <h2>Algorithm</h2>
+    <h2 class="section-title">Algorithm</h2>
     <ul>
         {% for algorithm in site.categories.algorithm %}
         <li>
@@ -138,7 +138,7 @@ priority: 1.0
 </div>
 
 <div class="section lastSection">
-    <h2>Trouble Shooting</h2>
+    <h2 class="section-title">Trouble Shooting</h2>
     <ul>
         {% for troubleShoot in site.categories.troubleshoots %}
         <li>
@@ -149,7 +149,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Design</h2>
+    <h2 class="section-title">Design</h2>
     <ul>
         {% for design in site.categories.design %}
         <li>
@@ -160,7 +160,7 @@ priority: 1.0
 </div>
 
 <div class="section">
-    <h2>Common</h2>
+    <h2 class="section-title">Common</h2>
     <ul>
         {% for common in site.categories.common %}
         <li>

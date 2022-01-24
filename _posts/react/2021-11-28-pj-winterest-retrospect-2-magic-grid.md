@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Winterest / Retrospect 2 - Pinterest Grid + Infinite Scroll
+title: Winterest / Pinterest Grid + Infinite Scroll
 meta: 윈터레스트 핵심 로직 및 기능
-category: projects
+category: react
 tags: [React, ReactHook, Project, HTML5, CSS, Styled-component, Javascript]
 source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?usp=sharing
 ---

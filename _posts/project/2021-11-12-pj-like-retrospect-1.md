@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Like / Retrospect 1 - Overview
+title: 의류 이커머스 웹 구현 / Like
 meta: 나이키 클론 프로젝트 회고 개요
-category: project
+category: projects
 tags: [React, Project, HTML5, SASS, Javascript, AWS S3]
 source: https://drive.google.com/file/d/1TyeGsUcogieXJmMcxchkl2-tk5qylNw8/view?usp=sharing
 ---

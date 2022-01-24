@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Winterest / Retrospect 3 - 들어온 일부 데이터 값 변경시켜 저장하기
+title: Winterest / 들어온 일부 데이터 값 변경시켜 저장하기
 meta: 필요 데이터 값을 바꾸는 방법
-category: projects
+category: react
 tags: [React, ReactHook, Project, HTML5, CSS, Styled-component, Javascript]
 source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?usp=sharing
 ---

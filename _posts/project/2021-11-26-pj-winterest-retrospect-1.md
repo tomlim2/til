@@ -1,6 +1,6 @@
 ---
 layout: post-base
-title: Winterest / Retrospect 1 - Overview
+title: 이미지 기반 SNS 공유 서비스 / Winterest
 meta: 핀터레스트 클론 프로젝트 회고 개요
 category: projects
 tags: [React, ReactHook, Redux, Project, HTML5, Styled-component, Javascript, AWS S3]

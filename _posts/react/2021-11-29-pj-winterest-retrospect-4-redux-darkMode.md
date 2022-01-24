@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Winterest / Retrospect 4 - Dark mode with redux and react hook
+title: Winterest / Dark mode with redux and react hook
 meta: Implementing dark mode
-category: projects
+category: react
 tags: [React, ReactHook, Project, HTML5, CSS, Styled-component, Javascript]
 source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?usp=sharing
 ---

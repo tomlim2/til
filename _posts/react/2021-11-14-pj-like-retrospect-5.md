@@ -1,8 +1,8 @@
 ---
 layout: post-base
-title: Like / Retrospect 5 - Scroll event listener
+title: Like / Scroll event listener
 meta: 프로젝트하면서 얻은 다양한 피드백과 영감을 받는 코드들
-category: projects
+category: react
 tags: [React, Javascript, Sass, Project]
 source: https://github.com/wecode-bootcamp-korea/26-1st-LIKE-frontend
 ---
