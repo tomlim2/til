@@ -1,8 +1,9 @@
 ---
 layout: post-base
-title: NFT 갤러리  phase 1 / 머치스퀘어
-meta: NFT KROC 회고
+title: NFT 갤러리 phase 1 / Cork NFT
+meta: NFT Cork 회고
 category: projects
+source: https://www.corknft.com/
 tags: [React, Recoil, SASS, Javascript, Firebase, HTML5]
 ---
 
