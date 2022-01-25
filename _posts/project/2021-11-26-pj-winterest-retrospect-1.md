@@ -3,7 +3,17 @@ layout: post-base
 title: 이미지 기반 SNS 공유 서비스 / Winterest
 meta: 핀터레스트 클론 프로젝트 회고 개요
 category: projects
-tags: [React, ReactHook, Redux, Project, HTML5, Styled-component, Javascript, AWS S3]
+tags:
+  [
+    React,
+    ReactHook,
+    Redux,
+    Project,
+    HTML5,
+    Styled-component,
+    Javascript,
+    AWS S3,
+  ]
 source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?usp=sharing
 ---
 
@@ -19,7 +29,7 @@ source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?u
 ## Tech stack
 
 - **Front-End** : HTML5, Javascript, React, React Hook, Styled component, Redux AWS S3
-- **Back-End** :  Django, Python, MySQL, jwt, bcrypt, AWS EC2, AWS RDS, AWS S3, Docker
+- **Back-End** : Django, Python, MySQL, jwt, bcrypt, AWS EC2, AWS RDS, AWS S3, Docker
 - **Common** : Trello, Slack, Notion, Github, dbdiagram, postman
 
 ## 구현된 화면과 기능들
@@ -107,7 +117,7 @@ source: https://drive.google.com/file/d/1OeR-_FTH9cSdoDQzxY83fJlY1tcdrh7Q/view?u
 
 ## 소감
 
-> *[이전 프로젝트]({% post_url 2021-11-12-pj-like-retrospect-1 %})가 달달했다면 이번 프로젝트는 담백했다.*
+> _[이전 프로젝트]({% post_url 2021-11-12-pj-like-retrospect-1 %})가 달달했다면 이번 프로젝트는 담백했다._
 
 백 엔드에서 이미지 크롤링과 이미지 데이터 입력 로직상 다양한 높이 값을 가진 이미지를 처리하는 것에 어려움이 있었기에 고정된 넓이 높이 사이즈의 이미지만이 있었고 핀 저장기능도 메인 데이터에서 분리되어 있기에 업로드한 이미지와 같이 표시 되지 않았기에 저장된 핀과 업로드한 이미지가 마이페이지에 하나의 뷰 안에 들어가 있지 않았다. 이에 따른 고정된 높이 값에 랜덤한 높이값을 반영하고 마이페이지에 들어올 두가지 뷰를 위한 레이아웃 수정 및 하는 등 프론트 엔드 측에서 해결해야할 사항들이 있었다. 팀원 전부 이부분들에 대해 유기적이고 적극적으로 타협 했기에 인상적인 완성도를 가진 결과물을 얻게 되었다.
 

@@ -20,29 +20,29 @@ tags: [react, javascript]
 ```js
 const animationDuration = 2000;
 const frameDuration = 1000 / 60;
-const totalFrames = Math.round( animationDuration / frameDuration );
-const easeOutQuad = t => t * ( 2 - t );
-const animateCountUp = el => {
+const totalFrames = Math.round(animationDuration / frameDuration);
+const easeOutQuad = (t) => t * (2 - t);
+const animateCountUp = (el) => {
   let frame = 0;
-  const countTo = parseInt( el.innerHTML, 10 );
-  const counter = setInterval( () => {
+  const countTo = parseInt(el.innerHTML, 10);
+  const counter = setInterval(() => {
     frame++;
-    const progress = easeOutQuad( frame / totalFrames );
-    const currentCount = Math.round( countTo * progress );
+    const progress = easeOutQuad(frame / totalFrames);
+    const currentCount = Math.round(countTo * progress);
 
-    if ( parseInt( el.innerHTML, 10 ) !== currentCount ) {
+    if (parseInt(el.innerHTML, 10) !== currentCount) {
       el.innerHTML = currentCount;
     }
 
-    if ( frame === totalFrames ) {
-      clearInterval( counter );
+    if (frame === totalFrames) {
+      clearInterval(counter);
     }
-  }, frameDuration );
+  }, frameDuration);
 };
 
 const runAnimations = () => {
-  const countupEls = document.querySelectorAll( '.countup' );
-  countupEls.forEach( animateCountUp );
+  const countupEls = document.querySelectorAll(".countup");
+  countupEls.forEach(animateCountUp);
 };
 ```
 
@@ -102,20 +102,23 @@ const totalFrames = Math.round(duration / frameDuration);
 
 ```js
 EasingFunctions = {
-  linear: t => t,
-  easeInQuad: t => t*t,
-  easeOutQuad: t => t*(2-t),
-  easeInOutQuad: t => t<.5 ? 2*t*t : -1+(4-2*t)*t,
-  easeInCubic: t => t*t*t,
-  easeOutCubic: t => (--t)*t*t+1,
-  easeInOutCubic: t => t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1,
-  easeInQuart: t => t*t*t*t,
-  easeOutQuart: t => 1-(--t)*t*t*t,
-  easeInOutQuart: t => t<.5 ? 8*t*t*t*t : 1-8*(--t)*t*t*t,
-  easeInQuint: t => t*t*t*t*t,
-  easeOutQuint: t => 1+(--t)*t*t*t*t,
-  easeInOutQuint: t => t<.5 ? 16*t*t*t*t*t : 1+16*(--t)*t*t*t*t
-}
+  linear: (t) => t,
+  easeInQuad: (t) => t * t,
+  easeOutQuad: (t) => t * (2 - t),
+  easeInOutQuad: (t) => (t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t),
+  easeInCubic: (t) => t * t * t,
+  easeOutCubic: (t) => --t * t * t + 1,
+  easeInOutCubic: (t) =>
+    t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1,
+  easeInQuart: (t) => t * t * t * t,
+  easeOutQuart: (t) => 1 - --t * t * t * t,
+  easeInOutQuart: (t) =>
+    t < 0.5 ? 8 * t * t * t * t : 1 - 8 * --t * t * t * t,
+  easeInQuint: (t) => t * t * t * t * t,
+  easeOutQuint: (t) => 1 + --t * t * t * t * t,
+  easeInOutQuint: (t) =>
+    t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * --t * t * t * t * t,
+};
 ```
 
 Resource from [easing functions in this Gist](https://gist.github.com/gre/1650294)

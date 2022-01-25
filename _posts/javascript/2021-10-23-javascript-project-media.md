@@ -121,7 +121,7 @@ console.log(speed.isCheckedOut); // true
 
 - Add more properties to each class (movieCast, songTitles, etc.)
 - Create a CD class that extends Media.
-In .addRating(), make sure input is between 1 and 5.
+  In .addRating(), make sure input is between 1 and 5.
 - Create a method called shuffle for the CD class. The method returns a randomly sorted array of all the songs in the songs property.
 - Create class called Catalog that holds all of the Media items in our library.
 
@@ -139,32 +139,36 @@ In .addRating(), make sure input is between 1 and 5.
 
 ```js
 class School {
-  constructor(name, level, numberOfStudents){
-    this._name = name,
-    this._level = level,
-    this._numberOfStudents = numberOfStudents
+  constructor(name, level, numberOfStudents) {
+    (this._name = name),
+      (this._level = level),
+      (this._numberOfStudents = numberOfStudents);
   }
-  get name(){
+  get name() {
     return this._name;
   }
-  get level(){
+  get level() {
     return this._level;
   }
-  get numberOfStudents(){
+  get numberOfStudents() {
     return this._numberOfStudents;
   }
-  set numberOfStudents(newNumberOfStudents){
-    if (typeof newNumberOfStudents === 'number'){
+  set numberOfStudents(newNumberOfStudents) {
+    if (typeof newNumberOfStudents === "number") {
       this._numbderOfStudents = newNumberOfStudents;
     } else {
-      console.log('Invalid input: numberOfStudents must be set to a Number.')
+      console.log("Invalid input: numberOfStudents must be set to a Number.");
     }
   }
-  quickFacts(){
-    console.log(`${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`)
+  quickFacts() {
+    console.log(
+      `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
+    );
   }
-  static pickSubstituteTeacher(substituteTeachers){
-    return substituteTeachers[Math.floor(Math.random()*(substituteTeachers.length-1))];
+  static pickSubstituteTeacher(substituteTeachers) {
+    return substituteTeachers[
+      Math.floor(Math.random() * (substituteTeachers.length - 1))
+    ];
   }
 }
 ```
@@ -175,8 +179,8 @@ class School {
 
 ```js
 class PrimarySchool extends School {
-  constructor(name, numberOfStudent, pickupPolicy){
-    super(name, 'primary', numberOfStudent);
+  constructor(name, numberOfStudent, pickupPolicy) {
+    super(name, "primary", numberOfStudent);
     this._pickupPolicy = pickupPolicy;
   }
   get pickupPolicy() {
@@ -185,18 +189,27 @@ class PrimarySchool extends School {
 }
 
 class HighSchool extends School {
-  constructor(name, numberOfStudent, sportsTeams){
-    super(name, 'high', numberOfStudent);
+  constructor(name, numberOfStudent, sportsTeams) {
+    super(name, "high", numberOfStudent);
     this._sportsTeams = sportsTeams;
   }
-  get sportsTeams(){
-    return this._sportsTeam
+  get sportsTeams() {
+    return this._sportsTeam;
   }
 }
 
-const lorraineHansbury = new PrimarySchool ('Lorraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.')
+const lorraineHansbury = new PrimarySchool(
+  "Lorraine Hansbury",
+  514,
+  "Students must be picked up by a parent, guardian, or a family member over the age of 13."
+);
 
-const alSmith = new HighSchool ('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+const alSmith = new HighSchool("Al E. Smith", 415, [
+  "Baseball",
+  "Basketball",
+  "Volleyball",
+  "Track and Field",
+]);
 ```
 
 ## Resource

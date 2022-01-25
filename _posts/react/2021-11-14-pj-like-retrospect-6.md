@@ -42,7 +42,7 @@ Paste policy above
 }
 ```
 
-### Step 8. Go back to Properties > get URL from the bottom.
+### Step 8. Go back to Properties > get URL from the bottom
 
 ## Resource
 

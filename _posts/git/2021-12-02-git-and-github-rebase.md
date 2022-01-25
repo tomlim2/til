@@ -26,7 +26,7 @@ tags: [Git / Github]
 1. 최종적으로 이 rebase된 커밋의 내용을 작성하는 부분.
 2. 현재까지 적은 커밋 메세지가 전부 나타난다.
 3. 불필요한 내용을 제거하고 현재 수정 내역에 대한 커밋 메세지를 정
-성껏 작성한다.
+   성껏 작성한다.
 4. `esc` -> `:wq` 저장하고 에디터에서 빠져나온다.
 
 ### Successfully rebased
@@ -39,19 +39,19 @@ tags: [Git / Github]
 1. Rebase는 commit history를 정리하는 역할을 한다.
 2. 같은 브랜치에서 Rebase를 할 때마다 history가 달라질 수 있다.
 3. 수정 사항이 추가로 생긴 후 다시 rebase하면 history가 무조건 달
-라진다.
+   라진다.
 4. git은 history가 다른 branch의 push를 허용하지 않는다.
 5. `git push origin feature/login -f` -f 옵션을 사용하여 force
-push를 진행한다.
+   push를 진행한다.
 
 ## Conflict Flow
 
 ### Rebase 중 충돌 해결하기
 
 1. 충돌이 일어난 경우 Rebase가 진행되지도, 끝나지도 않고 도중에
-멈춰 있어, 매우 당혹스럽다.
+   멈춰 있어, 매우 당혹스럽다.
 2. 터미널이 (rebase ~ 1/6) 과 같은 메세지로 rebase가 진행중임을
-알려주니 겁먹지 않도록 하자!
+   알려주니 겁먹지 않도록 하자!
 3. 충돌은 충돌일 뿐, 해당하는 코드를 수정 후
 4. `Git add .`
 5. (Git commit은 하지 않는다. 수정 사항이 없으니까)
@@ -59,8 +59,8 @@ push를 진행한다.
 7. 멈춰 있던 리베이스가 진행된다.
 8. 충돌이 여러번 나면 그 때마다 충돌을 해결하고 `git add .` / `git rebase ㅡㅡcontinue`를 반복한다.
 9. 계속 해결이 안된다면, `git rebase ㅡㅡabort`로 아예 rebase를
-진행하기 전 상황으로 돌아갈 수도 있다.
+   진행하기 전 상황으로 돌아갈 수도 있다.
 
 ## Resource
 
-* Wecode
+- Wecode

@@ -5,6 +5,7 @@ meta: 자바스크립트 ES6를 활용한 모듈 구현
 category: javascript
 tags: [Javascript]
 ---
+
 묘듈은 재사용 가능한 코드의 조각들이다. 이 코드들은 그 파일에서 `export`가 되고 다른 파일에서 `import`될 수 있다.
 
 ![what is modules?]({{site.baseurl}}/img/2021-10-25-modular-program-diagram.svg)
@@ -28,15 +29,15 @@ _출처 - [Code Academy](www.codecademy.com)_
 function changeText(domElement, newText) {
   domElement.innerHTML = newText;
 }
- 
+
 function changeToFunkyColor(domElement) {
   const r = Math.random() * 255;
   const g = Math.random() * 255;
   const b = Math.random() * 255;
- 
+
   domElement.style.color = `rgb(${r}, ${g}, ${b})`;
 
-  export { changeText, changeToFunkyColor }
+  export { changeText, changeToFunkyColor };
 }
 ```
 
@@ -45,18 +46,16 @@ function changeToFunkyColor(domElement) {
 ```js
 /* main.js */
 
-import { changeText, changeToFunkyColor } from './module.js'
+import { changeText, changeToFunkyColor } from "./module.js";
 
 const header = document.getElementById("header");
 
 // call changeText here
 changeText(header, "I did it!");
 
-setInterval(()=> {
-  
+setInterval(() => {
   // call changeToFunkyColor() here
   changeToFunkyColor(header);
-
 }, 200);
 ```
 
@@ -64,17 +63,17 @@ setInterval(()=> {
 
 ```js
 /* area-calculator.js */
- 
-import { area as squareArea } from 'square-area.js';
-import { area as circleArea } from 'circle-area.js';
- 
-console.log('The area of a square with sides of length 5 is ' + squareArea(5));
-console.log('The area of a circle with radius of length 5 is ' + circleArea(5));
+
+import { area as squareArea } from "square-area.js";
+import { area as circleArea } from "circle-area.js";
+
+console.log("The area of a square with sides of length 5 is " + squareArea(5));
+console.log("The area of a circle with radius of length 5 is " + circleArea(5));
 ```
 
 ### HTML
 
-모듈화된 자바스크립트는 `HTML`에 `import`할 때, `type='module'`을 써줘야 에러를 피할 수 있다. `<script  type='module' src="./my-module.js"> </script>`
+모듈화된 자바스크립트는 `HTML`에 `import`할 때, `type='module'`을 써줘야 에러를 피할 수 있다. `<script type='module' src="./my-module.js"> </script>`
 
 ### export default
 
@@ -95,7 +94,10 @@ function changeToFunkyColor(domElement) {
 
 // use default export syntax below here
 
-export default {changeText: changeText, changeToFunkyColor: changeToFunkyColor}
+export default {
+  changeText: changeText,
+  changeToFunkyColor: changeToFunkyColor,
+};
 ```
 
 ### Importing default modules
@@ -104,8 +106,8 @@ export default {changeText: changeText, changeToFunkyColor: changeToFunkyColor}
 const resources = {
   articleTitle: "Implementing Modules using ES6 Syntax",
   numberOfChallenges: 6,
-  minutesToComplete: 45
-}
+  minutesToComplete: 45,
+};
 export default resources;
 ```
 

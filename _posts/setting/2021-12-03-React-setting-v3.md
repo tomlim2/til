@@ -59,8 +59,8 @@ npm install node-sass
 - `GlobalStyle.js` - 전역 css 초기화 및 모든 페이지에 공통적으로 적용될 css 속성들
 
 ```jsx
-import { createGlobalStyle } from 'styled-components';
-import reset from 'styled-reset';
+import { createGlobalStyle } from "styled-components";
+import reset from "styled-reset";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -83,24 +83,22 @@ const GlobalStyle = createGlobalStyle`
 export default GlobalStyle;
 ```
 
-<br />
-
 - `theme.js` - 함께 쓰는 공통 css 속성(ex. theme color)
 
 ```jsx
 const theme = {
-  background: '#FFFEFC',
-  white: '#FFFFFF',
-  black: '#000000',
-  vermilion: '#ff7425',
-  orange: '#FF9900',
-  opacityOrange: 'rgba(242,153,74,0.5)',
-  yellow: '#FFD66C',
-  grey: 'rgba(196,196,196,0.3)',
-  middleGrey: 'rgba(65,65,65,0.4)',
-  deepGrey: '#828282',
-  lightOrange: 'rgba(255,195,170,0.3)',
-  fontColor: '#2D2B2B',
+  background: "#FFFEFC",
+  white: "#FFFFFF",
+  black: "#000000",
+  vermilion: "#ff7425",
+  orange: "#FF9900",
+  opacityOrange: "rgba(242,153,74,0.5)",
+  yellow: "#FFD66C",
+  grey: "rgba(196,196,196,0.3)",
+  middleGrey: "rgba(65,65,65,0.4)",
+  deepGrey: "#828282",
+  lightOrange: "rgba(255,195,170,0.3)",
+  fontColor: "#2D2B2B",
   fontTitle: "'Noto Sans KR', sans-serif;",
   fontContent: "'Noto Sans KR', sans-serif;",
 };
@@ -108,17 +106,15 @@ const theme = {
 export default theme;
 ```
 
-<br />
-
 - `index.js`
 
 ```jsx
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './styles/GlobalStyle';
-import Routers from './Routers';
-import theme from './styles/theme';
+import React from "react";
+import ReactDOM from "react-dom";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "./styles/GlobalStyle";
+import Routers from "./Routers";
+import theme from "./styles/theme";
 
 ReactDOM.render(
   <>
@@ -127,22 +123,21 @@ ReactDOM.render(
       <Routers />
     </ThemeProvider>
   </>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
 ```
 
 ### :::: `Routers.js`
 
 ```jsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Nav from './components/Nav/Nav';
-import Detail from './pages/Detail/Detail';
-import Login from './pages/Login/Login';
-import Main from './pages/Main/Main';
-import MyPage from './pages/MyPage/MyPage';
-import Upload from './pages/Upload/Upload';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav/Nav";
+import Detail from "./pages/Detail/Detail";
+import Login from "./pages/Login/Login";
+import Main from "./pages/Main/Main";
+import MyPage from "./pages/MyPage/MyPage";
+import Upload from "./pages/Upload/Upload";
 
 const Routers = () => {
   return (
@@ -167,19 +162,19 @@ export default Routers;
 - `index.js`와 같은 위치에 두면 된다.
 
 ```jsx
-const BASE_URL = 'http://15.164.170.124:8000';
+const BASE_URL = "http://15.164.170.124:8000";
 
 export const API = {
   signUp: `${BASE_URL}/users/signup`,
   baseUrl: `${BASE_URL}`,
   token:
-    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g',
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g",
 };
 
 export const MockUp = {
-  categories: '/data/nav/categories.json',
+  categories: "/data/nav/categories.json",
   token:
-    'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g',
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NX0.jugJgM3JP9XFInnwQJbQt02wCRW_aUnWnv5HWNC0X_g",
 };
 ```
 
@@ -220,7 +215,7 @@ Prettier는 ESLint와 비슷한 기능을 가지고 있지만 자동으로 코�
 
 위의 경로에 `setting.json`이 보인다면 설치가 성공한 것이다.
 
-확장 프로그램만 설치하면 밑의 프로그램을 설치할 필요가 없다고 하지만 팀 작업 때 밑의 코드를 실행했었다. 나중에 초기세팅 한다면  밑의 코드 설치를 생략해보자.
+확장 프로그램만 설치하면 밑의 프로그램을 설치할 필요가 없다고 하지만 팀 작업 때 밑의 코드를 실행했었다. 나중에 초기세팅 한다면 밑의 코드 설치를 생략해보자.
 
 ```bush
 npm install -D prettier eslint-config-prettier eslint-plugin-prettier
@@ -306,9 +301,9 @@ npm install -D prettier eslint-config-prettier eslint-plugin-prettier
 
 ```bush
 {
-  "tabWidth": 2, 
-  "endOfLine": "lf", 
-  "arrowParens": "avoid", 
+  "tabWidth": 2,
+  "endOfLine": "lf",
+  "arrowParens": "avoid",
   "singleQuote": true,
 }
 ```

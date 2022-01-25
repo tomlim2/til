@@ -5,11 +5,12 @@ meta: 웹사이트 개발 시작전 상기해야할 요소들
 category: html
 tags: [HTML, CSS, Evergreen]
 ---
+
 밑의 자료들은 semantic HTML&CSS에 대한 일반적인 구현형식과 태그들을 간략하게 정리하였다. 5분 안에 읽을 수 있도록 더 간결하고 깊게 쓰도록 항상 갱신하자.
 
 ![General semantic html]({{site.baseurl}}/img/2021-10-29-semanticHTML.png)
 
-***출처 - [Interneting Is Hard](https://www.internetingishard.com/html-and-css/semantic-html/)***
+**_출처 - [Interneting Is Hard](https://www.internetingishard.com/html-and-css/semantic-html/)_**
 
 ## General
 
@@ -23,7 +24,7 @@ HTML에 이미지를 넣는다고 한다면, `<img>` 태그에 그림들을 넣�
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <header>
@@ -36,7 +37,7 @@ HTML에 이미지를 넣는다고 한다면, `<img>` 태그에 그림들을 넣�
         </ul>
       </nav>
     </header>
-    
+
     <main>
       <section>
         <article>
@@ -44,34 +45,32 @@ HTML에 이미지를 넣는다고 한다면, `<img>` 태그에 그림들을 넣�
           <p>Dogs have a sense of time...</p>
         </article>
         <aside>
-          <p>A study was conducted on dogs...</p> 
+          <p>A study was conducted on dogs...</p>
         </aside>
-      </section> 
+      </section>
       <figure>
-        <img src="dogimage.jpeg"/>
+        <img src="dogimage.jpeg" />
         <figcaption>A cute dog.</figcaption>
-      </figure>  
+      </figure>
       <audio controls>
-        <source src="dogBarking.mp3" type="audio/mp3">
-      </audio> 
-      <video src="dog-video.mp4" controls>
-      </video>
-      <embed src="dog-on-beach.gif"/>
+        <source src="dogBarking.mp3" type="audio/mp3" />
+      </audio>
+      <video src="dog-video.mp4" controls></video>
+      <embed src="dog-on-beach.gif" />
     </main>
-    
+
     <footer>
-      <p>Contact me at +1 234 567 8910 </p>
+      <p>Contact me at +1 234 567 8910</p>
     </footer>
-              
   </body>
 </html>
 ```
 
 ## 태그 정리
 
-* 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
-* `<section>`은 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸 때 사용한다.
-* `<aside>`는 메인 컨텐츠에 관련은 있으나 그 컨텐츠를 이해하는데 필수가 아닌 정보를 보여줄때 쓴다.
+- 가장 기본적인 웹페이지는 `<header>`, `<nav>` , `<main>` 그리고 `<footer>`로 사용하자.
+- `<section>`은 같은 테마에 다른 부분, 챕터, 머릿글 등을 쓸 때 사용한다.
+- `<aside>`는 메인 컨텐츠에 관련은 있으나 그 컨텐츠를 이해하는데 필수가 아닌 정보를 보여줄때 쓴다.
 
 ## CSS 예시
 
@@ -88,49 +87,61 @@ HTML에 이미지를 넣는다고 한다면, `<img>` 태그에 그림들을 넣�
 ======================================== */
 *,
 html,
-body {}
-@media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+body {
+}
+@media only screen and (min-width: 320px) and (max-width: 480px),
+  (orientation: portrait) {
 }
 /* 2. Typography Styles
 ======================================== */
 h1,
-h2,
-{
-  font-family: 'Roboto', Helvetica, sans-serif;
+h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
 }
-h1 {}
-@media(min-width: 720px) {
-  h1 {}
+h1 {
 }
-@media(min-width: 1024px) {
-  h1 {}
+@media (min-width: 720px) {
+  h1 {
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+  }
 }
 
 /* 2. Typography Styles
 ======================================== */
 h1,
-h2,
-{
-  font-family: 'Roboto', Helvetica, sans-serif;
+h2 {
+  font-family: "Roboto", Helvetica, sans-serif;
 }
 
 /* 3. Structure Styles
 ======================================== */
-.container {}
-@media(min-width: 720px) {}
+.container {
+}
+@media (min-width: 720px) {
+}
 
 /* 4. Modules Styles
 ======================================== */
-.site-header {}
-.site-nav-left li:not(:last-child), .site-nav-right li:not(:last-child), .site-nav-mobile li:not(:last-child) {}
-.site-nav-link.active {}
+.site-header {
+}
+.site-nav-left li:not(:last-child),
+.site-nav-right li:not(:last-child),
+.site-nav-mobile li:not(:last-child) {
+}
+.site-nav-link.active {
+}
 /* 5. Component Styles
 ======================================== */
-.alert{}
+.alert {
+}
 
 /* 6. Page Styles
 ======================================== */
-.site-main {}
+.site-main {
+}
 ```
 
 ## CSS - Cascade order for pseudo-classes
@@ -142,7 +153,7 @@ h2,
 ## CSS - Useful selector for Navigation
 
 ```css
-.breadcrumb li.location+li.location::before {
+.breadcrumb li.location + li.location::before {
   color: gray;
   content: ">";
 }
@@ -158,13 +169,13 @@ h2,
 
 ## Styling inspiration
 
-* Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/utilities/text/)
-* Google’s [Material Design](https://material.io/design/)
-* Twitter's [Bootstrap](https://getbootstrap.com/docs/4.0/components/buttons/)
+- Salesforce’s [Lightning Design System](https://www.lightningdesignsystem.com/utilities/text/)
+- Google’s [Material Design](https://material.io/design/)
+- Twitter's [Bootstrap](https://getbootstrap.com/docs/4.0/components/buttons/)
 
 ## Resource
 
-* [Semantic HTML](https://www.internetingishard.com/html-and-css/semantic-html/)
-* [Semantic CSS](https://css-tricks.com/semantic-class-names/)
+- [Semantic HTML](https://www.internetingishard.com/html-and-css/semantic-html/)
+- [Semantic CSS](https://css-tricks.com/semantic-class-names/)
 
 ---
