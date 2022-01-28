@@ -1,15 +1,14 @@
 <nav class="nav-container">
     <div class="logo">
         <div class="img-wrapper">
-            <a href="/"><img src="{{site.baseurl}}/favicon.png" alt="로고"></a>
+            <a href="{{site.baseurl}}"><img src="{{site.baseurl}}/favicon.png" alt="로고"></a>
         </div>
     </div>
     <div class="menu search-container" id="search-container">
         <input type="text" id="search-input" placeholder="Search or jump to...">
     </div>
     <div class="menu">
-        <a href="{{site.baseurl}}"
-            class="{% if page.url == '/about.html' %} current {% endif %}">깃허브</a>
+        <a href="https://github.com/tomlim2" class="{% if page.url == '/about.html' %} current {% endif %}">깃허브</a>
         <a href="https://younsoo.notion.site/younsoo/05f1a0048db546ad877bfd645fc181b0"
             class="{% if page.url == '/about.html' %} current {% endif %}">포트폴리오</a>
         <a href="{{site.baseurl}}/about" class="{% if page.url == '/about.html' %} current {% endif %}">ABOUT</a>

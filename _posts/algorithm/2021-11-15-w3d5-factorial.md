@@ -7,16 +7,44 @@ category: algorithm
 tags: [Javascript, Algorithm]
 ---
 
-### Solution
+### 문제
+
+재귀를 사용하여 팩토리얼(factorial)을 구하는 함수를 구현해주세요.
+팩토리얼이란 1에서부터 n까지의 정수를 모두 곱한것을 말합니다.
+
+```text
+1! = 1
+2! = 1 * 2
+5! = 1 * 2 * 3 * 4 * 5
+```
+
+### Solution 1
+
+```js
+const Calculate = {
+  factorial(inputNumber) {
+    if (inputNumber === 0) {
+      return 1;
+    }
+
+    for (let i = inputNumber - 1; i >= 1; i--) {
+      inputNumber *= i;
+    }
+    return inputNumber;
+  },
+};
+```
+
+### Solution 2: 재귀함수 사용시
 
 ```js
 const factorial = (n) => {
-    if (n == 0 || n == 1) {
-        return 1;
-    } else {
-        return n * factorial(n - 1);
-    }
-}
+  if (n == 0 || n == 1) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+};
 ```
 
 ### 재귀 알고리즘
@@ -27,10 +55,10 @@ const factorial = (n) => {
 예)
 
 ```js
-const countdown = n => {
+const countdown = (n) => {
   console.log(n);
-  countdown(n-1);
-}
+  countdown(n - 1);
+};
 
 countdown(10);
 ```
@@ -44,26 +72,15 @@ countdown 함수는 받은 인자를 console로 출력합니다.
 위를 고려해 0이 되면 더이상 재귀를 이어나가지 않도록 종료 조건을 추가하겠습니다.
 
 ```js
-const countdown = n => {
+const countdown = (n) => {
   console.log(n);
 
   if (n === 0) return;
 
-  countdown(n-1);
-}
+  countdown(n - 1);
+};
 
 countdown(10);
 ```
 
 재귀의 이론은 위와 같이 아주 간단합니다. 재귀를 더 공부하고 싶은 분은 인터넷에 재귀 문제를 찾아 더 풀어보셔도 좋고, 알고리즘 책에서 재귀 부분만 더 읽으셔도 좋습니다.
-
-### 문제
-
-재귀를 사용하여 팩토리얼(factorial)을 구하는 함수를 구현해주세요.
-팩토리얼이란 1에서부터 n까지의 정수를 모두 곱한것을 말합니다.
-
-```text
-1! = 1
-2! = 1 * 2
-5! = 1 * 2 * 3 * 4 * 5
-```
