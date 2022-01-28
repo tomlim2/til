@@ -2,8 +2,8 @@
 layout: post-base
 title: Queue and Stack
 meta: 큐와 스택의 차이
-category: algorithm
-tags: [CS, Algorithm]
+category: common
+tags: [CS, Common]
 ---
 
 Stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle.
