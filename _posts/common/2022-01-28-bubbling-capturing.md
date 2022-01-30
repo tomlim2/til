@@ -3,7 +3,7 @@ layout: post-base
 title: Bubbling and Capturing
 meta: 포스트맨 토큰 설정
 category: common
-tags: [common]
+tags: [Common]
 ---
 
 아래 핸들러는 `<div>`에 할당되어 있지만, `<em>` 이나 `<code>`같은 중첩 태그를 클릭해도 동작합니다.

@@ -2,9 +2,8 @@
 layout: post-base
 title: Multiplation table
 meta: 조건 들어간 구구단표 만들기
-source: https://www.a11yproject.com/
 category: algorithm
-tags: [Javascript, Algorithm]
+tags: [Algorithm, Javascript]
 ---
 
 ```js
