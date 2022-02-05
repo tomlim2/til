@@ -1,12 +1,12 @@
 ---
 layout: post-base
-title: user-input 커스텀 훅
+title: userInput 커스텀 훅
 meta: 양식 리페토링시 유용한 코드
 category: react
 tags: [React, Javascript, Styled-component]
 ---
 
-## user-input custom hooks
+## userInput custom hooks
 
 ```jsx
 import { useState } from "react";
