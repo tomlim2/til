@@ -1,7 +1,7 @@
 ---
 layout: post-base
 title: Make modal using createPortal
-meta: 포탈을 이용한 모달창 구현
+meta: 성능 향상을 위한 포탈 모달창 구현
 category: react
 tags: [React, Javascript, Modal]
 ---
