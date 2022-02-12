@@ -11,20 +11,27 @@
   margin-top: 25px;
 }
 
+.section-title {
+  position: relative;
+  font-weight: var(--font-bold);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 .home-container .section:nth-child(1) {
   margin-top: 20px;
 }
 
-.home-container .section:nth-child(1) h2{
+.home-container .section:nth-child(1) h2 {
   margin-top: 0;
 }
 
-.home-container .section:nth-child(1) p{
+.home-container .section:nth-child(1) p {
   margin: -3px 0 5px 0;
   color: var(--color-gray-600);
   font-family: "Noto Sans Mono", monospace;
   font-weight: 400;
-  font-size: .85rem;
+  font-size: 0.85rem;
 }
 
 .home-container .section:nth-last-child(1) {
@@ -43,7 +50,7 @@
 .home-container ul {
   padding-left: 0;
   margin-top: 0;
-  line-height: 1.7; 
+  line-height: 1.7;
 }
 
 .home-container h2 {
